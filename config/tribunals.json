@@ -1,0 +1,291 @@
+{
+  "tribunals": {
+    "NSWCATOD": {
+      "name": "NSW Civil and Administrative Tribunal - Occupational Division",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWCATOD/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWCATOD\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2014-present",
+      "source": "huggingface",
+      "notes": "Also hears architect/surveyor matters; needs keyword filtering"
+    },
+    "NSWMT": {
+      "name": "NSW Medical Tribunal",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWMT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWMT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "1999-2013",
+      "source": "huggingface",
+      "notes": "Legacy tribunal; replaced by NSWCATOD in 2014"
+    },
+    "NSWNMT": {
+      "name": "Nursing and Midwifery Tribunal of NSW",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWNMT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWNMT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2007-2013",
+      "source": "huggingface",
+      "notes": "Legacy tribunal; merged into NSWCATOD"
+    },
+    "NSWCATAP": {
+      "name": "NSW Civil and Administrative Tribunal - Appeal Panel",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWCATAP/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWCATAP\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2014-present",
+      "source": "huggingface",
+      "notes": "Appeals from NSWCATOD; needs keyword filtering"
+    },
+    "NSWChirT": {
+      "name": "Chiropractors Tribunal of NSW",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWChirT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWChirT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2008-2013",
+      "source": "huggingface",
+      "notes": "Legacy tribunal"
+    },
+    "NSWDenT": {
+      "name": "Dental Tribunal of NSW",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWDenT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWDenT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2009-2013",
+      "source": "huggingface",
+      "notes": "Legacy tribunal"
+    },
+    "NSWOptT": {
+      "name": "Optometry Tribunal of NSW",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWOptT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWOptT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2012-2013",
+      "source": "huggingface",
+      "notes": "Legacy tribunal"
+    },
+    "NSWOstT": {
+      "name": "Osteopathy Tribunal of NSW",
+      "jurisdiction": "NSW",
+      "state": "new_south_wales",
+      "austlii_path": "/au/cases/nsw/NSWOstT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NSWOstT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2010-2013",
+      "source": "huggingface",
+      "notes": "Legacy tribunal"
+    },
+    "VCAT": {
+      "name": "Victorian Civil and Administrative Tribunal",
+      "jurisdiction": "VIC",
+      "state": "victoria",
+      "austlii_path": "/au/cases/vic/VCAT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*VCAT\\s+\\d+",
+      "health_specific": false,
+      "active_years": "1998-present",
+      "source": "austlii",
+      "notes": "General tribunal; needs keyword filtering for health matters"
+    },
+    "VicMPB": {
+      "name": "Medical Practitioners Board of Victoria - Professional Standards Panel",
+      "jurisdiction": "VIC",
+      "state": "victoria",
+      "austlii_path": "/au/cases/vic/VicMPB/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*VicMPB\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2009-2012",
+      "source": "austlii",
+      "notes": "Legacy board hearings"
+    },
+    "VicPRB": {
+      "name": "Physiotherapists Registration Board of Victoria",
+      "jurisdiction": "VIC",
+      "state": "victoria",
+      "austlii_path": "/au/cases/vic/VicPRB/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*VicPRB\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2008-2011",
+      "source": "austlii",
+      "notes": "Legacy board hearings"
+    },
+    "VicPsyRB": {
+      "name": "Psychologists Registration Board of Victoria",
+      "jurisdiction": "VIC",
+      "state": "victoria",
+      "austlii_path": "/au/cases/vic/VicPsyRB/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*VicPsyRB\\s+\\d+",
+      "health_specific": true,
+      "active_years": "1999-2011",
+      "source": "austlii",
+      "notes": "Legacy board hearings"
+    },
+    "QCAT": {
+      "name": "Queensland Civil and Administrative Tribunal",
+      "jurisdiction": "QLD",
+      "state": "queensland",
+      "austlii_path": "/au/cases/qld/QCAT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*QCAT\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2009-present",
+      "source": "austlii",
+      "notes": "General tribunal; needs keyword filtering for health matters"
+    },
+    "QldMPT": {
+      "name": "Queensland Medical Tribunal",
+      "jurisdiction": "QLD",
+      "state": "queensland",
+      "austlii_path": "/au/cases/qld/QldMPT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*QldMPT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2002-2009",
+      "source": "austlii",
+      "notes": "Legacy tribunal; replaced by QCAT"
+    },
+    "SACAT": {
+      "name": "South Australian Civil and Administrative Tribunal",
+      "jurisdiction": "SA",
+      "state": "south_australia",
+      "austlii_path": "/au/cases/sa/SACAT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*SACAT\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2015-present",
+      "source": "austlii",
+      "notes": "General tribunal; needs keyword filtering for health matters"
+    },
+    "SADenPCT": {
+      "name": "SA Dental Professional Conduct Tribunal",
+      "jurisdiction": "SA",
+      "state": "south_australia",
+      "austlii_path": "/au/cases/sa/SADenPCT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*SADenPCT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "1998-2015",
+      "source": "austlii",
+      "notes": "Legacy tribunal"
+    },
+    "SAPsyB": {
+      "name": "SA Psychological Board - Disciplinary Decisions",
+      "jurisdiction": "SA",
+      "state": "south_australia",
+      "austlii_path": "/au/cases/sa/SAPsyB/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*SAPsyB\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2003-2015",
+      "source": "austlii",
+      "notes": "Legacy board hearings"
+    },
+    "WASAT": {
+      "name": "State Administrative Tribunal of Western Australia",
+      "jurisdiction": "WA",
+      "state": "western_australia",
+      "austlii_path": "/au/cases/wa/WASAT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*WASAT\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2005-present",
+      "source": "austlii",
+      "notes": "General tribunal; needs keyword filtering for health matters"
+    },
+    "ACAT": {
+      "name": "ACT Civil and Administrative Tribunal",
+      "jurisdiction": "ACT",
+      "state": "australian_capital_territory",
+      "austlii_path": "/au/cases/act/ACAT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*ACAT\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2009-present",
+      "source": "austlii",
+      "notes": "General tribunal; needs keyword filtering for health matters"
+    },
+    "ACTMBPSP": {
+      "name": "Medical Board of the ACT - Professional Standards Panel",
+      "jurisdiction": "ACT",
+      "state": "australian_capital_territory",
+      "austlii_path": "/au/cases/act/ACTMBPSP/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*ACTMBPSP\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2005-2010",
+      "source": "austlii",
+      "notes": "Legacy board outcomes"
+    },
+    "NTCAT": {
+      "name": "Northern Territory Civil and Administrative Tribunal",
+      "jurisdiction": "NT",
+      "state": "northern_territory",
+      "austlii_path": "/au/cases/nt/NTCAT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NTCAT\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2015-present",
+      "source": "austlii",
+      "notes": "General tribunal; needs keyword filtering"
+    },
+    "NTHPRT": {
+      "name": "NT Health Professional Review Tribunal",
+      "jurisdiction": "NT",
+      "state": "northern_territory",
+      "austlii_path": "/au/cases/nt/NTHPRT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*NTHPRT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2005-2015",
+      "source": "austlii",
+      "notes": "Legacy health-specific tribunal"
+    },
+    "TasHPT": {
+      "name": "Health Practitioners Tribunal of Tasmania",
+      "jurisdiction": "TAS",
+      "state": "tasmania",
+      "austlii_path": "/au/cases/tas/TasHPT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*TasHPT\\s+\\d+",
+      "health_specific": true,
+      "active_years": "2010-present",
+      "source": "austlii",
+      "notes": "Health-specific tribunal"
+    },
+    "TasCAT": {
+      "name": "Tasmanian Civil and Administrative Tribunal",
+      "jurisdiction": "TAS",
+      "state": "tasmania",
+      "austlii_path": "/au/cases/tas/TasCAT/",
+      "citation_pattern": "\\[\\d{4}\\]\\s*TasCAT\\s+\\d+",
+      "health_specific": false,
+      "active_years": "2022-present",
+      "source": "austlii",
+      "notes": "General tribunal; needs keyword filtering"
+    }
+  },
+  "jurisdictions": {
+    "NSW": {"name": "New South Wales", "austlii_state": "nsw"},
+    "VIC": {"name": "Victoria", "austlii_state": "vic"},
+    "QLD": {"name": "Queensland", "austlii_state": "qld"},
+    "SA": {"name": "South Australia", "austlii_state": "sa"},
+    "WA": {"name": "Western Australia", "austlii_state": "wa"},
+    "ACT": {"name": "Australian Capital Territory", "austlii_state": "act"},
+    "NT": {"name": "Northern Territory", "austlii_state": "nt"},
+    "TAS": {"name": "Tasmania", "austlii_state": "tas"}
+  },
+  "sources": {
+    "huggingface": {
+      "dataset_id": "umarbutler/open-australian-legal-corpus",
+      "description": "Open Australian Legal Corpus (CC-BY-4.0)",
+      "coverage": "NSW decisions only (NSWCATOD 2014+, NSWMT 1999-2013, and legacy NSW tribunals)"
+    },
+    "austlii": {
+      "base_url": "https://www.austlii.edu.au",
+      "health_library_path": "/au/special/healthprac/",
+      "description": "AustLII direct scraping for non-NSW jurisdictions",
+      "crawl_delay_seconds": 120
+    }
+  }
+}

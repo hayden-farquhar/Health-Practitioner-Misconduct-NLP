@@ -1,0 +1,379 @@
+{
+  "version": "1.0",
+  "description": "Taxonomy for coding Australian health practitioner disciplinary decisions. Based on AHPRA notification categories, GMC UK fitness-to-practise categories, NZMC categories, and project research questions.",
+
+  "misconduct_categories": {
+    "CLIN": {
+      "name": "Clinical competence",
+      "definition": "Deficiencies in clinical knowledge, skill, judgement, or care delivery that fall below the expected standard for the practitioner's profession and level of experience.",
+      "examples": [
+        "Failure to diagnose a condition that a competent practitioner would have identified",
+        "Inadequate clinical assessment or examination",
+        "Inappropriate or unsafe treatment"
+      ],
+      "inclusion": "Errors or deficiencies directly related to clinical care delivery, diagnosis, treatment planning, or clinical decision-making.",
+      "exclusion": "Prescribing-specific issues (code under PRESC). Communication failures during clinical encounters (code under COMM). Impairment-related clinical errors (code under both CLIN and IMPR).",
+      "subcategories": {
+        "CLIN_DIAG": {
+          "name": "Diagnostic failure",
+          "definition": "Failure to diagnose, misdiagnosis, or delayed diagnosis of a condition.",
+          "examples": ["Missed fracture on imaging", "Failure to order appropriate investigations", "Misdiagnosis leading to delayed treatment"]
+        },
+        "CLIN_TREAT": {
+          "name": "Inappropriate treatment",
+          "definition": "Treatment that is not clinically indicated, is contraindicated, or falls below accepted standards.",
+          "examples": ["Performing unnecessary surgery", "Using outdated or discredited treatment methods", "Failing to refer when indicated"]
+        },
+        "CLIN_ASSESS": {
+          "name": "Inadequate assessment",
+          "definition": "Failure to conduct an adequate clinical assessment, history, or examination.",
+          "examples": ["No physical examination before prescribing", "Incomplete patient history", "Failure to review test results"]
+        },
+        "CLIN_RECORD": {
+          "name": "Inadequate record-keeping",
+          "definition": "Clinical records that are absent, incomplete, inaccurate, or do not meet professional standards.",
+          "examples": ["No clinical notes for consultations", "Retrospective alteration of records", "Illegible or unintelligible notes"]
+        },
+        "CLIN_INFCON": {
+          "name": "Infection control failure",
+          "definition": "Failure to maintain infection control or hygiene standards.",
+          "examples": ["Non-sterile equipment", "Failure to follow hand hygiene protocols", "Inadequate sterilisation of instruments"]
+        },
+        "CLIN_OTHER": {
+          "name": "Other clinical competence issue",
+          "definition": "Clinical competence issues not captured by the above subcategories.",
+          "examples": ["Practising outside scope without appropriate training", "Failure to maintain clinical competence through continuing education"]
+        }
+      }
+    },
+
+    "PRESC": {
+      "name": "Prescribing misconduct",
+      "definition": "Inappropriate, excessive, or fraudulent prescribing, dispensing, or supply of medications, including failure to monitor patients on medication, prescribing or dispensing without adequate assessment, and self-prescribing or self-supply.",
+      "examples": [
+        "Prescribing opioids without adequate clinical indication",
+        "Excessive prescribing of Schedule 8 substances",
+        "Prescribing to family members or self"
+      ],
+      "inclusion": "All matters primarily concerning prescribing practices, medication management, or drug supply.",
+      "exclusion": "Drug-related impairment of the practitioner (code under IMPR). Clinical decisions about non-pharmacological treatment (code under CLIN).",
+      "subcategories": {
+        "PRESC_OPIOID": {
+          "name": "Opioid prescribing",
+          "definition": "Inappropriate prescribing of opioid medications (Schedule 8 or equivalent).",
+          "examples": ["Excessive opioid prescribing without monitoring", "Prescribing opioids to known drug-seeking patients", "Failure to use opioid prescribing monitoring systems"]
+        },
+        "PRESC_BENZO": {
+          "name": "Benzodiazepine prescribing",
+          "definition": "Inappropriate prescribing of benzodiazepines (Schedule 4 Appendix D or equivalent).",
+          "examples": ["Long-term benzodiazepine prescribing without review", "High-dose benzodiazepine prescribing"]
+        },
+        "PRESC_OTHER_S8": {
+          "name": "Other Schedule 8 prescribing",
+          "definition": "Inappropriate prescribing of Schedule 8 substances other than opioids.",
+          "examples": ["Amphetamine prescribing without appropriate indication", "Stimulant prescribing irregularities"]
+        },
+        "PRESC_GENERAL": {
+          "name": "General prescribing failure",
+          "definition": "Prescribing failures not specific to controlled substances.",
+          "examples": ["Prescribing without adequate assessment", "Failure to check drug interactions", "Prescribing outside scope of practice"]
+        },
+        "PRESC_SELF": {
+          "name": "Self-prescribing or prescribing for associates",
+          "definition": "Prescribing medication for oneself, family members, or close associates.",
+          "examples": ["Self-prescribing controlled substances", "Prescribing for family members without proper clinical relationship"]
+        },
+        "PRESC_MONITOR": {
+          "name": "Monitoring failure",
+          "definition": "Failure to appropriately monitor patients on medication.",
+          "examples": ["No blood monitoring for patients on warfarin", "No follow-up for patients on lithium", "Failure to review opioid patients regularly"]
+        }
+      }
+    },
+
+    "BOUND": {
+      "name": "Boundary violations",
+      "definition": "Breaches of professional boundaries in the practitioner-patient relationship, including sexual, emotional, financial, and social boundary violations.",
+      "examples": [
+        "Sexual relationship with a current patient",
+        "Accepting large gifts from a patient",
+        "Engaging in a business relationship with a patient"
+      ],
+      "inclusion": "All matters involving inappropriate relationships or interactions between practitioner and patient/client that breach professional boundaries.",
+      "exclusion": "Communication failures that do not involve boundary crossing (code under COMM). Financial fraud not involving patients (code under FRAUD).",
+      "subcategories": {
+        "BOUND_SEXUAL": {
+          "name": "Sexual boundary violation",
+          "definition": "Sexual contact, sexual relationship, or sexualised behaviour with a patient or former patient (where the therapeutic relationship has not clearly ended).",
+          "examples": ["Sexual intercourse with a patient", "Sexual touching during consultation", "Sending sexual messages to a patient"]
+        },
+        "BOUND_EMOTIONAL": {
+          "name": "Emotional boundary violation",
+          "definition": "Inappropriate emotional involvement with a patient, including dual relationships and emotional dependency.",
+          "examples": ["Becoming emotionally dependent on a patient", "Excessive personal disclosure to a patient", "Personal relationship with a vulnerable patient"]
+        },
+        "BOUND_FINANCIAL": {
+          "name": "Financial boundary violation",
+          "definition": "Inappropriate financial dealings with a patient.",
+          "examples": ["Borrowing money from a patient", "Entering business partnerships with patients", "Accepting large gifts or bequests"]
+        },
+        "BOUND_SOCIAL": {
+          "name": "Social/digital boundary violation",
+          "definition": "Inappropriate social or online interactions with patients.",
+          "examples": ["Befriending patients on social media", "Inappropriate text messaging with patients", "Meeting patients socially during treatment"]
+        }
+      }
+    },
+
+    "IMPR": {
+      "name": "Impairment",
+      "definition": "The practitioner's ability to practise is impaired by a physical or mental health condition, substance use disorder, or cognitive impairment.",
+      "examples": [
+        "Practising while under the influence of alcohol",
+        "Unmanaged mental health condition affecting clinical practice",
+        "Diverting drugs of dependence for personal use"
+      ],
+      "inclusion": "All matters where the practitioner's health or substance use is a primary concern affecting their fitness to practise.",
+      "exclusion": "Prescribing misconduct that is not related to the practitioner's own substance use (code under PRESC). Dishonesty to obtain drugs for patients (code under FRAUD).",
+      "subcategories": {
+        "IMPR_SUBSTANCE": {
+          "name": "Substance use disorder",
+          "definition": "Practitioner has a substance use disorder or is practising while affected by alcohol or drugs.",
+          "examples": ["Attending work intoxicated", "Diverting Schedule 8 drugs from the workplace", "Positive drug test while registered"]
+        },
+        "IMPR_MENTAL": {
+          "name": "Mental health impairment",
+          "definition": "Practitioner has a mental health condition that impairs their ability to practise safely.",
+          "examples": ["Unmanaged psychiatric condition affecting clinical judgement", "Practising during acute mental health crisis"]
+        },
+        "IMPR_PHYSICAL": {
+          "name": "Physical health impairment",
+          "definition": "Practitioner has a physical health condition or cognitive impairment affecting their ability to practise.",
+          "examples": ["Physical disability affecting clinical skills without appropriate accommodation", "Cognitive decline affecting clinical competence"]
+        },
+        "IMPR_NONCOMPLIANCE": {
+          "name": "Non-compliance with health monitoring",
+          "definition": "Failure to comply with health-related conditions on registration or monitoring programs.",
+          "examples": ["Failure to attend required drug screening", "Non-compliance with mental health treatment plan", "Breach of health-related conditions on registration"]
+        }
+      }
+    },
+
+    "FRAUD": {
+      "name": "Dishonesty and fraud",
+      "definition": "Deliberate dishonesty, fraud, or deception in the practitioner's professional conduct, including Medicare fraud, falsification of records, and misrepresentation of qualifications.",
+      "examples": [
+        "Medicare billing fraud",
+        "Falsifying clinical records",
+        "Misrepresenting qualifications or registration status"
+      ],
+      "inclusion": "All forms of professional dishonesty, fraud, deception, or misrepresentation.",
+      "exclusion": "Inadequate record-keeping due to poor practice rather than deliberate falsification (code under CLIN_RECORD). Financial boundary violations with patients (code under BOUND_FINANCIAL).",
+      "subcategories": {
+        "FRAUD_BILLING": {
+          "name": "Billing or Medicare fraud",
+          "definition": "Fraudulent billing, including billing for services not provided, upcoding, or Medicare fraud.",
+          "examples": ["Billing Medicare for services not rendered", "Upcoding consultations", "Claiming rebates for ineligible services"]
+        },
+        "FRAUD_RECORDS": {
+          "name": "Falsification of records",
+          "definition": "Deliberate alteration, fabrication, or destruction of clinical or professional records.",
+          "examples": ["Backdating clinical notes", "Creating false patient records", "Destroying records to conceal misconduct"]
+        },
+        "FRAUD_QUALS": {
+          "name": "Misrepresentation of qualifications",
+          "definition": "Misrepresenting qualifications, registration status, or professional credentials.",
+          "examples": ["Claiming specialist qualifications not held", "Practising while unregistered", "Falsifying continuing education records"]
+        },
+        "FRAUD_RESEARCH": {
+          "name": "Research misconduct",
+          "definition": "Fabrication, falsification, or plagiarism in research activities.",
+          "examples": ["Fabricating research data", "Plagiarism in publications", "Failure to obtain ethics approval"]
+        },
+        "FRAUD_OTHER": {
+          "name": "Other dishonesty",
+          "definition": "Other forms of professional dishonesty not captured above.",
+          "examples": ["Providing false information to AHPRA", "Deceiving patients about diagnosis or prognosis for financial gain", "Insurance fraud"]
+        }
+      }
+    },
+
+    "COMM": {
+      "name": "Communication failures",
+      "definition": "Failures in professional communication with patients, families, colleagues, or regulatory bodies, including failures to obtain informed consent, inadequate disclosure, and failure to respond to complaints.",
+      "examples": [
+        "Failure to obtain informed consent before a procedure",
+        "Inadequate disclosure of risks",
+        "Failure to notify or report as required"
+      ],
+      "inclusion": "All matters where communication failures are the primary conduct concern.",
+      "exclusion": "Record-keeping failures (code under CLIN_RECORD). Dishonest communication (code under FRAUD). Boundary-related communication (code under BOUND).",
+      "subcategories": {
+        "COMM_CONSENT": {
+          "name": "Informed consent failure",
+          "definition": "Failure to obtain adequate informed consent before treatment or procedures.",
+          "examples": ["Performing procedure without consent", "Failure to explain risks and alternatives", "Consent not documented"]
+        },
+        "COMM_DISCLOSURE": {
+          "name": "Inadequate disclosure",
+          "definition": "Failure to provide patients with adequate information about their condition, treatment, or outcomes.",
+          "examples": ["Failure to disclose adverse outcome", "Withholding material information from patient", "Not disclosing conflicts of interest"]
+        },
+        "COMM_NOTIFY": {
+          "name": "Failure to report or notify",
+          "definition": "Failure to make mandatory notifications or reports to regulatory bodies, employers, or relevant authorities.",
+          "examples": ["Failure to make a mandatory notification about a colleague", "Failure to notify a notifiable condition", "Failure to report to AHPRA as required"]
+        },
+        "COMM_CONDUCT": {
+          "name": "Unprofessional communication",
+          "definition": "Rude, aggressive, intimidating, or otherwise unprofessional communication with patients, families, or colleagues.",
+          "examples": ["Verbal abuse of patients or staff", "Intimidating behaviour toward colleagues", "Discriminatory language"]
+        }
+      }
+    },
+
+    "PROF": {
+      "name": "Professional conduct",
+      "definition": "Breaches of general professional obligations and standards of conduct not captured by other categories, including failure to comply with conditions, advertising breaches, and practice management failures.",
+      "examples": [
+        "Breach of conditions on registration",
+        "Misleading advertising",
+        "Failure to maintain professional indemnity insurance"
+      ],
+      "inclusion": "General professional conduct matters, breach of registration conditions, advertising, practice management, and matters not fitting other categories.",
+      "exclusion": "Clinical competence issues (code under CLIN). Communication failures (code under COMM). Boundary violations (code under BOUND).",
+      "subcategories": {
+        "PROF_CONDITIONS": {
+          "name": "Breach of conditions",
+          "definition": "Failure to comply with conditions imposed on the practitioner's registration.",
+          "examples": ["Practising outside permitted scope", "Failing to attend required supervision", "Breaching restriction on practice"]
+        },
+        "PROF_ADVERTISING": {
+          "name": "Advertising breach",
+          "definition": "Misleading, deceptive, or non-compliant advertising of health services.",
+          "examples": ["False claims about treatment outcomes", "Use of prohibited testimonials", "Misleading qualifications in advertising"]
+        },
+        "PROF_INSURANCE": {
+          "name": "Insurance or registration failure",
+          "definition": "Failure to maintain professional indemnity insurance or registration requirements.",
+          "examples": ["Practising without indemnity insurance", "Failure to renew registration", "Practising in a restricted area without approval"]
+        },
+        "PROF_SUPERVISION": {
+          "name": "Supervision failure",
+          "definition": "Inadequate supervision of students, junior practitioners, or support staff.",
+          "examples": ["Delegating tasks to unqualified staff", "Inadequate oversight of student practitioners", "Failure to supervise as required by conditions"]
+        },
+        "PROF_OTHER": {
+          "name": "Other professional conduct",
+          "definition": "Professional conduct issues not captured by other subcategories.",
+          "examples": ["Criminal conviction relevant to practice", "Conduct bringing the profession into disrepute", "Failure to cooperate with regulatory investigation"]
+        }
+      }
+    }
+  },
+
+  "outcome_categories": {
+    "CANCEL": {
+      "name": "Cancellation",
+      "definition": "Registration is cancelled (may include a non-review period).",
+      "severity_rank": 1
+    },
+    "SUSPEND": {
+      "name": "Suspension",
+      "definition": "Registration is suspended for a specified period.",
+      "severity_rank": 2
+    },
+    "CONDITIONS": {
+      "name": "Conditions",
+      "definition": "Conditions are imposed on the practitioner's registration.",
+      "severity_rank": 3
+    },
+    "REPRIMAND": {
+      "name": "Reprimand",
+      "definition": "A formal reprimand or censure is issued.",
+      "severity_rank": 4
+    },
+    "FINE": {
+      "name": "Fine",
+      "definition": "A monetary penalty is imposed.",
+      "severity_rank": 5
+    },
+    "CAUTION": {
+      "name": "Caution",
+      "definition": "A formal caution is issued.",
+      "severity_rank": 6
+    },
+    "UNDERTAKING": {
+      "name": "Undertaking",
+      "definition": "The practitioner gives an undertaking (e.g., to restrict practice, undergo training).",
+      "severity_rank": 7
+    },
+    "NO_ADVERSE": {
+      "name": "No adverse finding",
+      "definition": "Complaint dismissed, charges not established, or no adverse finding made.",
+      "severity_rank": 9
+    },
+    "OTHER": {
+      "name": "Other",
+      "definition": "Outcome not captured by the above categories (e.g., costs orders only, referral to another body, consent orders with non-standard terms).",
+      "severity_rank": 8
+    }
+  },
+
+  "finding_categories": {
+    "PM": {
+      "name": "Professional misconduct",
+      "definition": "A finding of professional misconduct — the most serious finding, typically involving conduct that is substantially below the standard reasonably expected of a practitioner of an equivalent level of training or experience.",
+      "legislation_refs": [
+        "Health Practitioner Regulation National Law s 5"
+      ]
+    },
+    "UPC_SAT": {
+      "name": "Unsatisfactory professional conduct",
+      "definition": "A finding of unsatisfactory professional conduct — conduct that is below the standard reasonably expected of a practitioner of an equivalent level of training or experience but does not amount to professional misconduct.",
+      "legislation_refs": [
+        "Health Practitioner Regulation National Law s 139B (NSW)"
+      ]
+    },
+    "UPC_GEN": {
+      "name": "Unprofessional conduct",
+      "definition": "A finding of unprofessional conduct — professional conduct that is of a lesser standard than that which might reasonably be expected of the health practitioner by the public or the practitioner's professional peers.",
+      "legislation_refs": [
+        "Health Practitioner Regulation National Law s 5"
+      ]
+    },
+    "NO_FINDING": {
+      "name": "No finding",
+      "definition": "No finding of misconduct or unsatisfactory conduct is made. Complaint dismissed or not established.",
+      "legislation_refs": []
+    }
+  },
+
+  "professions": [
+    "medical_practitioner",
+    "nurse",
+    "midwife",
+    "dentist",
+    "pharmacist",
+    "psychologist",
+    "physiotherapist",
+    "chiropractor",
+    "osteopath",
+    "optometrist",
+    "podiatrist",
+    "paramedic",
+    "occupational_therapist",
+    "chinese_medicine_practitioner",
+    "medical_radiation_practitioner",
+    "aboriginal_health_practitioner"
+  ],
+
+  "coding_rules": {
+    "multi_label": "Decisions may have multiple misconduct categories. Code all applicable categories.",
+    "primary_outcome": "When multiple outcomes are ordered, the primary outcome is the most severe (lowest severity_rank).",
+    "primary_finding": "When multiple findings are made across different charges, the primary finding is the most serious.",
+    "consent_orders": "Code consent orders the same as contested orders — the outcome category is determined by what was ordered, not how it was reached.",
+    "appeals": "Code the appeal outcome, not the original decision outcome. Note in the 'notes' field that this is an appeal decision.",
+    "interim_orders": "Do not code interim (interlocutory) orders as final outcomes. If the only decision is an interim order, note this and code the interim outcome separately."
+  }
+}

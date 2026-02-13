@@ -1,0 +1,127 @@
+<!--
+  Label Studio Configuration for Health Practitioner Misconduct Annotation
+  ========================================================================
+
+  Setup instructions:
+  1. Install Label Studio: pip install label-studio
+  2. Start Label Studio: label-studio start
+  3. Create a new project, paste this XML into Settings > Labeling Interface > Code
+  4. Import data from: data/annotations/label_studio_tasks.json
+  5. Configure annotation settings:
+     - Enable "Show predictions to annotators" for pre-populated metadata
+     - Set "Annotations per task" to 1 (or 2 for IRR subset)
+
+  Taxonomy reference: config/taxonomy.json
+  Coding guidelines: manuscript/supplementary/annotation_guidelines.md
+-->
+
+<View>
+  <Header value="Decision Text" />
+  <Text name="text" value="$text" granularity="paragraph" />
+
+  <Header value="1. Misconduct Type (multi-select — code all applicable)" />
+  <Taxonomy name="misconduct" toName="text" required="true" maxUsages="7">
+    <Choice value="N/A — Not a disciplinary decision" />
+    <Choice value="CLIN — Clinical competence">
+      <Choice value="CLIN_DIAG — Diagnostic failure" />
+      <Choice value="CLIN_TREAT — Inappropriate treatment" />
+      <Choice value="CLIN_ASSESS — Inadequate assessment" />
+      <Choice value="CLIN_RECORD — Inadequate record-keeping" />
+      <Choice value="CLIN_INFCON — Infection control failure" />
+      <Choice value="CLIN_OTHER — Other clinical issue" />
+    </Choice>
+    <Choice value="PRESC — Prescribing misconduct">
+      <Choice value="PRESC_OPIOID — Opioid prescribing" />
+      <Choice value="PRESC_BENZO — Benzodiazepine prescribing" />
+      <Choice value="PRESC_OTHER_S8 — Other Schedule 8" />
+      <Choice value="PRESC_GENERAL — General prescribing failure" />
+      <Choice value="PRESC_SELF — Self-prescribing / associates" />
+      <Choice value="PRESC_MONITOR — Monitoring failure" />
+    </Choice>
+    <Choice value="BOUND — Boundary violations">
+      <Choice value="BOUND_SEXUAL — Sexual boundary violation" />
+      <Choice value="BOUND_EMOTIONAL — Emotional boundary violation" />
+      <Choice value="BOUND_FINANCIAL — Financial boundary violation" />
+      <Choice value="BOUND_SOCIAL — Social/digital boundary violation" />
+    </Choice>
+    <Choice value="IMPR — Impairment">
+      <Choice value="IMPR_SUBSTANCE — Substance use disorder" />
+      <Choice value="IMPR_MENTAL — Mental health impairment" />
+      <Choice value="IMPR_PHYSICAL — Physical health impairment" />
+      <Choice value="IMPR_NONCOMPLIANCE — Non-compliance with monitoring" />
+    </Choice>
+    <Choice value="FRAUD — Dishonesty and fraud">
+      <Choice value="FRAUD_BILLING — Billing / Medicare fraud" />
+      <Choice value="FRAUD_RECORDS — Falsification of records" />
+      <Choice value="FRAUD_QUALS — Misrepresentation of qualifications" />
+      <Choice value="FRAUD_RESEARCH — Research misconduct" />
+      <Choice value="FRAUD_OTHER — Other dishonesty" />
+    </Choice>
+    <Choice value="COMM — Communication failures">
+      <Choice value="COMM_CONSENT — Informed consent failure" />
+      <Choice value="COMM_DISCLOSURE — Inadequate disclosure" />
+      <Choice value="COMM_NOTIFY — Failure to report / notify" />
+      <Choice value="COMM_CONDUCT — Unprofessional communication" />
+    </Choice>
+    <Choice value="PROF — Professional conduct">
+      <Choice value="PROF_CONDITIONS — Breach of conditions" />
+      <Choice value="PROF_ADVERTISING — Advertising breach" />
+      <Choice value="PROF_INSURANCE — Insurance / registration failure" />
+      <Choice value="PROF_SUPERVISION — Supervision failure" />
+      <Choice value="PROF_OTHER — Other professional conduct" />
+    </Choice>
+  </Taxonomy>
+
+  <Header value="2. Finding (single-select — most serious finding)" />
+  <Choices name="finding" toName="text" choice="single" required="true">
+    <Choice value="PM — Professional misconduct" />
+    <Choice value="UPC_SAT — Unsatisfactory professional conduct" />
+    <Choice value="UPC_GEN — Unprofessional conduct" />
+    <Choice value="NO_FINDING — No finding" />
+  </Choices>
+
+  <Header value="3. Outcome (multi-select — all sanctions ordered)" />
+  <Choices name="outcome" toName="text" choice="multiple" required="true">
+    <Choice value="CANCEL — Cancellation" />
+    <Choice value="SUSPEND — Suspension" />
+    <Choice value="CONDITIONS — Conditions" />
+    <Choice value="REPRIMAND — Reprimand" />
+    <Choice value="FINE — Fine" />
+    <Choice value="CAUTION — Caution" />
+    <Choice value="UNDERTAKING — Undertaking" />
+    <Choice value="NO_ADVERSE — No adverse finding" />
+    <Choice value="OTHER — Other" />
+    <Choice value="N/A — Not a disciplinary decision" />
+  </Choices>
+
+  <Header value="4. Profession (single-select)" />
+  <Choices name="profession" toName="text" choice="single" required="true">
+    <Choice value="medical_practitioner" />
+    <Choice value="nurse" />
+    <Choice value="midwife" />
+    <Choice value="dentist" />
+    <Choice value="pharmacist" />
+    <Choice value="psychologist" />
+    <Choice value="physiotherapist" />
+    <Choice value="chiropractor" />
+    <Choice value="osteopath" />
+    <Choice value="optometrist" />
+    <Choice value="podiatrist" />
+    <Choice value="paramedic" />
+    <Choice value="occupational_therapist" />
+    <Choice value="chinese_medicine_practitioner" />
+    <Choice value="medical_radiation_practitioner" />
+    <Choice value="aboriginal_health_practitioner" />
+  </Choices>
+
+  <Header value="5. Confidence" />
+  <Choices name="confidence_misconduct" toName="text" choice="single">
+    <Choice value="High — Misconduct coding clear" />
+    <Choice value="Medium — Some judgement required" />
+    <Choice value="Low — Uncertain / borderline" />
+  </Choices>
+
+  <Header value="6. Notes (edge cases, ambiguities, appeals, etc.)" />
+  <TextArea name="notes" toName="text" rows="3"
+            placeholder="Record any edge cases, ambiguities, or reasoning here..." />
+</View>

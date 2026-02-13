@@ -1,0 +1,10 @@
+# Data acquisition and preprocessing dependencies
+# Python 3.12+ required
+
+requests==2.32.5
+beautifulsoup4==4.14.3
+lxml==4.9.4
+inscriptis==2.7.0
+striprtf==0.0.29
+PyMuPDF==1.26.7
+anthropic==0.79.0
