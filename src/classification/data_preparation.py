@@ -22,9 +22,12 @@ from sklearn.model_selection import train_test_split
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CONFIG_DIR = PROJECT_ROOT / "config"
 DATA_DIR = PROJECT_ROOT / "data"
-GOLD_STANDARD_PATH = DATA_DIR / "annotations" / "gold_standard.json"
+# Nov 2026 gold standard (re-code + logged model pass + adjudication); see its manifest.
+GOLD_STANDARD_PATH = DATA_DIR / "annotations" / "gold_standard_2026-11.json"
 CORPUS_PATH = DATA_DIR / "extracted" / "all_decisions.jsonl"
 SPLITS_DIR = DATA_DIR / "annotations" / "splits"
+# Feb 2026 split membership, kept fixed when labels change (config/retrain_protocol_2026-11.md)
+SPLIT_IDS_PATH = SPLITS_DIR / "split_ids.json"
 TAXONOMY_PATH = CONFIG_DIR / "taxonomy.json"
 
 # Label lists (aligned with taxonomy.json)
@@ -98,8 +101,20 @@ def binarise_multilabel(series: pd.Series, label_set: list[str]) -> pd.DataFrame
 def create_splits(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Stratified train/val/test split: 70/15/15, stratified by is_disciplinary.
 
-    Returns (train, val, test) DataFrames.
+    Returns (train, val, test) DataFrames. If split_ids.json exists, its membership is reused
+    instead of re-stratifying, so a label change cannot move decisions between splits.
     """
+    if SPLIT_IDS_PATH.exists():
+        ids = json.loads(SPLIT_IDS_PATH.read_text())
+        by_id = df.set_index("id", drop=False)
+        if sorted(sum(ids.values(), [])) != sorted(df["id"]):
+            sys.exit("split_ids.json does not cover exactly the gold-standard ids")
+        train, val, test = (by_id.loc[ids[k]].reset_index(drop=True) for k in ("train", "val", "test"))
+        print(f"Split sizes (fixed ids) — train: {len(train)}, val: {len(val)}, test: {len(test)}")
+        for name, part in [("Train", train), ("Val", val), ("Test", test)]:
+            print(f"  {name} disciplinary: {part['is_disciplinary'].sum()}/{len(part)}")
+        return train, val, test
+
     # Stratify by is_disciplinary to maintain class balance
     strat_col = df["is_disciplinary"].astype(int)
 

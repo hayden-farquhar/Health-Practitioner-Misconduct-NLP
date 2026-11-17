@@ -1,0 +1,13 @@
+Measure,"Classifier, first test set (n = 45)","Classifier, second test set (n = 160, weighted)","Language-model coder, second test set (n = 160, weighted)"
+Is-disciplinary accuracy,0.98,0.98 (0.94-1.00),0.96 (0.92-0.99)
+Misconduct macro-F1,0.72,0.70 (0.61-0.77),0.77 (0.69-0.83)
+Misconduct micro-F1,0.78,0.78 (0.72-0.83),0.82 (0.78-0.87)
+Finding accuracy,0.87,0.89 (0.83-0.94),0.93 (0.88-0.97)
+Outcome micro-F1,0.69,0.74 (0.68-0.80),0.94 (0.91-0.97)
+Professional conduct F1,0.90 (0.78-0.98),0.76 (0.64-0.85),0.77 (0.65-0.87)
+Dishonesty/fraud F1,0.53 (0.17-0.80),0.66 (0.46-0.81),0.85 (0.73-0.94)
+Clinical competence F1,0.83 (0.64-0.96),0.70 (0.54-0.83),0.81 (0.68-0.91)
+Boundary violations F1,0.86 (0.57-1.00),0.88 (0.76-0.96),0.91 (0.80-0.98)
+Prescribing/dispensing F1,0.80 (0.50-1.00),0.83 (0.67-0.95),0.90 (0.77-0.99)
+Impairment F1,0.44 (0.00-0.80),0.54 (0.08-0.86),0.61 (0.25-0.90)
+Communication F1,0.43 (0.00-0.71),0.24 (0.00-0.59),0.34 (0.00-0.65)

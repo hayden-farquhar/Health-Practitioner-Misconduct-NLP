@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "properties": {
+    "is_disciplinary": {
+      "type": "boolean"
+    },
+    "finding": {
+      "type": "string",
+      "enum": [
+        "PM",
+        "UPC_SAT",
+        "UPC_GEN",
+        "NO_FINDING",
+        "NA"
+      ]
+    },
+    "misconduct": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "CLIN",
+          "PRESC",
+          "BOUND",
+          "IMPR",
+          "FRAUD",
+          "COMM",
+          "PROF"
+        ]
+      }
+    },
+    "boundary_subtypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "BOUND_SEXUAL",
+          "BOUND_EMOTIONAL",
+          "BOUND_FINANCIAL"
+        ]
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "CANCEL",
+          "SUSPEND",
+          "CONDITIONS",
+          "REPRIMAND",
+          "FINE",
+          "CAUTION",
+          "UNDERTAKING",
+          "NO_ADVERSE",
+          "OTHER"
+        ]
+      }
+    },
+    "profession": {
+      "type": "string",
+      "enum": [
+        "medical_practitioner",
+        "nurse",
+        "midwife",
+        "dentist",
+        "pharmacist",
+        "psychologist",
+        "physiotherapist",
+        "chiropractor",
+        "osteopath",
+        "optometrist",
+        "podiatrist",
+        "paramedic",
+        "occupational_therapist",
+        "chinese_medicine_practitioner",
+        "medical_radiation_practitioner",
+        "aboriginal_health_practitioner",
+        "other",
+        "unknown"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "is_disciplinary",
+    "finding",
+    "misconduct",
+    "boundary_subtypes",
+    "outcomes",
+    "profession",
+    "confidence",
+    "notes"
+  ],
+  "additionalProperties": false
+}

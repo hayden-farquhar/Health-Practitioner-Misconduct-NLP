@@ -1,0 +1,33 @@
+,id,profession,error_types,mc_true,mc_pred,mc_false_pos,mc_false_neg,find_true,find_pred,oc_true,oc_pred,text_length
+0,qcat_2012_186,pharmacist,"misconduct, outcome","CLIN, PRESC",PRESC,,CLIN,,,"CONDITIONS, SUSPEND",,17466
+1,nswcatod_2018_103,other,outcome,,,,,,,,REPRIMAND,47239
+2,qcat_2023_432,nurse,"misconduct, finding, outcome","COMM, PROF",,,"COMM, PROF",UPC_SAT,NONE,"CAUTION, CONDITIONS",,33073
+3,nswcatod_2015_139,osteopath,"misconduct, outcome","BOUND, CLIN, COMM",BOUND,,"CLIN, COMM",,,"CANCEL, CONDITIONS",CANCEL,22563
+4,qcat_2021_51,other,misconduct,"CLIN, FRAUD, IMPR, PRESC",,,"CLIN, FRAUD, IMPR, PRESC",,,,,19011
+5,vcat_2021_1209,medical_practitioner,"misconduct, outcome","BOUND, PROF","BOUND, COMM, PROF",COMM,,,,"CONDITIONS, REPRIMAND","CANCEL, CONDITIONS, REPRIMAND, SUSPEND",53416
+6,nswmt_2012_13,medical_practitioner,misconduct,"BOUND, CLIN, PRESC","BOUND, CLIN, IMPR, PRESC",IMPR,,,,,,43234
+7,vcat_2025_563,pharmacist,outcome,,,,,,,"CANCEL, REPRIMAND","CANCEL, CONDITIONS, REPRIMAND, SUSPEND",99094
+8,nswcatod_2018_72,pharmacist,"misconduct, finding","FRAUD, PRESC, PROF","PRESC, PROF",,FRAUD,PM,UPC_SAT,,,73824
+9,nswcatod_2021_26,medical_practitioner,"finding, outcome",,,,,UPC_SAT,PM,,CANCEL,39571
+10,vcat_2024_358,osteopath,outcome,,,,,,,REPRIMAND,"CANCEL, CONDITIONS, REPRIMAND, SUSPEND",87350
+11,nswcatod_2018_28,medical_practitioner,"misconduct, outcome","BOUND, CLIN, PRESC","CLIN, PRESC",,BOUND,,,,CANCEL,147552
+12,nswcatod_2024_76,medical_practitioner,"misconduct, outcome","BOUND, CLIN","BOUND, CLIN, COMM",COMM,,,,,CANCEL,35462
+13,nswcatod_2020_65,chiropractor,"misconduct, outcome",CLIN,"CLIN, COMM",COMM,,,,"CONDITIONS, REPRIMAND","CANCEL, CONDITIONS, REPRIMAND",71042
+14,nswcatod_2019_67,nurse,misconduct,"BOUND, PROF",BOUND,,PROF,,,,,62692
+15,vcat_2021_68,nurse,outcome,,,,,,,REPRIMAND,"CONDITIONS, REPRIMAND",54142
+16,tashpt_2014_4,nurse,misconduct,"FRAUD, PRESC, PROF",,,"FRAUD, PRESC, PROF",,,,,8117
+17,nswcatod_2022_169,chiropractor,finding,,,,,PM,UPC_SAT,,,84587
+18,vcat_2012_1615,chinese_medicine_practitioner,"misconduct, outcome","CLIN, PRESC",CLIN,,PRESC,,,"CAUTION, CONDITIONS",CAUTION,12463
+19,qcat_2024_465,nurse,misconduct,"FRAUD, IMPR, PROF",PROF,,"FRAUD, IMPR",,,,,26787
+20,nswcatod_2022_166,pharmacist,misconduct,"CLIN, IMPR, PRESC, PROF","CLIN, FRAUD, PRESC, PROF",FRAUD,IMPR,,,,,73702
+21,vcat_2011_2002,podiatrist,"is_disciplinary, misconduct, finding, outcome",CLIN,N/A,N/A,CLIN,UPC_SAT,NONE,CONDITIONS,,13618
+22,vcat_2018_1044,nurse,outcome,,,,,,,,REPRIMAND,35516
+23,vcat_2022_959,psychologist,"misconduct, outcome","BOUND, CLIN","BOUND, CLIN, COMM",COMM,,,,REPRIMAND,,38537
+24,vcat_2024_232,psychologist,"misconduct, outcome","CLIN, COMM, FRAUD, PROF","CLIN, COMM, PROF",,FRAUD,,,"CANCEL, REPRIMAND","CANCEL, CONDITIONS, REPRIMAND, SUSPEND, UNDERTAKING",258014
+25,nswcatod_2023_31,medical_practitioner,misconduct,"BOUND, CLIN, COMM, FRAUD, PRESC, PROF","CLIN, PRESC, PROF",,"BOUND, COMM, FRAUD",,,,,49659
+26,qcat_2025_153,medical_practitioner,"misconduct, outcome","CLIN, COMM, PROF",PROF,,"CLIN, COMM",,,REPRIMAND,"CANCEL, REPRIMAND",45991
+27,qcat_2012_613,pharmacist,finding,,,,,NONE,UPC_GEN,,,4374
+28,nswcatod_2020_141,nurse,outcome,,,,,,,CANCEL,"CANCEL, CONDITIONS",112246
+29,qcat_2014_553,psychologist,"misconduct, outcome",PROF,,,PROF,,,"CONDITIONS, REPRIMAND, SUSPEND",CONDITIONS,14016
+30,vcat_2022_1042,podiatrist,outcome,,,,,,,"CONDITIONS, REPRIMAND, SUSPEND","CANCEL, CONDITIONS, REPRIMAND, SUSPEND",65552
+31,qcat_2022_131,medical_practitioner,misconduct,PROF,"IMPR, PROF",IMPR,,,,,,49588

@@ -1,0 +1,51 @@
+[
+  {
+    "code": "CLIN",
+    "f1": 0.8276,
+    "ci_lower": 0.643,
+    "ci_upper": 0.96,
+    "support": 17
+  },
+  {
+    "code": "PRESC",
+    "f1": 0.8,
+    "ci_lower": 0.5,
+    "ci_upper": 1.0,
+    "support": 9
+  },
+  {
+    "code": "BOUND",
+    "f1": 0.8571,
+    "ci_lower": 0.571,
+    "ci_upper": 1.0,
+    "support": 8
+  },
+  {
+    "code": "IMPR",
+    "f1": 0.4444,
+    "ci_lower": 0.0,
+    "ci_upper": 0.8,
+    "support": 5
+  },
+  {
+    "code": "FRAUD",
+    "f1": 0.5333,
+    "ci_lower": 0.167,
+    "ci_upper": 0.8,
+    "support": 10
+  },
+  {
+    "code": "COMM",
+    "f1": 0.4286,
+    "ci_lower": 0.0,
+    "ci_upper": 0.714,
+    "support": 7
+  },
+  {
+    "code": "PROF",
+    "f1": 0.9,
+    "ci_lower": 0.783,
+    "ci_upper": 0.979,
+    "support": 22
+  }
+]

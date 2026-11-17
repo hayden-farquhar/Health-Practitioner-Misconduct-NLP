@@ -1,0 +1,8 @@
+,Misconduct type,Pre-2015 N,Pre-2015 %,Post-2015 N,Post-2015 %,Chi2,p-value
+0,Clinical competence,184,44.9,721,35.1,13.74,0.0002098
+1,Prescribing,118,28.8,605,29.4,0.04,0.8393
+2,Boundary violations,105,25.6,613,29.8,2.73,0.09854
+3,Professional conduct,159,38.8,1134,55.2,36.1,1.877e-09
+4,Dishonesty/fraud,54,13.2,505,24.6,24.66,6.842e-07
+5,Impairment,42,10.2,250,12.2,1.03,0.3113
+6,Communication,27,6.6,312,15.2,20.55,5.8e-06

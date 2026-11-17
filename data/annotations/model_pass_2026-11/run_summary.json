@@ -1,0 +1,13 @@
+{
+  "batch_id": "msgbatch_01P6SW9pMypxs8YJEFcPM1EP",
+  "collected_at": "2026-11-03T03:35:49.037826+00:00",
+  "n_coded": 300,
+  "problems": [],
+  "usage": {
+    "input_tokens": 4814207,
+    "output_tokens": 60137,
+    "cache_read_input_tokens": 2937386,
+    "cache_creation_input_tokens": 19714
+  },
+  "estimated_cost_usd": 5.43
+}

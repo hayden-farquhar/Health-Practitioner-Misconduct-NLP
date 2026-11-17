@@ -1,0 +1,21 @@
+,Medication,N,% of PRESC decisions,Schedule
+0,oxycodone,227,31.4,S8
+1,diazepam,209,28.9,S4 (App D)
+2,morphine,190,26.2,S8
+3,endone,161,22.2,S8
+4,codeine,149,20.6,S4/S8
+5,methadone,135,18.6,S8
+6,temazepam,128,17.7,S4 (App D)
+7,fentanyl,122,16.9,S8
+8,alprazolam,120,16.6,S8 (App D)
+9,panadeine forte,119,16.4,S4
+10,valium,114,15.7,S4 (App D)
+11,oxycontin,104,14.4,S8
+12,tramadol,98,13.5,S4
+13,pethidine,88,12.2,S8
+14,oxazepam,86,11.9,S4 (App D)
+15,testosterone,86,11.9,S4 (App D)
+16,buprenorphine,78,10.8,S8
+17,dexamphetamine,53,7.3,S8
+18,nitrazepam,48,6.6,S4 (App D)
+19,cannabis,45,6.2,S8/S9 (App D)

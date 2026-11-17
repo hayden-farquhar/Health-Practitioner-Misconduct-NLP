@@ -1,0 +1,737 @@
+{
+  "protocol": "config/llm_coder_protocol_2026-11.md (2026-11-07 amendment)",
+  "frozen_workbook_sha1": "b42fd27e8e3756ee1beae2a0f0033c8ab0210a6a",
+  "describes": "sampled pool: dated decisions >= 500 characters never previously labelled",
+  "n_decisions": 160,
+  "n_disciplinary": 109,
+  "n_bound": 39,
+  "share_disciplinary": {
+    "pct": 70.3,
+    "ci95": [
+      61.6,
+      78.6
+    ],
+    "n_positive": 109,
+    "n": 160
+  },
+  "misconduct": {
+    "CLIN": {
+      "pct": 38.6,
+      "ci95": [
+        27.5,
+        50.3
+      ],
+      "n_positive": 51,
+      "n": 109
+    },
+    "PRESC": {
+      "pct": 24.7,
+      "ci95": [
+        14.9,
+        35.3
+      ],
+      "n_positive": 31,
+      "n": 109
+    },
+    "BOUND": {
+      "pct": 36.3,
+      "ci95": [
+        24.8,
+        48.0
+      ],
+      "n_positive": 39,
+      "n": 109
+    },
+    "IMPR": {
+      "pct": 7.5,
+      "ci95": [
+        2.3,
+        14.2
+      ],
+      "n_positive": 13,
+      "n": 109
+    },
+    "FRAUD": {
+      "pct": 41.6,
+      "ci95": [
+        29.7,
+        53.1
+      ],
+      "n_positive": 39,
+      "n": 109
+    },
+    "COMM": {
+      "pct": 5.5,
+      "ci95": [
+        0.6,
+        12.0
+      ],
+      "n_positive": 5,
+      "n": 109
+    },
+    "PROF": {
+      "pct": 68.7,
+      "ci95": [
+        58.9,
+        77.5
+      ],
+      "n_positive": 61,
+      "n": 109
+    }
+  },
+  "boundary_subtypes_among_bound": {
+    "BOUND_SEXUAL": {
+      "pct": 83.6,
+      "ci95": [
+        70.0,
+        94.5
+      ],
+      "n_positive": 31,
+      "n": 39
+    },
+    "BOUND_EMOTIONAL": {
+      "pct": 76.4,
+      "ci95": [
+        58.4,
+        92.4
+      ],
+      "n_positive": 30,
+      "n": 39
+    },
+    "BOUND_FINANCIAL": {
+      "pct": 5.5,
+      "ci95": [
+        1.4,
+        9.6
+      ],
+      "n_positive": 4,
+      "n": 39
+    }
+  },
+  "outcomes": {
+    "CANCEL": {
+      "pct": 30.6,
+      "ci95": [
+        19.8,
+        42.4
+      ],
+      "n_positive": 38,
+      "n": 109
+    },
+    "SUSPEND": {
+      "pct": 20.8,
+      "ci95": [
+        11.9,
+        31.1
+      ],
+      "n_positive": 20,
+      "n": 109
+    },
+    "CONDITIONS": {
+      "pct": 40.0,
+      "ci95": [
+        28.7,
+        51.6
+      ],
+      "n_positive": 48,
+      "n": 109
+    },
+    "REPRIMAND": {
+      "pct": 70.9,
+      "ci95": [
+        61.0,
+        79.9
+      ],
+      "n_positive": 59,
+      "n": 109
+    },
+    "FINE": {
+      "pct": 6.6,
+      "ci95": [
+        1.4,
+        13.1
+      ],
+      "n_positive": 7,
+      "n": 109
+    },
+    "CAUTION": {
+      "pct": 1.5,
+      "ci95": [
+        0.0,
+        3.5
+      ],
+      "n_positive": 3,
+      "n": 109
+    },
+    "UNDERTAKING": {
+      "pct": 0.1,
+      "ci95": [
+        0.0,
+        0.3
+      ],
+      "n_positive": 1,
+      "n": 109
+    },
+    "NO_ADVERSE": {
+      "pct": 2.0,
+      "ci95": [
+        0.0,
+        4.9
+      ],
+      "n_positive": 2,
+      "n": 109
+    },
+    "OTHER": {
+      "pct": 39.2,
+      "ci95": [
+        27.5,
+        51.1
+      ],
+      "n_positive": 41,
+      "n": 109
+    }
+  },
+  "finding": {
+    "finding_PM": {
+      "pct": 83.0,
+      "ci95": [
+        74.7,
+        90.4
+      ],
+      "n_positive": 84,
+      "n": 109
+    },
+    "finding_UPC_SAT": {
+      "pct": 10.0,
+      "ci95": [
+        4.2,
+        17.2
+      ],
+      "n_positive": 16,
+      "n": 109
+    },
+    "finding_UPC_GEN": {
+      "pct": 3.0,
+      "ci95": [
+        0.5,
+        5.9
+      ],
+      "n_positive": 5,
+      "n": 109
+    },
+    "finding_NO_FINDING": {
+      "pct": 4.0,
+      "ci95": [
+        0.1,
+        9.1
+      ],
+      "n_positive": 4,
+      "n": 109
+    }
+  },
+  "profession": {
+    "profession_medical": {
+      "pct": 41.7,
+      "ci95": [
+        30.8,
+        53.0
+      ],
+      "n_positive": 68,
+      "n": 109
+    },
+    "profession_nurse_midwife": {
+      "pct": 29.7,
+      "ci95": [
+        18.8,
+        41.0
+      ],
+      "n_positive": 21,
+      "n": 109
+    },
+    "profession_other": {
+      "pct": 28.7,
+      "ci95": [
+        17.8,
+        40.0
+      ],
+      "n_positive": 20,
+      "n": 109
+    }
+  },
+  "misconduct_by_period": {
+    "CLIN": {
+      "by_period": {
+        "1999-2009": {
+          "pct": 57.1,
+          "ci95": [
+            39.3,
+            75.0
+          ],
+          "n_positive": 16,
+          "n": 28
+        },
+        "2010-2014": {
+          "pct": 51.7,
+          "ci95": [
+            34.5,
+            69.0
+          ],
+          "n_positive": 15,
+          "n": 29
+        },
+        "2015-2019": {
+          "pct": 50.0,
+          "ci95": [
+            30.0,
+            70.0
+          ],
+          "n_positive": 10,
+          "n": 20
+        },
+        "2020-2026": {
+          "pct": 31.2,
+          "ci95": [
+            15.6,
+            46.9
+          ],
+          "n_positive": 10,
+          "n": 32
+        }
+      },
+      "logit_year": {
+        "n": 109,
+        "events": 51,
+        "or_per_decade": 0.565,
+        "ci95": [
+          0.319,
+          1.003
+        ],
+        "p_value": 0.05116,
+        "q_bh_across_types": 0.1791
+      }
+    },
+    "PRESC": {
+      "by_period": {
+        "1999-2009": {
+          "pct": 35.7,
+          "ci95": [
+            17.9,
+            53.6
+          ],
+          "n_positive": 10,
+          "n": 28
+        },
+        "2010-2014": {
+          "pct": 27.6,
+          "ci95": [
+            13.8,
+            44.8
+          ],
+          "n_positive": 8,
+          "n": 29
+        },
+        "2015-2019": {
+          "pct": 30.0,
+          "ci95": [
+            10.0,
+            50.0
+          ],
+          "n_positive": 6,
+          "n": 20
+        },
+        "2020-2026": {
+          "pct": 21.9,
+          "ci95": [
+            9.4,
+            37.5
+          ],
+          "n_positive": 7,
+          "n": 32
+        }
+      },
+      "logit_year": {
+        "n": 109,
+        "events": 31,
+        "or_per_decade": 0.792,
+        "ci95": [
+          0.429,
+          1.462
+        ],
+        "p_value": 0.4554,
+        "q_bh_across_types": 0.598
+      }
+    },
+    "BOUND": {
+      "by_period": {
+        "1999-2009": {
+          "pct": 28.6,
+          "ci95": [
+            14.3,
+            46.4
+          ],
+          "n_positive": 8,
+          "n": 28
+        },
+        "2010-2014": {
+          "pct": 48.3,
+          "ci95": [
+            31.0,
+            65.5
+          ],
+          "n_positive": 14,
+          "n": 29
+        },
+        "2015-2019": {
+          "pct": 25.0,
+          "ci95": [
+            10.0,
+            45.0
+          ],
+          "n_positive": 5,
+          "n": 20
+        },
+        "2020-2026": {
+          "pct": 37.5,
+          "ci95": [
+            21.9,
+            53.1
+          ],
+          "n_positive": 12,
+          "n": 32
+        }
+      },
+      "logit_year": {
+        "n": 109,
+        "events": 39,
+        "or_per_decade": 0.966,
+        "ci95": [
+          0.542,
+          1.719
+        ],
+        "p_value": 0.9052,
+        "q_bh_across_types": 0.9052
+      }
+    },
+    "IMPR": {
+      "by_period": {
+        "1999-2009": {
+          "pct": 21.4,
+          "ci95": [
+            7.1,
+            35.7
+          ],
+          "n_positive": 6,
+          "n": 28
+        },
+        "2010-2014": {
+          "pct": 13.8,
+          "ci95": [
+            3.4,
+            27.6
+          ],
+          "n_positive": 4,
+          "n": 29
+        },
+        "2015-2019": {
+          "pct": 5.0,
+          "ci95": [
+            0.0,
+            15.0
+          ],
+          "n_positive": 1,
+          "n": 20
+        },
+        "2020-2026": {
+          "pct": 6.2,
+          "ci95": [
+            0.0,
+            15.6
+          ],
+          "n_positive": 2,
+          "n": 32
+        }
+      },
+      "logit_year": {
+        "n": 109,
+        "events": 13,
+        "or_per_decade": 0.488,
+        "ci95": [
+          0.202,
+          1.179
+        ],
+        "p_value": 0.111,
+        "q_bh_across_types": 0.259
+      }
+    },
+    "FRAUD": {
+      "by_period": {
+        "1999-2009": {
+          "pct": 42.9,
+          "ci95": [
+            25.0,
+            60.7
+          ],
+          "n_positive": 12,
+          "n": 28
+        },
+        "2010-2014": {
+          "pct": 13.8,
+          "ci95": [
+            3.4,
+            27.6
+          ],
+          "n_positive": 4,
+          "n": 29
+        },
+        "2015-2019": {
+          "pct": 35.0,
+          "ci95": [
+            15.0,
+            55.0
+          ],
+          "n_positive": 7,
+          "n": 20
+        },
+        "2020-2026": {
+          "pct": 50.0,
+          "ci95": [
+            31.2,
+            68.8
+          ],
+          "n_positive": 16,
+          "n": 32
+        }
+      },
+      "logit_year": {
+        "n": 109,
+        "events": 39,
+        "or_per_decade": 1.421,
+        "ci95": [
+          0.789,
+          2.559
+        ],
+        "p_value": 0.2415,
+        "q_bh_across_types": 0.4226
+      }
+    },
+    "COMM": {
+      "by_period": {
+        "1999-2009": {
+          "pct": 3.6,
+          "ci95": [
+            0.0,
+            10.7
+          ],
+          "n_positive": 1,
+          "n": 28
+        },
+        "2010-2014": {
+          "pct": 3.4,
+          "ci95": [
+            0.0,
+            10.3
+          ],
+          "n_positive": 1,
+          "n": 29
+        },
+        "2015-2019": {
+          "pct": 5.0,
+          "ci95": [
+            0.0,
+            15.0
+          ],
+          "n_positive": 1,
+          "n": 20
+        },
+        "2020-2026": {
+          "pct": 6.2,
+          "ci95": [
+            0.0,
+            15.6
+          ],
+          "n_positive": 2,
+          "n": 32
+        }
+      },
+      "logit_year": {
+        "n": 109,
+        "events": 5,
+        "or_per_decade": 1.59,
+        "ci95": [
+          0.397,
+          6.371
+        ],
+        "p_value": 0.5126,
+        "q_bh_across_types": 0.598
+      }
+    },
+    "PROF": {
+      "by_period": {
+        "1999-2009": {
+          "pct": 57.1,
+          "ci95": [
+            39.3,
+            75.0
+          ],
+          "n_positive": 16,
+          "n": 28
+        },
+        "2010-2014": {
+          "pct": 27.6,
+          "ci95": [
+            10.3,
+            44.8
+          ],
+          "n_positive": 8,
+          "n": 29
+        },
+        "2015-2019": {
+          "pct": 50.0,
+          "ci95": [
+            30.0,
+            70.0
+          ],
+          "n_positive": 10,
+          "n": 20
+        },
+        "2020-2026": {
+          "pct": 84.4,
+          "ci95": [
+            71.9,
+            96.9
+          ],
+          "n_positive": 27,
+          "n": 32
+        }
+      },
+      "logit_year": {
+        "n": 109,
+        "events": 61,
+        "or_per_decade": 2.084,
+        "ci95": [
+          1.158,
+          3.752
+        ],
+        "p_value": 0.01431,
+        "q_bh_across_types": 0.1002
+      }
+    }
+  },
+  "classifier_corpus_pct": {
+    "CLIN": 36.8,
+    "PRESC": 29.2,
+    "BOUND": 29.0,
+    "IMPR": 11.8,
+    "FRAUD": 22.6,
+    "COMM": 13.7,
+    "PROF": 52.2
+  },
+  "pool_exclusion_check": {
+    "pool": {
+      "n_predicted_disciplinary": 2053,
+      "CLIN": 36.1,
+      "PRESC": 29.0,
+      "BOUND": 28.7,
+      "IMPR": 11.3,
+      "FRAUD": 21.6,
+      "COMM": 12.9,
+      "PROF": 52.2
+    },
+    "excluded_labelled": {
+      "n_predicted_disciplinary": 416,
+      "CLIN": 39.7,
+      "PRESC": 30.8,
+      "BOUND": 31.2,
+      "IMPR": 14.2,
+      "FRAUD": 27.6,
+      "COMM": 18.0,
+      "PROF": 53.1
+    }
+  },
+  "practitioner_level_sensitivity": {
+    "n_disciplinary_with_related_decisions": 24,
+    "median_related_decisions": 1.0,
+    "max_related_decisions": 10,
+    "CLIN": {
+      "pct": 36.8,
+      "ci95": [
+        25.0,
+        49.0
+      ],
+      "n_positive": 51,
+      "n": 109
+    },
+    "PRESC": {
+      "pct": 22.5,
+      "ci95": [
+        13.0,
+        33.5
+      ],
+      "n_positive": 31,
+      "n": 109
+    },
+    "BOUND": {
+      "pct": 37.4,
+      "ci95": [
+        25.3,
+        50.0
+      ],
+      "n_positive": 39,
+      "n": 109
+    },
+    "IMPR": {
+      "pct": 7.8,
+      "ci95": [
+        2.2,
+        14.8
+      ],
+      "n_positive": 13,
+      "n": 109
+    },
+    "FRAUD": {
+      "pct": 43.3,
+      "ci95": [
+        30.8,
+        56.0
+      ],
+      "n_positive": 39,
+      "n": 109
+    },
+    "COMM": {
+      "pct": 5.1,
+      "ci95": [
+        0.3,
+        12.0
+      ],
+      "n_positive": 5,
+      "n": 109
+    },
+    "PROF": {
+      "pct": 69.8,
+      "ci95": [
+        59.4,
+        79.2
+      ],
+      "n_positive": 61,
+      "n": 109
+    },
+    "CANCEL": {
+      "pct": 29.7,
+      "ci95": [
+        18.4,
+        41.6
+      ],
+      "n_positive": 38,
+      "n": 109
+    },
+    "REPRIMAND": {
+      "pct": 77.5,
+      "ci95": [
+        68.2,
+        85.6
+      ],
+      "n_positive": 59,
+      "n": 109
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Group,Measure,Weighted % (95% CI),n
+All decisions,Disciplinary,70.3 (61.6-78.6),109/160
+Misconduct type,Clinical competence,38.6 (27.5-50.3),51/109
+Misconduct type,Prescribing/dispensing,24.7 (14.9-35.3),31/109
+Misconduct type,Boundary violations,36.3 (24.8-48.0),39/109
+Misconduct type,Impairment,7.5 (2.3-14.2),13/109
+Misconduct type,Dishonesty/fraud,41.6 (29.7-53.1),39/109
+Misconduct type,Communication,5.5 (0.6-12.0),5/109
+Misconduct type,Professional conduct,68.7 (58.9-77.5),61/109
+Finding,Professional misconduct,83.0 (74.7-90.4),84/109
+Finding,Unsatisfactory professional conduct,10.0 (4.2-17.2),16/109
+Finding,Unprofessional conduct,3.0 (0.5-5.9),5/109
+Finding,No finding,4.0 (0.1-9.1),4/109
+Outcome,Cancellation,30.6 (19.8-42.4),38/109
+Outcome,Suspension,20.8 (11.9-31.1),20/109
+Outcome,Conditions,40.0 (28.7-51.6),48/109
+Outcome,Reprimand,70.9 (61.0-79.9),59/109
+Outcome,Fine,6.6 (1.4-13.1),7/109
+Outcome,Caution,1.5 (0.0-3.5),3/109
+Outcome,Undertaking,0.1 (0.0-0.3),1/109
+Outcome,No adverse finding,2.0 (0.0-4.9),2/109
+Outcome,"Other orders (costs, disqualification, prohibition, other)",39.2 (27.5-51.1),41/109
+Profession,Medical practitioner,41.7 (30.8-53.0),68/109
+Profession,Nurse or midwife,29.7 (18.8-41.0),21/109
+Profession,Other profession,28.7 (17.8-40.0),20/109

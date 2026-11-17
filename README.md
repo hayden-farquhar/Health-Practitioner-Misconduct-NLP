@@ -1,166 +1,102 @@
-# NLP Analysis of Australian Health Practitioner Disciplinary Tribunal Decisions
+# What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses
 
-This repository contains the analysis code and configuration files for a natural language processing (NLP) study of 3,586 Australian health practitioner disciplinary tribunal decisions published between 1999 and 2025.
+Analysis code and released labels for: **What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses: 3,586 Decisions, 1999 to February 2026**
 
-**Author:** Hayden Farquhar MBBS MPHTM
-**ORCID:** [0009-0002-6226-440X](https://orcid.org/0009-0002-6226-440X)
-**Contact:** hayden.farquhar@icloud.com
+Hayden Farquhar MBBS MPHTM, Independent Researcher, Finley, New South Wales, Australia. ORCID [0009-0002-6226-440X](https://orcid.org/0009-0002-6226-440X)
+
+Preprint: version 1, [doi:10.64898/2026.02.13.26346299](https://doi.org/10.64898/2026.02.13.26346299). This release (v2.0.0) accompanies version 2 of the preprint, which corrects version 1 and reports a revised analysis.
 
 ## Overview
 
-This study applied NLP techniques to publicly available tribunal decisions sourced from the Australasian Legal Information Institute (AustLII) and the Open Australian Legal Corpus. The pipeline includes:
+The study assembled 3,586 published Australian health practitioner tribunal decisions (December 1999 to February 2026, eight jurisdictions) and asked what tribunals decide and how that has changed. Primary estimates come from a random sample of 160 decisions, stratified by period and coded by the author blind to any machine output; 60 of them were recoded by an independent second coder. A TF-IDF and logistic-regression classifier, trained on a 300-decision gold standard under a protocol fixed in advance, labels the whole corpus for exploratory analyses, and the coded sample measures how far those labels can be trusted.
 
-- **Data acquisition:** Web scraping from AustLII (with rate limiting), the Open Australian Legal Corpus (HuggingFace), and the Internet Archive Wayback Machine
-- **Text preprocessing:** HTML/RTF/PDF extraction, section segmentation, metadata enrichment
-- **Annotation:** Dual-coder protocol (human + LLM) with adjudication for a 300-decision gold standard
-- **Classification:** TF-IDF + logistic regression multi-label classifier for 7 misconduct categories
-- **Outcome extraction:** Regex-based extraction of 9 disciplinary outcome types
-- **Named entity recognition:** Rule-based extraction of medications, medical conditions, and regulatory boards using spaCy
-- **Topic modelling:** BERTopic with MiniLM sentence embeddings
-- **Statistical analysis:** Chi-square tests, Fisher's exact tests, Mann-Kendall trend analysis, bootstrap confidence intervals
+This repository contains the code for every stage (corpus assembly, coding packets, gold-standard construction, classifier training, corpus-wide analysis, and validation against human coding), the written protocols, the coding guidelines, the released gold-standard labels, and the aggregate tables, statistics, and figures the code produces.
 
-## Key Findings
+## What is and is not released
 
-- Professional conduct breaches were the most prevalent misconduct type (32.7%), followed by boundary violations (30.1%), clinical competence failures (25.6%), and prescribing misconduct (25.4%)
-- Significant temporal increases were identified for boundary violations, professional conduct breaches, dishonesty/fraud, and communication failures
-- Boundary violations were associated with higher odds of registration cancellation (OR = 1.47, p < 0.001)
-- 64% of prescribing misconduct decisions involved opioid medications
-- Significant variation in misconduct types and outcomes was observed across professions and jurisdictions
+| Released | Not released |
+|---|---|
+| Code (`src/`), protocols and configuration (`config/`), coding guidelines (`docs/`) | Decision texts and the assembled corpus (practitioner names; obtain from the sources below) |
+| Gold-standard labels for 300 decisions, keyed by neutral citation, with per-field provenance (`data/annotations/`) | Free-text notes and adjudication rationales (they can name practitioners) |
+| The language-model coder's system prompt, output schema, and run summary | The model's raw responses (free text) |
+| Train, validation, and test split identifiers | Coding workbooks for the coded sample and the second coder (individual codes; coder identity) |
+| Ahpra registrant counts transcribed from annual reports (`data/reference/`) | Trained model files (re-create with `retrain_2026.py`) |
+| Aggregate tables, statistics, and figures (`outputs/`) | Platform scripts used to recruit and pay the second coder |
 
-## Repository Structure
+`data/annotations/gold_standard_2026-11.json` is the gold standard with the `adjudication_rationales` field removed, so its hash differs from the one recorded in the manifest, which describes the full internal file. Every coded field is unchanged.
 
-```
-├── src/                        # Source code
-│   ├── scraping/               # AustLII web scraping and corpus construction
-│   ├── preprocessing/          # Text cleaning, annotation, metadata enrichment
-│   ├── classification/         # Misconduct classifier and outcome extraction
-│   ├── ner/                    # Named entity recognition (medications, conditions, boards)
-│   ├── topic_modelling/        # BERTopic analysis
-│   └── analysis/               # Statistical analysis and visualisation
-├── config/                     # Configuration files
-│   ├── taxonomy.json           # Misconduct, outcome, finding, and profession taxonomies
-│   ├── tribunals.json          # Registry of 24 tribunals across 8 jurisdictions
-│   └── label_studio_config.xml # Annotation interface configuration
-├── notebooks/                  # Jupyter notebooks
-│   └── legal_bert_training.ipynb  # Legal-BERT fine-tuning notebook (for Colab)
-└── requirements/               # Python dependencies
-    ├── requirements-scraping.txt   # Data acquisition dependencies
-    └── requirements-ml.txt         # ML/NLP pipeline dependencies
-```
+## Data sources
 
-## Reproducing the Analysis
+| Source | URL | Access |
+|---|---|---|
+| Australasian Legal Information Institute (AustLII) | https://www.austlii.edu.au/ | Free; observe the crawl delay in AustLII's robots.txt |
+| Open Australian Legal Corpus (Butler, Hugging Face) | https://doi.org/10.57967/hf/2784 | Free; see the dataset card for its licence |
+| Internet Archive Wayback Machine | https://web.archive.org/ | Free |
+| Ahpra and National Boards annual reports (registrant counts) | https://www.ahpra.gov.au/Publications/Annual-reports/Annual-report-archive | Free; transcribed values and page references in `data/reference/` |
+| Poisons Standard, October 2026 (F2026L01327) | https://www.legislation.gov.au/F2026L01327/latest/text | Free |
 
-### Prerequisites
+## Requirements
 
-- Python 3.12+ (3.12 recommended for ML dependencies)
-- pandoc 3.x (optional, for PDF generation)
-
-### Setup
-
-Two virtual environments are used to avoid dependency conflicts:
+Python 3.12. The analysis environment is pinned in `requirements/requirements-ml-arm64.lock.txt` (built on macOS arm64, 3 November 2026); `requirements/requirements-scraping.txt` covers corpus collection.
 
 ```bash
-# Scraping and preprocessing
-python3.12 -m venv .venv-scraping
-source .venv-scraping/bin/activate
-pip install -r requirements/requirements-scraping.txt
-
-# ML/NLP pipeline
 python3.12 -m venv .venv-ml
-source .venv-ml/bin/activate
-pip install -r requirements/requirements-ml.txt
-python -m spacy download en_core_web_sm
+.venv-ml/bin/pip install -r requirements/requirements-ml-arm64.lock.txt
 ```
 
-### Pipeline Steps
+The language-model coder (`src/annotation/model_second_coder.py`) needs an Anthropic API key, set as `ANTHROPIC_API_KEY` in the shell or in a `.env` file at the repository root (git-ignored), and incurs API charges. `src/ner/build_poisons_schedule_map.py` needs pandoc.
 
-The pipeline is executed as a series of Python modules. Each step produces output files consumed by subsequent steps.
+## Reproduction
 
-#### 1. Data Acquisition
+Run each step from the repository root as its docstring shows: most as modules (for example `.venv-ml/bin/python -m src.analysis.registrant_rates`), and the packet builders and `check_recode` as scripts (for example `python3 src/preprocessing/build_test2_packet.py`). Corpus assembly (step 1) uses `requirements/requirements-scraping.txt`. Steps 1 to 3 need the decision texts, so they cannot be run from this repository alone; steps 4 to 6 reproduce the reported results once the corpus and the coding workbooks are in place. Each script's docstring gives its inputs and outputs.
 
-```bash
-# Scrape decisions from AustLII (requires ~3 hours due to rate limiting)
-.venv-scraping/bin/python -m src.scraping.run_pipeline
+1. **Corpus assembly** (`src/scraping/`): `run_pipeline` (AustLII), `corpus_download` and `corpus_download_nonnsw` (Open Australian Legal Corpus), `wayback_scraper` (legacy tribunals), `merge_corpus` (deduplication); then `src/preprocessing/metadata_enrichment`.
+2. **Gold standard** (`src/preprocessing/`, `src/annotation/`): `sample_selection` (the 300-decision sample); `build_recode_packet` (blinded packet for the author's recode) and `check_recode`; `model_second_coder` (logged language-model second coder: `count`, `submit`, `collect`); `src/analysis/irr_recode_2026` (agreement); `build_adjudication_sheet`, `check_adjudication`, and `build_gold_standard_2026`.
+3. **Supplementary training labels**: `src/annotation/expand_gold_standard` (sample of 300 further decisions), `src/preprocessing/build_supplementary_texts`, and `model_second_coder --set supplementary`.
+4. **Classifier and corpus-wide labels** (`src/classification/`, `src/ner/`, `src/topic_modelling/`): `data_preparation`, `retrain_2026` (protocol in `config/retrain_protocol_2026-11.md`; selection on the validation set, test set scored once), `outcome_extraction`, `src/ner/build_poisons_schedule_map`, `src/ner/entity_extraction`, `src/topic_modelling/bertopic_analysis`, and `predict_full_corpus`.
+5. **Corpus-wide analyses** (`src/analysis/`): `statistical_analysis`, `revision_analyses`, `validation_analysis`, `prescribing_analysis`, and `registrant_rates`.
+6. **Coded sample and validation** (`src/preprocessing/build_test2_packet`, then `src/analysis/`): `score_test2` (classifier on the coded sample, scored once), `model_second_coder --set test2` and `score_llm_test2` (language-model coder, scored once), `human_reference_estimates` (weighted primary estimates), `figure_fraud_drift`, `validation_summary_table`, `sensitivity_author_reference`, and `second_coder_agreement_2026`.
 
-# Merge all sources into a single corpus
-.venv-scraping/bin/python -m src.scraping.merge_corpus
-```
+Corpus collection is the slowest step, because AustLII's crawl delay is observed for every request. `data_preparation` rebuilds the splits in `data/annotations/splits/split_ids.json` from the gold standard.
 
-**Output:** `data/extracted/all_decisions.jsonl` (3,586 decisions)
+## Protocols
 
-#### 2. Preprocessing and Annotation
+| File | Covers |
+|---|---|
+| `config/retrain_protocol_2026-11.md` | Classifier training sets, model selection, and the single scoring of the test set |
+| `config/external_test_protocol_2026-11.md` | Sampling, coding, and scoring of the 160-decision coded sample, with dated amendments |
+| `config/llm_coder_protocol_2026-11.md` | The test of whether the language-model coder should replace the classifier, and the fallback |
+| `config/second_coder_protocol_2026-11.md` | Recruitment, blinding, and agreement analysis for the independent second coder |
 
-```bash
-# Enrich metadata (profession, jurisdiction, dates)
-.venv-scraping/bin/python -m src.preprocessing.metadata_enrichment
+In the public copies, internal project identifiers have been removed; nothing else differs from the frozen versions.
 
-# Select stratified sample for annotation
-.venv-scraping/bin/python -m src.preprocessing.sample_selection
+## Outputs and the paper
 
-# Run LLM annotation (requires Anthropic API key)
-export ANTHROPIC_API_KEY=your_key_here
-.venv-scraping/bin/python -m src.preprocessing.llm_annotation
-```
+| Paper | File(s) | Script |
+|---|---|---|
+| Figure 1 | `outputs/figures/fig22_corpus_flow_mermaid.mmd` (rendered `.png`) | Counts from steps 1 to 6 |
+| Figure 2 | `outputs/figures/fig20_human_vs_classifier_prevalence.png` | `human_reference_estimates` |
+| Figure 3 | `outputs/figures/fig19_registrant_rates.png` | `registrant_rates` |
+| Figure 4 | `outputs/figures/fig21_fraud_drift.png` | `figure_fraud_drift` |
+| Table 1 | `outputs/tables/table01_corpus_overview.csv`, `table02_profession_distribution.csv` | `statistical_analysis` |
+| Table 2 | `outputs/tables/table38_coded_sample_estimates.csv`, `table35_human_reference_prevalence.csv` | `human_reference_estimates` |
+| Table 3 | `outputs/tables/table37_validation_summary.csv` | `validation_summary_table` |
+| Table 4 | `outputs/tables/table36_human_reference_by_period.csv` | `human_reference_estimates` |
+| Table 5 | `outputs/tables/table34_registrant_rates.csv` | `registrant_rates` |
+| Table 6 | `outputs/tables/table07_profession_x_outcome.csv` | `statistical_analysis` |
+| Table 7 | `outputs/tables/table11_top20_medications.csv` | `statistical_analysis` |
+| Supplementary tables and figures | Other files in `outputs/tables/`, `outputs/statistics/`, and `outputs/figures/` | `statistical_analysis`, `revision_analyses`, `validation_analysis`, `prescribing_analysis`, and step 6 |
 
-#### 3. Classification
+## Earlier scripts
 
-```bash
-# Prepare train/val/test splits
-.venv-ml/bin/python -m src.classification.data_preparation
-
-# Train misconduct classifier
-.venv-ml/bin/python -m src.classification.sklearn_classifier
-
-# Extract outcomes using regex
-.venv-ml/bin/python -m src.classification.outcome_extraction
-
-# Apply classifier to full corpus
-.venv-ml/bin/python -m src.classification.predict_full_corpus
-```
-
-**Output:** `data/extracted/misconduct_predictions_sklearn.jsonl`
-
-#### 4. NER and Topic Modelling
-
-```bash
-# Extract medications, conditions, and boards
-.venv-ml/bin/python -m src.ner.entity_extraction
-
-# Run BERTopic
-.venv-ml/bin/python -m src.topic_modelling.bertopic_analysis
-```
-
-#### 5. Statistical Analysis
-
-```bash
-# Generate all tables, figures, and statistical tests
-.venv-ml/bin/python -m src.analysis.statistical_analysis
-
-# Prescribing-specific analysis
-.venv-ml/bin/python -m src.analysis.prescribing_analysis
-
-# Validation and sensitivity analyses
-.venv-ml/bin/python -m src.analysis.validation_analysis
-```
-
-**Output:** `outputs/tables/` (26 CSV tables), `outputs/figures/` (16 PNG figures), `outputs/statistics/` (statistical test results as JSON)
-
-## Data Availability
-
-The raw tribunal decisions are publicly available through [AustLII](https://www.austlii.edu.au/au/special/healthprac/) and the [Open Australian Legal Corpus](https://huggingface.co/datasets/umarbutler/open-australian-legal-corpus). The scraped corpus and annotation files are not included in this repository due to size constraints but can be reproduced by running the data acquisition pipeline.
+`src/preprocessing/llm_annotation.py`, `src/analysis/irr_analysis.py`, `src/analysis/llm_irr_comparison.py`, `src/classification/retrain_expanded.py`, and `notebooks/legal_bert_training.ipynb` belong to version 1 of the analysis. They are kept for transparency but are not used for any version 2 result: the version 1 gold standard and its agreement statistics were replaced, and no Legal-BERT model was trained.
 
 ## Citation
 
-If you use this code or findings in your work, please cite:
+> Farquhar H. What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses: 3,586 Decisions, 1999 to February 2026. medRxiv preprint. https://doi.org/10.64898/2026.02.13.26346299
 
-> Farquhar H. NLP Analysis of Australian Health Practitioner Disciplinary Tribunal Decisions, 1999--2025. 2025. Available at: https://github.com/hayden-farquhar/Health-Practitioner-Misconduct-NLP
+Machine-readable citation metadata is in `CITATION.cff`.
 
 ## Licence
 
-This project is licensed under the MIT Licence. See [LICENCE](LICENCE) for details.
-
-## Acknowledgements
-
-- [AustLII](https://www.austlii.edu.au/) for maintaining open access to Australian legal materials
-- The [Open Australian Legal Corpus](https://huggingface.co/datasets/umarbutler/open-australian-legal-corpus) for curated NSW tribunal decisions
-- The [Internet Archive Wayback Machine](https://web.archive.org/) for enabling recovery of legacy tribunal decisions
+Code: MIT (see `LICENCE`). Released labels, protocols, guidelines, and documentation: CC BY 4.0.

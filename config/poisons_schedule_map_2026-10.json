@@ -1,0 +1,996 @@
+{
+ "source": "Therapeutic Goods (Poisons Standard—October 2026) Instrument 2026 (Cth), F2026L01327",
+ "url": "https://www.legislation.gov.au/F2026L01327/latest/text",
+ "downloaded": "2026-11-05",
+ "source_sha1": "13cf60859c7583900b70d6b6c920930873adaa4e",
+ "label_key": "S4/S8 etc = schedules listed in the instrument's Index; (App D) = also listed in Appendix D (additional controls on possession or supply). Current scheduling, which may differ from scheduling at the time of the conduct.",
+ "terms": {
+  "oxycodone": {
+   "substance": "OXYCODONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "oxycontin": {
+   "substance": "OXYCODONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": true
+  },
+  "endone": {
+   "substance": "OXYCODONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": true
+  },
+  "targin": {
+   "substance": "OXYCODONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "morphine": {
+   "substance": "MORPHINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "ms contin": {
+   "substance": "MORPHINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "kapanol": {
+   "substance": "MORPHINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "fentanyl": {
+   "substance": "FENTANYL",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "durogesic": {
+   "substance": "FENTANYL",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "actiq": {
+   "substance": "FENTANYL",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "methadone": {
+   "substance": "METHADONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "physeptone": {
+   "substance": "METHADONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "biodone": {
+   "substance": "METHADONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "hydromorphone": {
+   "substance": "HYDROMORPHONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "dilaudid": {
+   "substance": "HYDROMORPHONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "jurnista": {
+   "substance": "HYDROMORPHONE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "codeine": {
+   "substance": "CODEINE",
+   "index_entries": [
+    "Schedule 8",
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4/S8",
+   "note": "S4 when compounded with other active substances at 30 mg or less per dosage unit (Schedule 4 entry); otherwise S8",
+   "alias_checked": null
+  },
+  "panadeine forte": {
+   "substance": "CODEINE",
+   "index_entries": [
+    "Schedule 8",
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "paracetamol 500 mg + codeine 30 mg per tablet: compounded codeine, 30 mg or less per dosage unit (Schedule 4 entry)",
+   "alias_checked": true
+  },
+  "tramadol": {
+   "substance": "TRAMADOL",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "buprenorphine": {
+   "substance": "BUPRENORPHINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "suboxone": {
+   "substance": "BUPRENORPHINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "subutex": {
+   "substance": "BUPRENORPHINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "temgesic": {
+   "substance": "BUPRENORPHINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "pethidine": {
+   "substance": "PETHIDINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "meperidine": {
+   "substance": "PETHIDINE",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "tapentadol": {
+   "substance": "TAPENTADOL",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "palexia": {
+   "substance": "TAPENTADOL",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "dexamphetamine": {
+   "substance": "DEXAMFETAMINE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "dextroamphetamine": {
+   "substance": "DEXAMFETAMINE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "methylphenidate": {
+   "substance": "METHYLPHENIDATE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "ritalin": {
+   "substance": "METHYLPHENIDATE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "concerta": {
+   "substance": "METHYLPHENIDATE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "lisdexamfetamine": {
+   "substance": "LISDEXAMFETAMINE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "vyvanse": {
+   "substance": "LISDEXAMFETAMINE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": false
+  },
+  "ketamine": {
+   "substance": "KETAMINE",
+   "index_entries": [
+    "Schedule 8"
+   ],
+   "label": "S8",
+   "note": "",
+   "alias_checked": null
+  },
+  "cannabis": {
+   "substance": "CANNABIS",
+   "index_entries": [
+    "Schedule 9",
+    "Schedule 8",
+    "Appendix D, clause 1",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8/S9 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "medicinal cannabis": {
+   "substance": "CANNABIS",
+   "index_entries": [
+    "Schedule 9",
+    "Schedule 8",
+    "Appendix D, clause 1",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8/S9 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "thc": {
+   "substance": "TETRAHYDROCANNABINOLS",
+   "index_entries": [
+    "Schedule 9",
+    "Schedule 8",
+    "Appendix D, clause 1",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8/S9 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "dronabinol": {
+   "substance": "DRONABINOL",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix D, clause 3",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "alprazolam": {
+   "substance": "ALPRAZOLAM",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "xanax": {
+   "substance": "ALPRAZOLAM",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "diazepam": {
+   "substance": "DIAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "valium": {
+   "substance": "DIAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": true
+  },
+  "temazepam": {
+   "substance": "TEMAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "temaze": {
+   "substance": "TEMAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "normison": {
+   "substance": "TEMAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "oxazepam": {
+   "substance": "OXAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "serepax": {
+   "substance": "OXAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "clonazepam": {
+   "substance": "CLONAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "rivotril": {
+   "substance": "CLONAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "nitrazepam": {
+   "substance": "NITRAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "mogadon": {
+   "substance": "NITRAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "lorazepam": {
+   "substance": "LORAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "ativan": {
+   "substance": "LORAZEPAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "midazolam": {
+   "substance": "MIDAZOLAM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "flunitrazepam": {
+   "substance": "FLUNITRAZEPAM",
+   "index_entries": [
+    "Schedule 8",
+    "Appendix D, clause 5 (Benzodiazepine derivatives)",
+    "Appendix K, clause 1"
+   ],
+   "label": "S8 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "zolpidem": {
+   "substance": "ZOLPIDEM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "stilnox": {
+   "substance": "ZOLPIDEM",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "zopiclone": {
+   "substance": "ZOPICLONE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "imovane": {
+   "substance": "ZOPICLONE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "sertraline": {
+   "substance": "SERTRALINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "zoloft": {
+   "substance": "SERTRALINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "fluoxetine": {
+   "substance": "FLUOXETINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "prozac": {
+   "substance": "FLUOXETINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "paroxetine": {
+   "substance": "PAROXETINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "paxil": {
+   "substance": "PAROXETINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "escitalopram": {
+   "substance": "ESCITALOPRAM",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "lexapro": {
+   "substance": "ESCITALOPRAM",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "venlafaxine": {
+   "substance": "VENLAFAXINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "efexor": {
+   "substance": "VENLAFAXINE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "duloxetine": {
+   "substance": "DULOXETINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "cymbalta": {
+   "substance": "DULOXETINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "mirtazapine": {
+   "substance": "MIRTAZAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "avanza": {
+   "substance": "MIRTAZAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "amitriptyline": {
+   "substance": "AMITRIPTYLINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "endep": {
+   "substance": "AMITRIPTYLINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "quetiapine": {
+   "substance": "QUETIAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "seroquel": {
+   "substance": "QUETIAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "olanzapine": {
+   "substance": "OLANZAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "zyprexa": {
+   "substance": "OLANZAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "risperidone": {
+   "substance": "RISPERIDONE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "risperdal": {
+   "substance": "RISPERIDONE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "aripiprazole": {
+   "substance": "ARIPIPRAZOLE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "abilify": {
+   "substance": "ARIPIPRAZOLE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "clozapine": {
+   "substance": "CLOZAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 1",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": null
+  },
+  "clozaril": {
+   "substance": "CLOZAPINE",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix D, clause 1",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "",
+   "alias_checked": false
+  },
+  "pregabalin": {
+   "substance": "PREGABALIN",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "lyrica": {
+   "substance": "PREGABALIN",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "gabapentin": {
+   "substance": "GABAPENTIN",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "neurontin": {
+   "substance": "GABAPENTIN",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix K, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "propranolol": {
+   "substance": "PROPRANOLOL",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix G, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "inderal": {
+   "substance": "PROPRANOLOL",
+   "index_entries": [
+    "Schedule 4",
+    "Appendix G, clause 1"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "prednisone": {
+   "substance": "PREDNISONE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "prednisolone": {
+   "substance": "PREDNISOLONE",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "testosterone": {
+   "substance": "TESTOSTERONE",
+   "index_entries": [
+    "Schedule 6",
+    "Schedule 4",
+    "Appendix D, clause 5 (Anabolic and/or androgenic steroidal agents)",
+    "Appendix G, clause 1"
+   ],
+   "label": "S4 (App D)",
+   "note": "Schedule 6 entry covers only implant preparations for use in animals",
+   "alias_checked": null
+  },
+  "sildenafil": {
+   "substance": "SILDENAFIL",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  },
+  "viagra": {
+   "substance": "SILDENAFIL",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": false
+  },
+  "modafinil": {
+   "substance": "MODAFINIL",
+   "index_entries": [
+    "Schedule 4"
+   ],
+   "label": "S4",
+   "note": "",
+   "alias_checked": null
+  }
+ }
+}

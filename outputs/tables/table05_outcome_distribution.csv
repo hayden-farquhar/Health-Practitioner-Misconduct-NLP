@@ -1,0 +1,9 @@
+,Code,Outcome,N,Pct
+0,CANCEL,Cancellation,983,39.7
+1,SUSPEND,Suspension,538,21.7
+2,CONDITIONS,Conditions,632,25.5
+3,REPRIMAND,Reprimand,1291,52.1
+4,FINE,Fine,142,5.7
+5,CAUTION,Caution,68,2.7
+6,UNDERTAKING,Undertaking,17,0.7
+7,NO_ADVERSE,No adverse finding,37,1.5

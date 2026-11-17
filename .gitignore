@@ -28,13 +28,25 @@ Thumbs.db
 data/raw_html/
 data/extracted/
 data/metadata/
-data/annotations/
+# Annotations: only the released, text-free label files are tracked (no decision texts, names or free-text notes)
+data/annotations/*
+!data/annotations/gold_standard_2026-11.json
+!data/annotations/gold_standard_2026-11_manifest.json
+!data/annotations/splits/
+data/annotations/splits/*
+!data/annotations/splits/split_ids.json
+!data/annotations/model_pass_2026-11/
+data/annotations/model_pass_2026-11/*
+!data/annotations/model_pass_2026-11/system_prompt.txt
+!data/annotations/model_pass_2026-11/output_schema.json
+!data/annotations/model_pass_2026-11/run_summary.json
 
 # Models (too large for git)
 models/
 
-# Outputs (reproducible from code)
-outputs/
+# Outputs: aggregate tables, statistics and figures are tracked; logs and interactive topic plots are not
+outputs/**/*.txt
+outputs/**/*.html
 
 # Jupyter
 .ipynb_checkpoints/

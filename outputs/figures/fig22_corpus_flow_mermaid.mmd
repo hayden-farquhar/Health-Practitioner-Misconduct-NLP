@@ -1,0 +1,40 @@
+%%{init: {'theme':'base', 'flowchart': {'nodeSpacing': 30, 'rankSpacing': 36, 'curve': 'basis', 'wrappingWidth': 420, 'htmlLabels': true}, 'themeVariables': {'fontSize':'15px','fontFamily':'Helvetica, Arial, sans-serif','lineColor':'#333333'}}}%%
+flowchart TD
+    S1["Open Australian Legal Corpus<br/>NSW decisions after keyword filtering<br/>n = 1,497"]
+    S2["AustLII, seven jurisdictions<br/>n = 2,077 files"]
+    S3["Wayback Machine, three legacy tribunals<br/>n = 98 files"]
+    M["Merged: 3,672 files"]
+    X1["Excluded: 86 (extraction failure or duplicate)<br/>Six legacy tribunals unrecoverable"]
+    C["Corpus: 3,586 decisions<br/>8 jurisdictions, 24 tribunals<br/>December 1999 to February 2026"]
+    G["Gold standard: 300<br/>train 210, validation 45, test 45<br/>coded by the author and a logged language model"]
+    T["Supplementary training set: 300<br/>labeled by the logged language model"]
+    K["Classifier trained on 510 decisions<br/>labels all 3,586 decisions (exploratory)<br/>2,477 disciplinary, 1,109 non-disciplinary"]
+    P["Sampling pool: 2,978 decisions<br/>never labeled, dated"]
+    X2["Excluded from pool: 600 labeled<br/>and 8 without a date"]
+    R["Coded sample: 160<br/>40 per period, coded by the author<br/>primary estimates and validation"]
+    Q["Reliability subset: 60<br/>15 per period, independent second coder"]
+
+    S1 --> M
+    S2 --> M
+    S3 --> M
+    M --> C
+    M -.-> X1
+    C --> G
+    C --> T
+    G --> K
+    T --> K
+    C --> P
+    P -.-> X2
+    P --> R
+    R --> Q
+
+    classDef source fill:#e8eef5,stroke:#0072B2,stroke-width:1.2px,color:#111;
+    classDef core fill:#d6e4f0,stroke:#0072B2,stroke-width:2px,color:#111;
+    classDef excl fill:#ffffff,stroke:#777777,stroke-width:1px,stroke-dasharray:4 3,color:#333;
+    classDef labelled fill:#fbeee2,stroke:#D55E00,stroke-width:1.2px,color:#111;
+    classDef sample fill:#e3f1ea,stroke:#009E73,stroke-width:1.4px,color:#111;
+    class S1,S2,S3,M source;
+    class C core;
+    class X1,X2 excl;
+    class G,T,K labelled;
+    class P,R,Q sample;

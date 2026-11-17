@@ -1,0 +1,383 @@
+[
+  {
+    "test": "profession_vs_CANCEL",
+    "chi2": 106.25,
+    "df": 9,
+    "p_value": 8.51452e-19,
+    "cramers_v": 0.209,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_SUSPEND",
+    "chi2": 24.04,
+    "df": 9,
+    "p_value": 0.00423822,
+    "cramers_v": 0.099,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_CONDITIONS",
+    "chi2": 17.12,
+    "df": 9,
+    "p_value": 0.0468787,
+    "cramers_v": 0.084,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_REPRIMAND",
+    "chi2": 87.82,
+    "df": 9,
+    "p_value": 4.45522e-15,
+    "cramers_v": 0.19,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_FINE",
+    "chi2": 14.38,
+    "df": 9,
+    "p_value": 0.109532,
+    "cramers_v": 0.077,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_CAUTION",
+    "chi2": 29.38,
+    "df": 9,
+    "p_value": 0.000558124,
+    "cramers_v": 0.11,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_UNDERTAKING",
+    "chi2": 6.72,
+    "df": 9,
+    "p_value": 0.666257,
+    "cramers_v": 0.052,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_NO_ADVERSE",
+    "chi2": 13.05,
+    "df": 9,
+    "p_value": 0.160495,
+    "cramers_v": 0.073,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_most_severe_outcome",
+    "chi2": 262.19,
+    "df": 72,
+    "p_value": 2.00081e-23,
+    "cramers_v": 0.116,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_finding",
+    "chi2": 74.89,
+    "df": 27,
+    "p_value": 2.19105e-06,
+    "cramers_v": 0.101,
+    "n": 2440
+  },
+  {
+    "test": "profession_vs_mc_CLIN",
+    "chi2": 308.26,
+    "df": 7,
+    "p_value": 1.03914e-62,
+    "cramers_v": 0.358,
+    "n": 2410
+  },
+  {
+    "test": "profession_vs_mc_PRESC",
+    "chi2": 307.41,
+    "df": 7,
+    "p_value": 1.58347e-62,
+    "cramers_v": 0.357,
+    "n": 2410
+  },
+  {
+    "test": "profession_vs_mc_BOUND",
+    "chi2": 230.76,
+    "df": 7,
+    "p_value": 3.42617e-46,
+    "cramers_v": 0.309,
+    "n": 2410
+  },
+  {
+    "test": "profession_vs_mc_PROF",
+    "chi2": 199.24,
+    "df": 7,
+    "p_value": 1.66555e-39,
+    "cramers_v": 0.288,
+    "n": 2410
+  },
+  {
+    "test": "profession_vs_mc_FRAUD",
+    "chi2": 67.04,
+    "df": 7,
+    "p_value": 5.83415e-12,
+    "cramers_v": 0.167,
+    "n": 2410
+  },
+  {
+    "test": "profession_vs_mc_IMPR",
+    "chi2": 18.46,
+    "df": 7,
+    "p_value": 0.0100728,
+    "cramers_v": 0.088,
+    "n": 2410
+  },
+  {
+    "test": "profession_vs_mc_COMM",
+    "chi2": 130.59,
+    "df": 7,
+    "p_value": 4.7281e-25,
+    "cramers_v": 0.233,
+    "n": 2410
+  },
+  {
+    "test": "opioid_vs_CANCEL",
+    "chi2": 6.24,
+    "df": 1,
+    "p_value": 0.0124888,
+    "cramers_v": 0.093,
+    "n": 724
+  },
+  {
+    "test": "opioid_vs_SUSPEND",
+    "chi2": 0.25,
+    "df": 1,
+    "p_value": 0.617289,
+    "cramers_v": 0.019,
+    "n": 724
+  },
+  {
+    "test": "boundary_vs_CANCEL",
+    "chi2": 2.14,
+    "df": 1,
+    "p_value": 0.143587,
+    "cramers_v": 0.029,
+    "n": 2477
+  },
+  {
+    "test": "boundary_vs_SUSPEND",
+    "chi2": 2.05,
+    "df": 1,
+    "p_value": 0.152268,
+    "cramers_v": 0.029,
+    "n": 2477
+  },
+  {
+    "test": "fisher_boundary_vs_CANCEL",
+    "odds_ratio": 1.145,
+    "p_value": 0.135582
+  },
+  {
+    "test": "jurisdiction_vs_most_severe_outcome",
+    "chi2": 545.01,
+    "df": 56,
+    "p_value": 2.60488e-81,
+    "cramers_v": 0.177,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_vs_mc_CLIN",
+    "chi2": 227.82,
+    "df": 7,
+    "p_value": 1.4442e-45,
+    "cramers_v": 0.303,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_vs_mc_PRESC",
+    "chi2": 38.28,
+    "df": 7,
+    "p_value": 2.68202e-06,
+    "cramers_v": 0.124,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_vs_mc_BOUND",
+    "chi2": 8.42,
+    "df": 7,
+    "p_value": 0.297373,
+    "cramers_v": 0.058,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_vs_mc_PROF",
+    "chi2": 121.87,
+    "df": 7,
+    "p_value": 3.11926e-23,
+    "cramers_v": 0.222,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_vs_mc_FRAUD",
+    "chi2": 131.09,
+    "df": 7,
+    "p_value": 3.72443e-25,
+    "cramers_v": 0.23,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_vs_mc_IMPR",
+    "chi2": 29.09,
+    "df": 7,
+    "p_value": 0.000139333,
+    "cramers_v": 0.108,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_vs_mc_COMM",
+    "chi2": 124.43,
+    "df": 7,
+    "p_value": 9.13506e-24,
+    "cramers_v": 0.224,
+    "n": 2477
+  },
+  {
+    "test": "jurisdiction_pairwise_NSW_vs_VIC",
+    "chi2": 75.53,
+    "df": 7,
+    "p_value": 1.11941e-13,
+    "cramers_v": 0.219,
+    "n": 1577
+  },
+  {
+    "test": "jurisdiction_pairwise_NSW_vs_QLD",
+    "chi2": 380.47,
+    "df": 8,
+    "p_value": 2.81034e-77,
+    "cramers_v": 0.491,
+    "n": 1577
+  },
+  {
+    "test": "jurisdiction_pairwise_NSW_vs_SA",
+    "chi2": 53.01,
+    "df": 6,
+    "p_value": 1.16797e-09,
+    "cramers_v": 0.224,
+    "n": 1054
+  },
+  {
+    "test": "jurisdiction_pairwise_NSW_vs_WA",
+    "chi2": 48.22,
+    "df": 7,
+    "p_value": 3.22201e-08,
+    "cramers_v": 0.221,
+    "n": 988
+  },
+  {
+    "test": "jurisdiction_pairwise_VIC_vs_QLD",
+    "chi2": 250.33,
+    "df": 8,
+    "p_value": 1.4654e-49,
+    "cramers_v": 0.44,
+    "n": 1292
+  },
+  {
+    "test": "jurisdiction_pairwise_VIC_vs_SA",
+    "chi2": 44.84,
+    "df": 7,
+    "p_value": 1.46618e-07,
+    "cramers_v": 0.241,
+    "n": 769
+  },
+  {
+    "test": "jurisdiction_pairwise_VIC_vs_WA",
+    "chi2": 59.71,
+    "df": 7,
+    "p_value": 1.72284e-10,
+    "cramers_v": 0.291,
+    "n": 703
+  },
+  {
+    "test": "jurisdiction_pairwise_QLD_vs_SA",
+    "chi2": 33.0,
+    "df": 8,
+    "p_value": 6.15637e-05,
+    "cramers_v": 0.207,
+    "n": 769
+  },
+  {
+    "test": "jurisdiction_pairwise_QLD_vs_WA",
+    "chi2": 51.64,
+    "df": 8,
+    "p_value": 1.97687e-08,
+    "cramers_v": 0.271,
+    "n": 703
+  },
+  {
+    "test": "jurisdiction_pairwise_SA_vs_WA",
+    "chi2": 12.15,
+    "df": 6,
+    "p_value": 0.0587174,
+    "cramers_v": 0.26,
+    "n": 180
+  },
+  {
+    "test": "covid_vs_mc_CLIN",
+    "chi2": 28.87,
+    "df": 2,
+    "p_value": 5.39299e-07,
+    "cramers_v": 0.108,
+    "n": 2466
+  },
+  {
+    "test": "covid_vs_mc_PRESC",
+    "chi2": 11.53,
+    "df": 2,
+    "p_value": 0.00314066,
+    "cramers_v": 0.068,
+    "n": 2466
+  },
+  {
+    "test": "covid_vs_mc_BOUND",
+    "chi2": 4.62,
+    "df": 2,
+    "p_value": 0.0990277,
+    "cramers_v": 0.043,
+    "n": 2466
+  },
+  {
+    "test": "covid_vs_mc_PROF",
+    "chi2": 95.82,
+    "df": 2,
+    "p_value": 1.55926e-21,
+    "cramers_v": 0.197,
+    "n": 2466
+  },
+  {
+    "test": "covid_vs_mc_FRAUD",
+    "chi2": 26.05,
+    "df": 2,
+    "p_value": 2.20336e-06,
+    "cramers_v": 0.103,
+    "n": 2466
+  },
+  {
+    "test": "covid_vs_mc_IMPR",
+    "chi2": 0.84,
+    "df": 2,
+    "p_value": 0.657924,
+    "cramers_v": 0.018,
+    "n": 2466
+  },
+  {
+    "test": "covid_vs_mc_COMM",
+    "chi2": 21.2,
+    "df": 2,
+    "p_value": 2.49547e-05,
+    "cramers_v": 0.093,
+    "n": 2466
+  },
+  {
+    "test": "covid_vs_most_severe_outcome",
+    "chi2": 83.74,
+    "df": 16,
+    "p_value": 3.49434e-11,
+    "cramers_v": 0.13,
+    "n": 2466
+  }
+]

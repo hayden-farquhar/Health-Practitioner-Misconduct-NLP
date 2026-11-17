@@ -1,0 +1,8 @@
+,Code,Misconduct type,Overall N,Overall %,Medical practitioner,Nurse,Unknown,Pharmacist,Psychologist,Dentist,Chiropractor,Physiotherapist
+0,CLIN,Clinical competence,911,36.8,580,109,41,28,64,42,11,9
+1,PRESC,Prescribing,724,29.2,418,84,97,104,3,11,2,1
+2,BOUND,Boundary violations,719,29.0,362,118,86,3,93,5,16,12
+3,PROF,Professional conduct,1293,52.2,480,420,130,93,48,53,22,8
+4,FRAUD,Dishonesty/fraud,559,22.6,177,162,102,32,37,15,14,3
+5,IMPR,Impairment,292,11.8,135,84,42,10,6,7,0,1
+6,COMM,Communication,339,13.7,219,33,13,4,22,15,11,8

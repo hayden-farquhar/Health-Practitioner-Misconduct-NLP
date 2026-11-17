@@ -1,0 +1,456 @@
+{
+  "classification": {
+    "is_disciplinary": {
+      "accuracy": 0.9778,
+      "f1_disciplinary": 0.9846,
+      "f1_non_disciplinary": 0.96,
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          1,
+          32
+        ]
+      ],
+      "n_test": 45
+    },
+    "misconduct": {
+      "hamming_loss": 0.0972,
+      "macro_f1": 0.7189,
+      "micro_f1": 0.7826,
+      "per_class": {
+        "CLIN": {
+          "precision": 1.0,
+          "recall": 0.7059,
+          "f1": 0.8276,
+          "support": 17
+        },
+        "PRESC": {
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1": 0.8,
+          "support": 9
+        },
+        "BOUND": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571,
+          "support": 8
+        },
+        "IMPR": {
+          "precision": 0.5,
+          "recall": 0.4,
+          "f1": 0.4444,
+          "support": 5
+        },
+        "FRAUD": {
+          "precision": 0.8,
+          "recall": 0.4,
+          "f1": 0.5333,
+          "support": 10
+        },
+        "COMM": {
+          "precision": 0.4286,
+          "recall": 0.4286,
+          "f1": 0.4286,
+          "support": 7
+        },
+        "PROF": {
+          "precision": 1.0,
+          "recall": 0.8182,
+          "f1": 0.9,
+          "support": 22
+        },
+        "N/A": {
+          "precision": 0.9231,
+          "recall": 1.0,
+          "f1": 0.96,
+          "support": 12
+        }
+      }
+    },
+    "finding": {
+      "accuracy": 0.8667,
+      "macro_f1": 0.7552,
+      "per_class": {
+        "NONE": {
+          "precision": 0.8462,
+          "recall": 0.9167,
+          "f1": 0.88,
+          "support": 12
+        },
+        "NO_FINDING": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "PM": {
+          "precision": 0.9615,
+          "recall": 0.9259,
+          "f1": 0.9434,
+          "support": 27
+        },
+        "UPC_GEN": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667,
+          "support": 1
+        },
+        "UPC_SAT": {
+          "precision": 0.3333,
+          "recall": 0.25,
+          "f1": 0.2857,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          11,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "labels": [
+        "NONE",
+        "NO_FINDING",
+        "PM",
+        "UPC_GEN",
+        "UPC_SAT"
+      ]
+    },
+    "outcome_extraction": {
+      "micro_f1": 0.6939,
+      "macro_f1": 0.4062,
+      "per_class": {
+        "CANCEL": {
+          "precision": 0.5294,
+          "recall": 1.0,
+          "f1": 0.6923,
+          "support": 9
+        },
+        "SUSPEND": {
+          "precision": 0.3333,
+          "recall": 0.5,
+          "f1": 0.4,
+          "support": 4
+        },
+        "CONDITIONS": {
+          "precision": 0.6154,
+          "recall": 0.6154,
+          "f1": 0.6154,
+          "support": 13
+        },
+        "REPRIMAND": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875,
+          "support": 16
+        },
+        "FINE": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "CAUTION": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "support": 2
+        },
+        "UNDERTAKING": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "NO_ADVERSE": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      }
+    }
+  },
+  "error_analysis": {
+    "total_test": 45,
+    "total_with_errors": 32,
+    "error_rate": 71.1,
+    "error_type_counts": {
+      "misconduct": 22,
+      "outcome": 21,
+      "finding": 6,
+      "is_disciplinary": 1
+    },
+    "misconduct_false_positives": {
+      "COMM": 4,
+      "IMPR": 2,
+      "FRAUD": 1,
+      "N/A": 1
+    },
+    "misconduct_false_negatives": {
+      "CLIN": 5,
+      "COMM": 4,
+      "PROF": 4,
+      "FRAUD": 6,
+      "IMPR": 3,
+      "PRESC": 3,
+      "BOUND": 2
+    },
+    "outcome_false_positives": {
+      "REPRIMAND": 2,
+      "CANCEL": 8,
+      "SUSPEND": 4,
+      "CONDITIONS": 5,
+      "UNDERTAKING": 1
+    },
+    "outcome_false_negatives": {
+      "CONDITIONS": 5,
+      "SUSPEND": 2,
+      "CAUTION": 1,
+      "REPRIMAND": 2
+    }
+  },
+  "sensitivity": {
+    "appeals": {
+      "n_appeals": 516,
+      "pct_appeals": 14.4,
+      "n_disc_with": 2477,
+      "n_disc_without": 2374,
+      "misconduct_pct_with": {
+        "CLIN": 36.8,
+        "PRESC": 29.2,
+        "BOUND": 29.0,
+        "PROF": 52.2,
+        "FRAUD": 22.6,
+        "IMPR": 11.8,
+        "COMM": 13.7
+      },
+      "misconduct_pct_without": {
+        "CLIN": 36.3,
+        "PRESC": 29.1,
+        "BOUND": 29.3,
+        "PROF": 52.4,
+        "FRAUD": 23.2,
+        "IMPR": 11.8,
+        "COMM": 13.4
+      }
+    },
+    "temporal_split": {
+      "n_pre_2015": 410,
+      "n_post_2015": 2056,
+      "misconduct_comparison": [
+        {
+          "Misconduct type": "Clinical competence",
+          "Pre-2015 N": 184,
+          "Pre-2015 %": 44.9,
+          "Post-2015 N": 721,
+          "Post-2015 %": 35.1,
+          "Chi2": 13.74,
+          "p-value": 0.0002098
+        },
+        {
+          "Misconduct type": "Prescribing",
+          "Pre-2015 N": 118,
+          "Pre-2015 %": 28.8,
+          "Post-2015 N": 605,
+          "Post-2015 %": 29.4,
+          "Chi2": 0.04,
+          "p-value": 0.8393
+        },
+        {
+          "Misconduct type": "Boundary violations",
+          "Pre-2015 N": 105,
+          "Pre-2015 %": 25.6,
+          "Post-2015 N": 613,
+          "Post-2015 %": 29.8,
+          "Chi2": 2.73,
+          "p-value": 0.09854
+        },
+        {
+          "Misconduct type": "Professional conduct",
+          "Pre-2015 N": 159,
+          "Pre-2015 %": 38.8,
+          "Post-2015 N": 1134,
+          "Post-2015 %": 55.2,
+          "Chi2": 36.1,
+          "p-value": 1.877e-09
+        },
+        {
+          "Misconduct type": "Dishonesty/fraud",
+          "Pre-2015 N": 54,
+          "Pre-2015 %": 13.2,
+          "Post-2015 N": 505,
+          "Post-2015 %": 24.6,
+          "Chi2": 24.66,
+          "p-value": 6.842e-07
+        },
+        {
+          "Misconduct type": "Impairment",
+          "Pre-2015 N": 42,
+          "Pre-2015 %": 10.2,
+          "Post-2015 N": 250,
+          "Post-2015 %": 12.2,
+          "Chi2": 1.03,
+          "p-value": 0.3113
+        },
+        {
+          "Misconduct type": "Communication",
+          "Pre-2015 N": 27,
+          "Pre-2015 %": 6.6,
+          "Post-2015 N": 312,
+          "Post-2015 %": 15.2,
+          "Chi2": 20.55,
+          "p-value": 5.8e-06
+        }
+      ]
+    },
+    "thresholds": [
+      {
+        "Threshold": 0.0,
+        "Macro F1": 0.7189,
+        "Micro F1": 0.7826,
+        "Hamming Loss": 0.0972
+      },
+      {
+        "Threshold": 0.1,
+        "Macro F1": 0.7058,
+        "Micro F1": 0.775,
+        "Hamming Loss": 0.1
+      },
+      {
+        "Threshold": 0.2,
+        "Macro F1": 0.7027,
+        "Micro F1": 0.7643,
+        "Hamming Loss": 0.1028
+      },
+      {
+        "Threshold": 0.3,
+        "Macro F1": 0.7027,
+        "Micro F1": 0.7643,
+        "Hamming Loss": 0.1028
+      },
+      {
+        "Threshold": 0.5,
+        "Macro F1": 0.6718,
+        "Micro F1": 0.7333,
+        "Hamming Loss": 0.1111
+      },
+      {
+        "Threshold": 0.7,
+        "Macro F1": 0.6499,
+        "Micro F1": 0.7211,
+        "Hamming Loss": 0.1139
+      },
+      {
+        "Threshold": 1.0,
+        "Macro F1": 0.6334,
+        "Micro F1": 0.7034,
+        "Hamming Loss": 0.1194
+      }
+    ],
+    "per_profession": [
+      {
+        "Profession": "medical_practitioner",
+        "N (test)": 12,
+        "Macro F1": 0.6241,
+        "Micro F1": 0.8
+      },
+      {
+        "Profession": "nurse",
+        "N (test)": 9,
+        "Macro F1": 0.6378,
+        "Micro F1": 0.7333
+      },
+      {
+        "Profession": "pharmacist",
+        "N (test)": 6,
+        "Macro F1": 0.4583,
+        "Micro F1": 0.8182
+      },
+      {
+        "Profession": "physiotherapist",
+        "N (test)": 3,
+        "Macro F1": 0.25,
+        "Micro F1": 1.0
+      },
+      {
+        "Profession": "psychologist",
+        "N (test)": 3,
+        "Macro F1": 0.4167,
+        "Micro F1": 0.7692
+      }
+    ],
+    "bootstrap_ci": {
+      "CLIN": {
+        "point_estimate": 36.8,
+        "ci_95_lower": 34.8,
+        "ci_95_upper": 38.6
+      },
+      "PRESC": {
+        "point_estimate": 29.2,
+        "ci_95_lower": 27.5,
+        "ci_95_upper": 30.9
+      },
+      "BOUND": {
+        "point_estimate": 29.0,
+        "ci_95_lower": 27.3,
+        "ci_95_upper": 30.8
+      },
+      "PROF": {
+        "point_estimate": 52.2,
+        "ci_95_lower": 50.0,
+        "ci_95_upper": 54.2
+      },
+      "FRAUD": {
+        "point_estimate": 22.6,
+        "ci_95_lower": 21.0,
+        "ci_95_upper": 24.2
+      },
+      "IMPR": {
+        "point_estimate": 11.8,
+        "ci_95_lower": 10.5,
+        "ci_95_upper": 13.0
+      },
+      "COMM": {
+        "point_estimate": 13.7,
+        "ci_95_lower": 12.3,
+        "ci_95_upper": 15.0
+      }
+    }
+  }
+}

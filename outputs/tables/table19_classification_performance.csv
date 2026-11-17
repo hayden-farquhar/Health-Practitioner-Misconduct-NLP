@@ -1,0 +1,17 @@
+,Task,Metric,Value
+0,Is-disciplinary (binary),Accuracy,0.9778
+1,Is-disciplinary (binary),F1 (disciplinary),0.9846
+2,Misconduct L1 (multi-label),Macro F1,0.7189
+3,Misconduct L1 (multi-label),Micro F1,0.7826
+4,Misconduct L1 (multi-label),Hamming loss,0.0972
+5,Finding (single-label),Accuracy,0.8667
+6,Finding (single-label),Macro F1,0.7552
+7,Outcome extraction (regex),Micro F1,0.6939
+8,Outcome extraction (regex),Macro F1,0.4062
+9,Misconduct: CLIN,F1,0.8276
+10,Misconduct: PRESC,F1,0.8
+11,Misconduct: BOUND,F1,0.8571
+12,Misconduct: IMPR,F1,0.4444
+13,Misconduct: FRAUD,F1,0.5333
+14,Misconduct: COMM,F1,0.4286
+15,Misconduct: PROF,F1,0.9

@@ -31,6 +31,9 @@ OUTPUT_PATH = DATA_DIR / "extracted" / "entities.jsonl"
 # encountered in disciplinary decisions)
 # -------------------------------------------------------------------------
 
+# The two lists below are matched together (ALL_DRUGS); the split is for readability only and
+# is not an accurate scheduling (e.g. tramadol and compounded codeine are Schedule 4). Schedules
+# reported in the paper come from config/poisons_schedule_map_2026-10.json.
 # Schedule 8 (Controlled drugs) — high relevance to prescribing misconduct
 SCHEDULE_8_DRUGS = [
     # Opioids

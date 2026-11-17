@@ -1,0 +1,8 @@
+,Code,Misconduct type,N,Pct
+0,CLIN,Clinical competence,911,36.8
+1,PRESC,Prescribing,724,29.2
+2,BOUND,Boundary violations,719,29.0
+3,PROF,Professional conduct,1293,52.2
+4,FRAUD,Dishonesty/fraud,559,22.6
+5,IMPR,Impairment,292,11.8
+6,COMM,Communication,339,13.7

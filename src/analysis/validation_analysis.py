@@ -39,7 +39,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 SPLITS_DIR = DATA_DIR / "annotations" / "splits"
-GOLD_PATH = DATA_DIR / "annotations" / "gold_standard.json"
+GOLD_PATH = DATA_DIR / "annotations" / "gold_standard_2026-11.json"
 CORPUS_PATH = DATA_DIR / "extracted" / "enriched_corpus.jsonl"
 MODEL_DIR = PROJECT_ROOT / "models" / "sklearn_misconduct"
 FIGURES_DIR = PROJECT_ROOT / "outputs" / "figures"
@@ -114,7 +114,7 @@ def load_split(name: str) -> pd.DataFrame:
 
 
 def load_models():
-    """Load saved sklearn models."""
+    """Load saved sklearn models (supports hybrid vectorizer setup)."""
     with open(MODEL_DIR / "vectorizer.pkl", "rb") as f:
         vectorizer = pickle.load(f)
     with open(MODEL_DIR / "misconduct_clf.pkl", "rb") as f:
@@ -125,7 +125,14 @@ def load_models():
         finding_le = pickle.load(f)
     with open(MODEL_DIR / "disciplinary_clf.pkl", "rb") as f:
         disciplinary_clf = pickle.load(f)
-    return vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf
+    # Load separate finding vectorizer if available (hybrid model)
+    finding_vectorizer_path = MODEL_DIR / "vectorizer_finding.pkl"
+    if finding_vectorizer_path.exists():
+        with open(finding_vectorizer_path, "rb") as f:
+            vectorizer_finding = pickle.load(f)
+    else:
+        vectorizer_finding = vectorizer
+    return vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf, vectorizer_finding
 
 
 # ---------------------------------------------------------------------------
@@ -134,16 +141,20 @@ def load_models():
 def classification_validation(
     test_df: pd.DataFrame,
     vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf,
-    val_df: pd.DataFrame = None,
+    val_df: pd.DataFrame = None, vectorizer_finding=None,
 ) -> dict:
     """Full classification reports and confusion matrices on test set."""
     print("\n" + "=" * 60)
     print("5.1 CLASSIFICATION VALIDATION")
     print("=" * 60)
 
+    if vectorizer_finding is None:
+        vectorizer_finding = vectorizer
+
     results = {}
 
     X_test = vectorizer.transform(test_df["full_text"])
+    X_test_finding = vectorizer_finding.transform(test_df["full_text"])
 
     # --- 5.1.1 Is-disciplinary ---
     print("\n--- Is-Disciplinary ---")
@@ -236,7 +247,7 @@ def classification_validation(
     # --- 5.1.3 Finding ---
     print("\n--- Finding ---")
     y_true_find = test_df["finding"].fillna("NONE").values
-    y_pred_find_enc = finding_clf.predict(X_test)
+    y_pred_find_enc = finding_clf.predict(X_test_finding)
     y_pred_find = finding_le.inverse_transform(y_pred_find_enc)
 
     # Align labels
@@ -369,18 +380,23 @@ def classification_validation(
 def error_analysis(
     test_df: pd.DataFrame,
     vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf,
+    vectorizer_finding=None,
 ) -> dict:
     """Identify and categorise misclassified decisions."""
     print("\n" + "=" * 60)
     print("5.2 ERROR ANALYSIS")
     print("=" * 60)
 
+    if vectorizer_finding is None:
+        vectorizer_finding = vectorizer
+
     X_test = vectorizer.transform(test_df["full_text"])
+    X_test_finding = vectorizer_finding.transform(test_df["full_text"])
 
     # Get predictions
     y_pred_disc = disciplinary_clf.predict(X_test)
     y_pred_mc = misconduct_clf.predict(X_test)
-    y_pred_find = finding_le.inverse_transform(finding_clf.predict(X_test))
+    y_pred_find = finding_le.inverse_transform(finding_clf.predict(X_test_finding))
 
     # Load enriched corpus for outcome predictions
     enriched = {}
@@ -541,6 +557,7 @@ def error_analysis(
 def sensitivity_analyses(
     train_df: pd.DataFrame, val_df: pd.DataFrame, test_df: pd.DataFrame,
     vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf,
+    vectorizer_finding=None,
 ) -> dict:
     """Run sensitivity analyses on the full corpus."""
     print("\n" + "=" * 60)
@@ -823,24 +840,27 @@ def main():
 
     # Load models
     print("\nLoading sklearn models...")
-    vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf = load_models()
+    vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf, vectorizer_finding = load_models()
     print(f"  Vectorizer vocab: {len(vectorizer.vocabulary_)}")
+    print(f"  Finding vectorizer vocab: {len(vectorizer_finding.vocabulary_)}")
 
     # 5.1 Classification validation
     classification_results = classification_validation(
         test_df, vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf,
-        val_df=val_df,
+        val_df=val_df, vectorizer_finding=vectorizer_finding,
     )
 
     # 5.2 Error analysis
     error_summary = error_analysis(
         test_df, vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf,
+        vectorizer_finding=vectorizer_finding,
     )
 
     # 5.3 Sensitivity analyses
     sensitivity_results = sensitivity_analyses(
         train_df, val_df, test_df,
         vectorizer, misconduct_clf, finding_clf, finding_le, disciplinary_clf,
+        vectorizer_finding=vectorizer_finding,
     )
 
     # Save all results

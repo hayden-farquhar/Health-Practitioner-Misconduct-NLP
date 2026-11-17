@@ -1,0 +1,477 @@
+{
+  "coder_1": "author, blinded re-code 1-3 Nov 2026 (frozen sheet)",
+  "coder_2": "model pass, see data/annotations/model_pass_2026-11/batch_manifest.json",
+  "n_compared": 300,
+  "model_missing": [],
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261103
+  },
+  "all_items": {
+    "is_disciplinary": {
+      "n": 300,
+      "kappa": 0.968,
+      "ci95": [
+        0.931,
+        0.992
+      ],
+      "pct_agree": 0.987,
+      "positives_author": 213,
+      "positives_model": 213
+    },
+    "finding": {
+      "n": 300,
+      "kappa": 0.943,
+      "ci95": [
+        0.906,
+        0.973
+      ],
+      "pct_agree": 0.967,
+      "positives_author": null,
+      "positives_model": null
+    },
+    "profession": {
+      "n": 300,
+      "kappa": 0.953,
+      "ci95": [
+        0.925,
+        0.977
+      ],
+      "pct_agree": 0.96,
+      "positives_author": null,
+      "positives_model": null
+    },
+    "CLIN": {
+      "n": 300,
+      "kappa": 0.776,
+      "ci95": [
+        0.701,
+        0.846
+      ],
+      "pct_agree": 0.897,
+      "positives_author": 117,
+      "positives_model": 98
+    },
+    "PRESC": {
+      "n": 300,
+      "kappa": 0.897,
+      "ci95": [
+        0.833,
+        0.949
+      ],
+      "pct_agree": 0.963,
+      "positives_author": 73,
+      "positives_model": 66
+    },
+    "BOUND": {
+      "n": 300,
+      "kappa": 0.903,
+      "ci95": [
+        0.839,
+        0.958
+      ],
+      "pct_agree": 0.967,
+      "positives_author": 70,
+      "positives_model": 62
+    },
+    "IMPR": {
+      "n": 300,
+      "kappa": 0.869,
+      "ci95": [
+        0.748,
+        0.959
+      ],
+      "pct_agree": 0.98,
+      "positives_author": 25,
+      "positives_model": 25
+    },
+    "FRAUD": {
+      "n": 300,
+      "kappa": 0.871,
+      "ci95": [
+        0.804,
+        0.931
+      ],
+      "pct_agree": 0.953,
+      "positives_author": 71,
+      "positives_model": 71
+    },
+    "COMM": {
+      "n": 300,
+      "kappa": 0.597,
+      "ci95": [
+        0.446,
+        0.728
+      ],
+      "pct_agree": 0.907,
+      "positives_author": 43,
+      "positives_model": 37
+    },
+    "PROF": {
+      "n": 300,
+      "kappa": 0.747,
+      "ci95": [
+        0.67,
+        0.818
+      ],
+      "pct_agree": 0.873,
+      "positives_author": 150,
+      "positives_model": 120
+    },
+    "BOUND_SEXUAL": {
+      "n": 300,
+      "kappa": 0.94,
+      "ci95": [
+        0.88,
+        0.987
+      ],
+      "pct_agree": 0.983,
+      "positives_author": 52,
+      "positives_model": 49
+    },
+    "BOUND_EMOTIONAL": {
+      "n": 300,
+      "kappa": 0.684,
+      "ci95": [
+        0.545,
+        0.793
+      ],
+      "pct_agree": 0.93,
+      "positives_author": 48,
+      "positives_model": 27
+    },
+    "BOUND_FINANCIAL": {
+      "n": 300,
+      "kappa": 0.762,
+      "ci95": [
+        0.575,
+        0.92
+      ],
+      "pct_agree": 0.977,
+      "positives_author": 18,
+      "positives_model": 13
+    },
+    "CANCEL": {
+      "n": 300,
+      "kappa": 0.908,
+      "ci95": [
+        0.838,
+        0.967
+      ],
+      "pct_agree": 0.973,
+      "positives_author": 49,
+      "positives_model": 57
+    },
+    "SUSPEND": {
+      "n": 300,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 35,
+      "positives_model": 35
+    },
+    "CONDITIONS": {
+      "n": 300,
+      "kappa": 0.956,
+      "ci95": [
+        0.914,
+        0.991
+      ],
+      "pct_agree": 0.983,
+      "positives_author": 75,
+      "positives_model": 78
+    },
+    "REPRIMAND": {
+      "n": 300,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 126,
+      "positives_model": 126
+    },
+    "FINE": {
+      "n": 300,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 11,
+      "positives_model": 11
+    },
+    "CAUTION": {
+      "n": 300,
+      "kappa": 0.921,
+      "ci95": [
+        0.665,
+        1.0
+      ],
+      "pct_agree": 0.997,
+      "positives_author": 7,
+      "positives_model": 6
+    },
+    "UNDERTAKING": {
+      "n": 300,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "pct_agree": 0.993,
+      "positives_author": 2,
+      "positives_model": 0
+    },
+    "NO_ADVERSE": {
+      "n": 300,
+      "kappa": 0.887,
+      "ci95": [
+        0.497,
+        1.0
+      ],
+      "pct_agree": 0.997,
+      "positives_author": 5,
+      "positives_model": 4
+    },
+    "OTHER": {
+      "n": 300,
+      "kappa": 0.635,
+      "ci95": [
+        0.551,
+        0.719
+      ],
+      "pct_agree": 0.82,
+      "positives_author": 144,
+      "positives_model": 100
+    }
+  },
+  "both_disciplinary": {
+    "n": 211,
+    "finding": {
+      "n": 211,
+      "kappa": 0.912,
+      "ci95": [
+        0.834,
+        0.972
+      ],
+      "pct_agree": 0.972,
+      "positives_author": null,
+      "positives_model": null
+    },
+    "CLIN": {
+      "n": 211,
+      "kappa": 0.718,
+      "ci95": [
+        0.627,
+        0.802
+      ],
+      "pct_agree": 0.858,
+      "positives_author": 117,
+      "positives_model": 97
+    },
+    "PRESC": {
+      "n": 211,
+      "kappa": 0.903,
+      "ci95": [
+        0.838,
+        0.959
+      ],
+      "pct_agree": 0.957,
+      "positives_author": 73,
+      "positives_model": 64
+    },
+    "BOUND": {
+      "n": 211,
+      "kappa": 0.89,
+      "ci95": [
+        0.817,
+        0.951
+      ],
+      "pct_agree": 0.953,
+      "positives_author": 70,
+      "positives_model": 62
+    },
+    "IMPR": {
+      "n": 211,
+      "kappa": 0.885,
+      "ci95": [
+        0.777,
+        0.976
+      ],
+      "pct_agree": 0.976,
+      "positives_author": 25,
+      "positives_model": 24
+    },
+    "FRAUD": {
+      "n": 211,
+      "kappa": 0.862,
+      "ci95": [
+        0.783,
+        0.928
+      ],
+      "pct_agree": 0.938,
+      "positives_author": 71,
+      "positives_model": 70
+    },
+    "COMM": {
+      "n": 211,
+      "kappa": 0.592,
+      "ci95": [
+        0.447,
+        0.725
+      ],
+      "pct_agree": 0.877,
+      "positives_author": 42,
+      "positives_model": 36
+    },
+    "PROF": {
+      "n": 211,
+      "kappa": 0.64,
+      "ci95": [
+        0.54,
+        0.738
+      ],
+      "pct_agree": 0.829,
+      "positives_author": 149,
+      "positives_model": 119
+    },
+    "BOUND_SEXUAL": {
+      "n": 211,
+      "kappa": 0.935,
+      "ci95": [
+        0.872,
+        0.987
+      ],
+      "pct_agree": 0.976,
+      "positives_author": 52,
+      "positives_model": 49
+    },
+    "BOUND_EMOTIONAL": {
+      "n": 211,
+      "kappa": 0.665,
+      "ci95": [
+        0.534,
+        0.781
+      ],
+      "pct_agree": 0.9,
+      "positives_author": 48,
+      "positives_model": 27
+    },
+    "BOUND_FINANCIAL": {
+      "n": 211,
+      "kappa": 0.757,
+      "ci95": [
+        0.552,
+        0.912
+      ],
+      "pct_agree": 0.967,
+      "positives_author": 18,
+      "positives_model": 13
+    },
+    "CANCEL": {
+      "n": 211,
+      "kappa": 0.899,
+      "ci95": [
+        0.827,
+        0.961
+      ],
+      "pct_agree": 0.962,
+      "positives_author": 49,
+      "positives_model": 57
+    },
+    "SUSPEND": {
+      "n": 211,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 35,
+      "positives_model": 35
+    },
+    "CONDITIONS": {
+      "n": 211,
+      "kappa": 0.979,
+      "ci95": [
+        0.946,
+        1.0
+      ],
+      "pct_agree": 0.991,
+      "positives_author": 74,
+      "positives_model": 76
+    },
+    "REPRIMAND": {
+      "n": 211,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 126,
+      "positives_model": 126
+    },
+    "FINE": {
+      "n": 211,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 11,
+      "positives_model": 11
+    },
+    "CAUTION": {
+      "n": 211,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 6,
+      "positives_model": 6
+    },
+    "UNDERTAKING": {
+      "n": 211,
+      "kappa": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "pct_agree": 0.991,
+      "positives_author": 2,
+      "positives_model": 0
+    },
+    "NO_ADVERSE": {
+      "n": 211,
+      "kappa": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "pct_agree": 1.0,
+      "positives_author": 4,
+      "positives_model": 4
+    },
+    "OTHER": {
+      "n": 211,
+      "kappa": 0.52,
+      "ci95": [
+        0.418,
+        0.617
+      ],
+      "pct_agree": 0.754,
+      "positives_author": 144,
+      "positives_model": 98
+    }
+  }
+}

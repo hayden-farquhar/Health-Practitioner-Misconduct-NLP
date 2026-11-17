@@ -1,0 +1,45 @@
+{
+ "built": "2026-11-04",
+ "coder_1": {
+  "who": "Hayden Farquhar (author)",
+  "blinded": true,
+  "coded": "2026-11-01 to 2026-11-03",
+  "file": "data/annotations/recode_2026-10/P13_recode_results_SUBMITTED_2026-11-03.xlsx",
+  "sha1": "10cf4ff1cbe12e7c909bef0f27d64425f80abdc9"
+ },
+ "coder_2": {
+  "who": "logged model pass, batch msgbatch_01P6SW9pMypxs8YJEFcPM1EP",
+  "blinded": true,
+  "file": "data/annotations/model_pass_2026-11/model_codes.json",
+  "sha1": "2aeae0086c543fa1eb20266ca26b5dfe75017cfd"
+ },
+ "adjudication": {
+  "who": "Hayden Farquhar (author)",
+  "blinded": false,
+  "dates": [
+   "2026-11-03",
+   "2026-11-04"
+  ],
+  "file": "data/annotations/adjudication_2026-11/P13_adjudication_FROZEN_2026-11-04.xlsx",
+  "sha1": "f98d2a3b49265f2f8b5ebc501c5a078c3e70091c"
+ },
+ "amendments": {
+  "file": "data/annotations/adjudication_2026-11/post_adjudication_amendments.json",
+  "n": 1,
+  "sha1": "c72da79f6cdddad82e9aca250afe2acc97d8650a"
+ },
+ "n_items": 300,
+ "n_fields_per_item": 22,
+ "field_sources": {
+  "agreed": 6331,
+  "adjudicated_author": 127,
+  "adjudicated_model": 141,
+  "adjudicated_other": 0,
+  "amended": 1
+ },
+ "gold_standard": {
+  "file": "data/annotations/gold_standard_2026-11.json",
+  "sha1": "c04a65142329f732a9d06d14304dc8bf4c68f23f"
+ },
+ "replaces": "data/annotations/gold_standard.json (Feb 2026; 208/300 'human' codes were Claude agents)"
+}

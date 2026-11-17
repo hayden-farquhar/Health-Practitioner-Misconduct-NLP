@@ -1,0 +1,8 @@
+,Clinical competence,Prescribing,Boundary violations,Professional conduct,Dishonesty/fraud,Impairment,Communication
+Clinical competence,911,371,309,398,98,48,293
+Prescribing,371,724,82,390,192,166,73
+Boundary violations,309,82,719,192,81,34,192
+Professional conduct,398,390,192,1293,437,178,154
+Dishonesty/fraud,98,192,81,437,559,119,37
+Impairment,48,166,34,178,119,292,8
+Communication,293,73,192,154,37,8,339

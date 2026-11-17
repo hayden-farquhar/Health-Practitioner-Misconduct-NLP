@@ -1,0 +1,188 @@
+{
+  "n_disciplinary": 2477,
+  "phi_matrix": {
+    "CLIN": {
+      "CLIN": 1.0,
+      "PRESC": 0.193,
+      "BOUND": 0.082,
+      "PROF": -0.13,
+      "FRAUD": -0.215,
+      "IMPR": -0.154,
+      "COMM": 0.41
+    },
+    "PRESC": {
+      "CLIN": 0.193,
+      "PRESC": 1.0,
+      "BOUND": -0.251,
+      "PROF": 0.021,
+      "FRAUD": 0.061,
+      "IMPR": 0.222,
+      "COMM": -0.067
+    },
+    "BOUND": {
+      "CLIN": 0.082,
+      "PRESC": -0.251,
+      "BOUND": 1.0,
+      "PROF": -0.326,
+      "FRAUD": -0.173,
+      "IMPR": -0.14,
+      "COMM": 0.242
+    },
+    "PROF": {
+      "CLIN": -0.13,
+      "PRESC": 0.021,
+      "BOUND": -0.326,
+      "PROF": 1.0,
+      "FRAUD": 0.281,
+      "IMPR": 0.064,
+      "COMM": -0.054
+    },
+    "FRAUD": {
+      "CLIN": -0.215,
+      "PRESC": 0.061,
+      "BOUND": -0.173,
+      "PROF": 0.281,
+      "FRAUD": 1.0,
+      "IMPR": 0.159,
+      "COMM": -0.111
+    },
+    "IMPR": {
+      "CLIN": -0.154,
+      "PRESC": 0.222,
+      "BOUND": -0.14,
+      "PROF": 0.064,
+      "FRAUD": 0.159,
+      "IMPR": 1.0,
+      "COMM": -0.116
+    },
+    "COMM": {
+      "CLIN": 0.41,
+      "PRESC": -0.067,
+      "BOUND": 0.242,
+      "PROF": -0.054,
+      "FRAUD": -0.111,
+      "IMPR": -0.116,
+      "COMM": 1.0
+    }
+  },
+  "n_combinations_gte10": 40,
+  "top_combinations": [
+    {
+      "combination": "PROF",
+      "n": 317
+    },
+    {
+      "combination": "BOUND",
+      "n": 244
+    },
+    {
+      "combination": "PROF + FRAUD",
+      "n": 209
+    },
+    {
+      "combination": "CLIN + PRESC + PROF",
+      "n": 112
+    },
+    {
+      "combination": "CLIN + PRESC",
+      "n": 111
+    },
+    {
+      "combination": "CLIN",
+      "n": 109
+    },
+    {
+      "combination": "CLIN + BOUND + COMM",
+      "n": 98
+    },
+    {
+      "combination": "PRESC",
+      "n": 80
+    },
+    {
+      "combination": "CLIN + BOUND",
+      "n": 71
+    },
+    {
+      "combination": "CLIN + PROF",
+      "n": 64
+    }
+  ],
+  "optimal_k": 8,
+  "silhouette_score": 0.4,
+  "silhouette_scores": {
+    "2": 0.2301,
+    "3": 0.2695,
+    "4": 0.2938,
+    "5": 0.3241,
+    "6": 0.3501,
+    "7": 0.3809,
+    "8": 0.3999
+  },
+  "cluster_profiles": [
+    {
+      "cluster": 1,
+      "n": 222,
+      "pct_of_disciplinary": 9.0,
+      "dominant_misconduct": "PRESC (91.0%), PROF (48.2%), FRAUD (40.5%)",
+      "top_professions": "Medical Practitioner (72), Pharmacist (69), Unknown (46)",
+      "cancellation_rate_pct": 32.4
+    },
+    {
+      "cluster": 2,
+      "n": 277,
+      "pct_of_disciplinary": 11.2,
+      "dominant_misconduct": "IMPR (100.0%), PROF (59.2%), PRESC (55.2%), FRAUD (40.1%), CLIN (13.0%), BOUND (8.7%)",
+      "top_professions": "Medical Practitioner (125), Nurse (84), Unknown (41)",
+      "cancellation_rate_pct": 50.5
+    },
+    {
+      "cluster": 3,
+      "n": 317,
+      "pct_of_disciplinary": 12.8,
+      "dominant_misconduct": "PROF (100.0%)",
+      "top_professions": "Nurse (143), Medical Practitioner (90), Unknown (41)",
+      "cancellation_rate_pct": 43.8
+    },
+    {
+      "cluster": 4,
+      "n": 278,
+      "pct_of_disciplinary": 11.2,
+      "dominant_misconduct": "FRAUD (100.0%), PROF (95.0%), CLIN (24.8%), PRESC (11.9%), COMM (6.1%)",
+      "top_professions": "Nurse (88), Medical Practitioner (84), Unknown (42)",
+      "cancellation_rate_pct": 47.8
+    },
+    {
+      "cluster": 5,
+      "n": 519,
+      "pct_of_disciplinary": 21.0,
+      "dominant_misconduct": "BOUND (100.0%), CLIN (28.5%), PROF (25.4%), FRAUD (14.3%), PRESC (10.2%)",
+      "top_professions": "Medical Practitioner (225), Nurse (102), Psychologist (77)",
+      "cancellation_rate_pct": 41.4
+    },
+    {
+      "cluster": 6,
+      "n": 302,
+      "pct_of_disciplinary": 12.2,
+      "dominant_misconduct": "COMM (100.0%), CLIN (86.8%), BOUND (57.0%), PROF (44.0%), PRESC (19.9%)",
+      "top_professions": "Medical Practitioner (201), Nurse (31), Psychologist (16)",
+      "cancellation_rate_pct": 44.0
+    },
+    {
+      "cluster": 7,
+      "n": 173,
+      "pct_of_disciplinary": 7.0,
+      "dominant_misconduct": "CLIN (100.0%), PROF (37.0%)",
+      "top_professions": "Medical Practitioner (83), Nurse (53), Dentist (14)",
+      "cancellation_rate_pct": 27.7
+    },
+    {
+      "cluster": 8,
+      "n": 223,
+      "pct_of_disciplinary": 9.0,
+      "dominant_misconduct": "CLIN (100.0%), PRESC (100.0%), PROF (50.2%)",
+      "top_professions": "Medical Practitioner (176), Pharmacist (19), Nurse (12)",
+      "cancellation_rate_pct": 34.1
+    }
+  ]
+}

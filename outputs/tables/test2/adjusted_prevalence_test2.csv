@@ -1,0 +1,8 @@
+code,observed_pct,sensitivity,specificity,adjusted_pct
+CLIN,36.8,0.593,0.959,59.2
+PRESC,29.2,0.896,0.947,28.4
+BOUND,29.0,0.807,0.991,35.2
+IMPR,11.8,0.5,0.981,20.6
+FRAUD,22.6,0.541,0.955,36.4
+COMM,13.7,0.285,0.956,38.5
+PROF,52.2,0.662,0.921,76.0

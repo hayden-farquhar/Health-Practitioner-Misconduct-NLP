@@ -1,0 +1,1599 @@
+{
+  "protocol": "config/external_test_protocol_2026-11.md",
+  "frozen_workbook_sha1": "b42fd27e8e3756ee1beae2a0f0033c8ab0210a6a",
+  "n": 160,
+  "n_disciplinary_author": 109,
+  "main_test_metrics_reproduced": true,
+  "primary_weighted": {
+    "is_disciplinary_accuracy": {
+      "value": 0.9772,
+      "ci95": [
+        0.943,
+        0.9981
+      ]
+    },
+    "misconduct_macro_f1": {
+      "value": 0.6961,
+      "ci95": [
+        0.6071,
+        0.7696
+      ]
+    },
+    "misconduct_micro_f1": {
+      "value": 0.7759,
+      "ci95": [
+        0.7206,
+        0.8289
+      ]
+    },
+    "finding_accuracy": {
+      "value": 0.8862,
+      "ci95": [
+        0.8257,
+        0.9375
+      ]
+    },
+    "outcome_micro_f1": {
+      "value": 0.7388,
+      "ci95": [
+        0.6796,
+        0.7954
+      ]
+    },
+    "CLIN_precision": {
+      "value": 0.8438,
+      "ci95": [
+        0.6681,
+        0.9731
+      ]
+    },
+    "CLIN_recall": {
+      "value": 0.5932,
+      "ci95": [
+        0.4129,
+        0.7813
+      ]
+    },
+    "CLIN_f1": {
+      "value": 0.6966,
+      "ci95": [
+        0.5379,
+        0.8318
+      ]
+    },
+    "PRESC_precision": {
+      "value": 0.7807,
+      "ci95": [
+        0.5679,
+        0.9555
+      ]
+    },
+    "PRESC_recall": {
+      "value": 0.896,
+      "ci95": [
+        0.7134,
+        1.0
+      ]
+    },
+    "PRESC_f1": {
+      "value": 0.8344,
+      "ci95": [
+        0.6703,
+        0.9482
+      ]
+    },
+    "BOUND_precision": {
+      "value": 0.9674,
+      "ci95": [
+        0.8861,
+        1.0
+      ]
+    },
+    "BOUND_recall": {
+      "value": 0.8068,
+      "ci95": [
+        0.6382,
+        0.9394
+      ]
+    },
+    "BOUND_f1": {
+      "value": 0.8798,
+      "ci95": [
+        0.7617,
+        0.9602
+      ]
+    },
+    "IMPR_precision": {
+      "value": 0.5931,
+      "ci95": [
+        0.0985,
+        1.0
+      ]
+    },
+    "IMPR_recall": {
+      "value": 0.4998,
+      "ci95": [
+        0.0686,
+        0.8767
+      ]
+    },
+    "IMPR_f1": {
+      "value": 0.5424,
+      "ci95": [
+        0.0814,
+        0.8576
+      ]
+    },
+    "FRAUD_precision": {
+      "value": 0.8322,
+      "ci95": [
+        0.6188,
+        0.9962
+      ]
+    },
+    "FRAUD_recall": {
+      "value": 0.5408,
+      "ci95": [
+        0.3387,
+        0.7351
+      ]
+    },
+    "FRAUD_f1": {
+      "value": 0.6556,
+      "ci95": [
+        0.4608,
+        0.808
+      ]
+    },
+    "COMM_precision": {
+      "value": 0.2076,
+      "ci95": [
+        0.0,
+        0.6784
+      ]
+    },
+    "COMM_recall": {
+      "value": 0.2853,
+      "ci95": [
+        0.0,
+        1.0
+      ]
+    },
+    "COMM_f1": {
+      "value": 0.2403,
+      "ci95": [
+        0.0,
+        0.5863
+      ]
+    },
+    "PROF_precision": {
+      "value": 0.8868,
+      "ci95": [
+        0.7815,
+        0.9702
+      ]
+    },
+    "PROF_recall": {
+      "value": 0.6622,
+      "ci95": [
+        0.5121,
+        0.802
+      ]
+    },
+    "PROF_f1": {
+      "value": 0.7582,
+      "ci95": [
+        0.6366,
+        0.8542
+      ]
+    },
+    "N/A_precision": {
+      "value": 0.9539,
+      "ci95": [
+        0.8518,
+        1.0
+      ]
+    },
+    "N/A_recall": {
+      "value": 0.9699,
+      "ci95": [
+        0.93,
+        0.9962
+      ]
+    },
+    "N/A_f1": {
+      "value": 0.9618,
+      "ci95": [
+        0.9037,
+        0.9963
+      ]
+    }
+  },
+  "by_period": {
+    "1999-2009": {
+      "is_disciplinary_accuracy": {
+        "value": 0.925,
+        "ci95": [
+          0.825,
+          1.0
+        ]
+      },
+      "misconduct_macro_f1": {
+        "value": 0.7168,
+        "ci95": [
+          0.5523,
+          0.8051
+        ]
+      },
+      "misconduct_micro_f1": {
+        "value": 0.7383,
+        "ci95": [
+          0.65,
+          0.8199
+        ]
+      },
+      "finding_accuracy": {
+        "value": 0.775,
+        "ci95": [
+          0.65,
+          0.9
+        ]
+      },
+      "outcome_micro_f1": {
+        "value": 0.5588,
+        "ci95": [
+          0.3793,
+          0.6944
+        ]
+      },
+      "CLIN_precision": {
+        "value": 0.8,
+        "ci95": [
+          0.5714,
+          1.0
+        ]
+      },
+      "CLIN_recall": {
+        "value": 0.75,
+        "ci95": [
+          0.5294,
+          0.9412
+        ]
+      },
+      "CLIN_f1": {
+        "value": 0.7742,
+        "ci95": [
+          0.5833,
+          0.9167
+        ]
+      },
+      "PRESC_precision": {
+        "value": 0.75,
+        "ci95": [
+          0.5,
+          1.0
+        ]
+      },
+      "PRESC_recall": {
+        "value": 0.9,
+        "ci95": [
+          0.6667,
+          1.0
+        ]
+      },
+      "PRESC_f1": {
+        "value": 0.8182,
+        "ci95": [
+          0.5882,
+          0.963
+        ]
+      },
+      "BOUND_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "BOUND_recall": {
+        "value": 0.875,
+        "ci95": [
+          0.6,
+          1.0
+        ]
+      },
+      "BOUND_f1": {
+        "value": 0.9333,
+        "ci95": [
+          0.75,
+          1.0
+        ]
+      },
+      "IMPR_precision": {
+        "value": 0.75,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_recall": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_f1": {
+        "value": 0.6,
+        "ci95": [
+          0.0,
+          0.9091
+        ]
+      },
+      "FRAUD_precision": {
+        "value": 0.75,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "FRAUD_recall": {
+        "value": 0.25,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      },
+      "FRAUD_f1": {
+        "value": 0.375,
+        "ci95": [
+          0.0,
+          0.6667
+        ]
+      },
+      "COMM_precision": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "COMM_recall": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "COMM_f1": {
+        "value": 0.6667,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "PROF_precision": {
+        "value": 0.7333,
+        "ci95": [
+          0.5,
+          0.9375
+        ]
+      },
+      "PROF_recall": {
+        "value": 0.6875,
+        "ci95": [
+          0.4375,
+          0.9091
+        ]
+      },
+      "PROF_f1": {
+        "value": 0.7097,
+        "ci95": [
+          0.5,
+          0.8667
+        ]
+      },
+      "N/A_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "N/A_recall": {
+        "value": 0.75,
+        "ci95": [
+          0.5,
+          1.0
+        ]
+      },
+      "N/A_f1": {
+        "value": 0.8571,
+        "ci95": [
+          0.6667,
+          1.0
+        ]
+      }
+    },
+    "2010-2014": {
+      "is_disciplinary_accuracy": {
+        "value": 0.95,
+        "ci95": [
+          0.875,
+          1.0
+        ]
+      },
+      "misconduct_macro_f1": {
+        "value": 0.6773,
+        "ci95": [
+          0.4174,
+          0.7891
+        ]
+      },
+      "misconduct_micro_f1": {
+        "value": 0.7387,
+        "ci95": [
+          0.6337,
+          0.8317
+        ]
+      },
+      "finding_accuracy": {
+        "value": 0.725,
+        "ci95": [
+          0.575,
+          0.85
+        ]
+      },
+      "outcome_micro_f1": {
+        "value": 0.6875,
+        "ci95": [
+          0.5301,
+          0.8046
+        ]
+      },
+      "CLIN_precision": {
+        "value": 0.8571,
+        "ci95": [
+          0.6429,
+          1.0
+        ]
+      },
+      "CLIN_recall": {
+        "value": 0.8,
+        "ci95": [
+          0.5714,
+          1.0
+        ]
+      },
+      "CLIN_f1": {
+        "value": 0.8276,
+        "ci95": [
+          0.64,
+          0.9565
+        ]
+      },
+      "PRESC_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "PRESC_recall": {
+        "value": 0.875,
+        "ci95": [
+          0.6,
+          1.0
+        ]
+      },
+      "PRESC_f1": {
+        "value": 0.9333,
+        "ci95": [
+          0.75,
+          1.0
+        ]
+      },
+      "BOUND_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "BOUND_recall": {
+        "value": 0.5714,
+        "ci95": [
+          0.3077,
+          0.8333
+        ]
+      },
+      "BOUND_f1": {
+        "value": 0.7273,
+        "ci95": [
+          0.4706,
+          0.9091
+        ]
+      },
+      "IMPR_precision": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_recall": {
+        "value": 0.25,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_f1": {
+        "value": 0.3333,
+        "ci95": [
+          0.0,
+          0.8
+        ]
+      },
+      "FRAUD_precision": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "FRAUD_recall": {
+        "value": 0.25,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "FRAUD_f1": {
+        "value": 0.3333,
+        "ci95": [
+          0.0,
+          0.8
+        ]
+      },
+      "COMM_precision": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "COMM_recall": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "COMM_f1": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "PROF_precision": {
+        "value": 0.6667,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "PROF_recall": {
+        "value": 0.25,
+        "ci95": [
+          0.0,
+          0.6
+        ]
+      },
+      "PROF_f1": {
+        "value": 0.3636,
+        "ci95": [
+          0.0,
+          0.7
+        ]
+      },
+      "N/A_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "N/A_recall": {
+        "value": 0.8182,
+        "ci95": [
+          0.5455,
+          1.0
+        ]
+      },
+      "N/A_f1": {
+        "value": 0.9,
+        "ci95": [
+          0.7059,
+          1.0
+        ]
+      }
+    },
+    "2015-2019": {
+      "is_disciplinary_accuracy": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "misconduct_macro_f1": {
+        "value": 0.8084,
+        "ci95": [
+          0.5575,
+          0.9041
+        ]
+      },
+      "misconduct_micro_f1": {
+        "value": 0.85,
+        "ci95": [
+          0.7727,
+          0.918
+        ]
+      },
+      "finding_accuracy": {
+        "value": 0.9,
+        "ci95": [
+          0.8,
+          0.975
+        ]
+      },
+      "outcome_micro_f1": {
+        "value": 0.623,
+        "ci95": [
+          0.4444,
+          0.7636
+        ]
+      },
+      "CLIN_precision": {
+        "value": 0.8889,
+        "ci95": [
+          0.625,
+          1.0
+        ]
+      },
+      "CLIN_recall": {
+        "value": 0.8,
+        "ci95": [
+          0.5,
+          1.0
+        ]
+      },
+      "CLIN_f1": {
+        "value": 0.8421,
+        "ci95": [
+          0.6154,
+          1.0
+        ]
+      },
+      "PRESC_precision": {
+        "value": 0.75,
+        "ci95": [
+          0.4,
+          1.0
+        ]
+      },
+      "PRESC_recall": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "PRESC_f1": {
+        "value": 0.8571,
+        "ci95": [
+          0.5714,
+          1.0
+        ]
+      },
+      "BOUND_precision": {
+        "value": 0.8333,
+        "ci95": [
+          0.5,
+          1.0
+        ]
+      },
+      "BOUND_recall": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "BOUND_f1": {
+        "value": 0.9091,
+        "ci95": [
+          0.6667,
+          1.0
+        ]
+      },
+      "IMPR_precision": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_recall": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_f1": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "FRAUD_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "FRAUD_recall": {
+        "value": 0.5714,
+        "ci95": [
+          0.1667,
+          1.0
+        ]
+      },
+      "FRAUD_f1": {
+        "value": 0.7273,
+        "ci95": [
+          0.2857,
+          1.0
+        ]
+      },
+      "COMM_precision": {
+        "value": 0.3333,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "COMM_recall": {
+        "value": 1.0,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "COMM_f1": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "PROF_precision": {
+        "value": 0.6667,
+        "ci95": [
+          0.3333,
+          1.0
+        ]
+      },
+      "PROF_recall": {
+        "value": 0.6,
+        "ci95": [
+          0.2857,
+          0.9
+        ]
+      },
+      "PROF_f1": {
+        "value": 0.6316,
+        "ci95": [
+          0.3158,
+          0.8485
+        ]
+      },
+      "N/A_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "N/A_recall": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "N/A_f1": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "2020-2026": {
+      "is_disciplinary_accuracy": {
+        "value": 0.975,
+        "ci95": [
+          0.925,
+          1.0
+        ]
+      },
+      "misconduct_macro_f1": {
+        "value": 0.6448,
+        "ci95": [
+          0.5159,
+          0.7455
+        ]
+      },
+      "misconduct_micro_f1": {
+        "value": 0.755,
+        "ci95": [
+          0.6707,
+          0.8354
+        ]
+      },
+      "finding_accuracy": {
+        "value": 0.925,
+        "ci95": [
+          0.825,
+          1.0
+        ]
+      },
+      "outcome_micro_f1": {
+        "value": 0.7833,
+        "ci95": [
+          0.7091,
+          0.8527
+        ]
+      },
+      "CLIN_precision": {
+        "value": 0.8,
+        "ci95": [
+          0.3333,
+          1.0
+        ]
+      },
+      "CLIN_recall": {
+        "value": 0.4,
+        "ci95": [
+          0.1,
+          0.7273
+        ]
+      },
+      "CLIN_f1": {
+        "value": 0.5333,
+        "ci95": [
+          0.1667,
+          0.8
+        ]
+      },
+      "PRESC_precision": {
+        "value": 0.75,
+        "ci95": [
+          0.4,
+          1.0
+        ]
+      },
+      "PRESC_recall": {
+        "value": 0.8571,
+        "ci95": [
+          0.5,
+          1.0
+        ]
+      },
+      "PRESC_f1": {
+        "value": 0.8,
+        "ci95": [
+          0.5,
+          1.0
+        ]
+      },
+      "BOUND_precision": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "BOUND_recall": {
+        "value": 0.8333,
+        "ci95": [
+          0.6,
+          1.0
+        ]
+      },
+      "BOUND_f1": {
+        "value": 0.9091,
+        "ci95": [
+          0.75,
+          1.0
+        ]
+      },
+      "IMPR_precision": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_recall": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "IMPR_f1": {
+        "value": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "FRAUD_precision": {
+        "value": 0.8182,
+        "ci95": [
+          0.5556,
+          1.0
+        ]
+      },
+      "FRAUD_recall": {
+        "value": 0.5625,
+        "ci95": [
+          0.3077,
+          0.8
+        ]
+      },
+      "FRAUD_f1": {
+        "value": 0.6667,
+        "ci95": [
+          0.4211,
+          0.8462
+        ]
+      },
+      "COMM_precision": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "COMM_recall": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "COMM_f1": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "PROF_precision": {
+        "value": 0.95,
+        "ci95": [
+          0.8333,
+          1.0
+        ]
+      },
+      "PROF_recall": {
+        "value": 0.7037,
+        "ci95": [
+          0.52,
+          0.8667
+        ]
+      },
+      "PROF_f1": {
+        "value": 0.8085,
+        "ci95": [
+          0.6667,
+          0.9143
+        ]
+      },
+      "N/A_precision": {
+        "value": 0.8889,
+        "ci95": [
+          0.625,
+          1.0
+        ]
+      },
+      "N/A_recall": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "N/A_f1": {
+        "value": 0.9412,
+        "ci95": [
+          0.7692,
+          1.0
+        ]
+      }
+    }
+  },
+  "combined_author_reference": {
+    "n": 205,
+    "is_disciplinary_accuracy": {
+      "value": 0.9659,
+      "ci95": [
+        0.9415,
+        0.9902
+      ]
+    },
+    "misconduct_macro_f1": {
+      "value": 0.7156,
+      "ci95": [
+        0.6562,
+        0.7629
+      ]
+    },
+    "misconduct_micro_f1": {
+      "value": 0.7697,
+      "ci95": [
+        0.7302,
+        0.8071
+      ]
+    },
+    "finding_accuracy": {
+      "value": 0.839,
+      "ci95": [
+        0.7854,
+        0.8878
+      ]
+    },
+    "outcome_micro_f1": {
+      "value": 0.6862,
+      "ci95": [
+        0.6305,
+        0.7364
+      ]
+    },
+    "CLIN_precision": {
+      "value": 0.8727,
+      "ci95": [
+        0.78,
+        0.9592
+      ]
+    },
+    "CLIN_recall": {
+      "value": 0.7059,
+      "ci95": [
+        0.5942,
+        0.8133
+      ]
+    },
+    "CLIN_f1": {
+      "value": 0.7805,
+      "ci95": [
+        0.6931,
+        0.8571
+      ]
+    },
+    "PRESC_precision": {
+      "value": 0.8293,
+      "ci95": [
+        0.7021,
+        0.9388
+      ]
+    },
+    "PRESC_recall": {
+      "value": 0.85,
+      "ci95": [
+        0.7307,
+        0.9512
+      ]
+    },
+    "PRESC_f1": {
+      "value": 0.8395,
+      "ci95": [
+        0.7397,
+        0.9167
+      ]
+    },
+    "BOUND_precision": {
+      "value": 0.973,
+      "ci95": [
+        0.9091,
+        1.0
+      ]
+    },
+    "BOUND_recall": {
+      "value": 0.7347,
+      "ci95": [
+        0.6047,
+        0.8519
+      ]
+    },
+    "BOUND_f1": {
+      "value": 0.8372,
+      "ci95": [
+        0.7419,
+        0.9131
+      ]
+    },
+    "IMPR_precision": {
+      "value": 0.6154,
+      "ci95": [
+        0.3333,
+        0.8889
+      ]
+    },
+    "IMPR_recall": {
+      "value": 0.4444,
+      "ci95": [
+        0.2143,
+        0.6843
+      ]
+    },
+    "IMPR_f1": {
+      "value": 0.5161,
+      "ci95": [
+        0.2727,
+        0.7143
+      ]
+    },
+    "FRAUD_precision": {
+      "value": 0.8462,
+      "ci95": [
+        0.6923,
+        0.9655
+      ]
+    },
+    "FRAUD_recall": {
+      "value": 0.44,
+      "ci95": [
+        0.3043,
+        0.5818
+      ]
+    },
+    "FRAUD_f1": {
+      "value": 0.5789,
+      "ci95": [
+        0.4333,
+        0.7042
+      ]
+    },
+    "COMM_precision": {
+      "value": 0.4667,
+      "ci95": [
+        0.2,
+        0.7273
+      ]
+    },
+    "COMM_recall": {
+      "value": 0.5,
+      "ci95": [
+        0.2222,
+        0.7692
+      ]
+    },
+    "COMM_f1": {
+      "value": 0.4828,
+      "ci95": [
+        0.2222,
+        0.6875
+      ]
+    },
+    "PROF_precision": {
+      "value": 0.8615,
+      "ci95": [
+        0.7721,
+        0.9403
+      ]
+    },
+    "PROF_recall": {
+      "value": 0.6588,
+      "ci95": [
+        0.5566,
+        0.759
+      ]
+    },
+    "PROF_f1": {
+      "value": 0.7467,
+      "ci95": [
+        0.6622,
+        0.8193
+      ]
+    },
+    "N/A_precision": {
+      "value": 0.9667,
+      "ci95": [
+        0.9138,
+        1.0
+      ]
+    },
+    "N/A_recall": {
+      "value": 0.9206,
+      "ci95": [
+        0.8475,
+        0.9831
+      ]
+    },
+    "N/A_f1": {
+      "value": 0.9431,
+      "ci95": [
+        0.896,
+        0.9808
+      ]
+    }
+  },
+  "temporal_stability": {
+    "CLIN": {
+      "detection_among_positives": {
+        "n": 51,
+        "events": 36,
+        "or_per_decade": 0.582,
+        "ci95": [
+          0.224,
+          1.51
+        ],
+        "p_value": 0.2657
+      },
+      "false_positive_among_negatives": {
+        "n": 109,
+        "events": 7,
+        "or_per_decade": 0.628,
+        "ci95": [
+          0.199,
+          1.98
+        ],
+        "p_value": 0.4273
+      }
+    },
+    "PRESC": {
+      "detection_among_positives": {
+        "n": 31,
+        "events": 28,
+        "or_per_decade": 1.177,
+        "ci95": [
+          0.162,
+          8.563
+        ],
+        "p_value": 0.8718
+      },
+      "false_positive_among_negatives": {
+        "n": 129,
+        "events": 7,
+        "or_per_decade": 0.834,
+        "ci95": [
+          0.272,
+          2.564
+        ],
+        "p_value": 0.752
+      }
+    },
+    "BOUND": {
+      "detection_among_positives": {
+        "n": 39,
+        "events": 30,
+        "or_per_decade": 1.171,
+        "ci95": [
+          0.382,
+          3.588
+        ],
+        "p_value": 0.7823
+      },
+      "false_positive_among_negatives": {
+        "n": 121,
+        "events": 1,
+        "or_per_decade": 3.668,
+        "ci95": [
+          0.079,
+          170.919
+        ],
+        "p_value": 0.5073
+      }
+    },
+    "IMPR": {
+      "detection_among_positives": {
+        "n": 13,
+        "events": 6,
+        "or_per_decade": 2.013,
+        "ci95": [
+          0.286,
+          14.181
+        ],
+        "p_value": 0.4825
+      },
+      "false_positive_among_negatives": {
+        "n": 147,
+        "events": 3,
+        "or_per_decade": 0.845,
+        "ci95": [
+          0.153,
+          4.67
+        ],
+        "p_value": 0.8471
+      }
+    },
+    "FRAUD": {
+      "detection_among_positives": {
+        "n": 39,
+        "events": 17,
+        "or_per_decade": 2.833,
+        "ci95": [
+          1.107,
+          7.25
+        ],
+        "p_value": 0.0299
+      },
+      "false_positive_among_negatives": {
+        "n": 121,
+        "events": 4,
+        "or_per_decade": 0.97,
+        "ci95": [
+          0.188,
+          5.015
+        ],
+        "p_value": 0.9712
+      }
+    },
+    "COMM": {
+      "detection_among_positives": {
+        "n": 5,
+        "events": 3,
+        "or_per_decade": null,
+        "note": "descriptive only"
+      },
+      "false_positive_among_negatives": {
+        "n": 155,
+        "events": 5,
+        "or_per_decade": 2.832,
+        "ci95": [
+          0.569,
+          14.094
+        ],
+        "p_value": 0.2036
+      }
+    },
+    "PROF": {
+      "detection_among_positives": {
+        "n": 61,
+        "events": 38,
+        "or_per_decade": 1.412,
+        "ci95": [
+          0.707,
+          2.819
+        ],
+        "p_value": 0.3278
+      },
+      "false_positive_among_negatives": {
+        "n": 99,
+        "events": 9,
+        "or_per_decade": 0.569,
+        "ci95": [
+          0.175,
+          1.847
+        ],
+        "p_value": 0.3476
+      }
+    }
+  },
+  "trend_check": {
+    "CLIN": {
+      "predicted_prevalence_by_period": {
+        "1999-2009": 0.484,
+        "2010-2014": 0.452,
+        "2015-2019": 0.45,
+        "2020-2026": 0.161
+      },
+      "author_prevalence_by_period": {
+        "1999-2009": 0.571,
+        "2010-2014": 0.517,
+        "2015-2019": 0.5,
+        "2020-2026": 0.312
+      },
+      "slope_predicted": -0.0969,
+      "slope_author": -0.0794,
+      "same_direction": true,
+      "no_clear_time_dependence": true,
+      "robust": true
+    },
+    "PRESC": {
+      "predicted_prevalence_by_period": {
+        "1999-2009": 0.355,
+        "2010-2014": 0.226,
+        "2015-2019": 0.35,
+        "2020-2026": 0.258
+      },
+      "author_prevalence_by_period": {
+        "1999-2009": 0.357,
+        "2010-2014": 0.276,
+        "2015-2019": 0.3,
+        "2020-2026": 0.219
+      },
+      "slope_predicted": -0.0166,
+      "slope_author": -0.0391,
+      "same_direction": true,
+      "no_clear_time_dependence": true,
+      "robust": true
+    },
+    "BOUND": {
+      "predicted_prevalence_by_period": {
+        "1999-2009": 0.226,
+        "2010-2014": 0.258,
+        "2015-2019": 0.3,
+        "2020-2026": 0.323
+      },
+      "author_prevalence_by_period": {
+        "1999-2009": 0.286,
+        "2010-2014": 0.483,
+        "2015-2019": 0.25,
+        "2020-2026": 0.375
+      },
+      "slope_predicted": 0.0332,
+      "slope_author": 0.0035,
+      "same_direction": true,
+      "no_clear_time_dependence": true,
+      "robust": true
+    },
+    "IMPR": {
+      "predicted_prevalence_by_period": {
+        "1999-2009": 0.129,
+        "2010-2014": 0.065,
+        "2015-2019": 0.05,
+        "2020-2026": 0.065
+      },
+      "author_prevalence_by_period": {
+        "1999-2009": 0.214,
+        "2010-2014": 0.138,
+        "2015-2019": 0.05,
+        "2020-2026": 0.062
+      },
+      "slope_predicted": -0.0208,
+      "slope_author": -0.0543,
+      "same_direction": true,
+      "no_clear_time_dependence": true,
+      "robust": true
+    },
+    "FRAUD": {
+      "predicted_prevalence_by_period": {
+        "1999-2009": 0.129,
+        "2010-2014": 0.065,
+        "2015-2019": 0.2,
+        "2020-2026": 0.355
+      },
+      "author_prevalence_by_period": {
+        "1999-2009": 0.429,
+        "2010-2014": 0.138,
+        "2015-2019": 0.35,
+        "2020-2026": 0.5
+      },
+      "slope_predicted": 0.0813,
+      "slope_author": 0.0426,
+      "same_direction": true,
+      "no_clear_time_dependence": false,
+      "robust": false
+    },
+    "COMM": {
+      "predicted_prevalence_by_period": {
+        "1999-2009": 0.065,
+        "2010-2014": 0.032,
+        "2015-2019": 0.1,
+        "2020-2026": 0.065
+      },
+      "author_prevalence_by_period": {
+        "1999-2009": 0.036,
+        "2010-2014": 0.034,
+        "2015-2019": 0.05,
+        "2020-2026": 0.062
+      },
+      "slope_predicted": 0.0068,
+      "slope_author": 0.0096,
+      "same_direction": true,
+      "no_clear_time_dependence": true,
+      "robust": true
+    },
+    "PROF": {
+      "predicted_prevalence_by_period": {
+        "1999-2009": 0.484,
+        "2010-2014": 0.097,
+        "2015-2019": 0.45,
+        "2020-2026": 0.645
+      },
+      "author_prevalence_by_period": {
+        "1999-2009": 0.571,
+        "2010-2014": 0.276,
+        "2015-2019": 0.5,
+        "2020-2026": 0.844
+      },
+      "slope_predicted": 0.0837,
+      "slope_author": 0.1041,
+      "same_direction": true,
+      "no_clear_time_dependence": true,
+      "robust": true
+    }
+  },
+  "boundary_subtypes": {
+    "n_author_bound": 39,
+    "sexual": {
+      "author_positive": 31,
+      "keyword_positive": 31,
+      "precision": 0.968,
+      "recall": 0.968
+    },
+    "emotional": {
+      "author_positive": 30,
+      "keyword_positive": 30,
+      "precision": 0.8,
+      "recall": 0.8
+    },
+    "financial": {
+      "author_positive": 4,
+      "keyword_positive": 19,
+      "precision": 0.211,
+      "recall": 1.0
+    }
+  },
+  "adjusted_prevalence_weighted": [
+    {
+      "code": "CLIN",
+      "observed_pct": 36.8,
+      "sensitivity": 0.593,
+      "specificity": 0.959,
+      "adjusted_pct": 59.2
+    },
+    {
+      "code": "PRESC",
+      "observed_pct": 29.2,
+      "sensitivity": 0.896,
+      "specificity": 0.947,
+      "adjusted_pct": 28.4
+    },
+    {
+      "code": "BOUND",
+      "observed_pct": 29.0,
+      "sensitivity": 0.807,
+      "specificity": 0.991,
+      "adjusted_pct": 35.2
+    },
+    {
+      "code": "IMPR",
+      "observed_pct": 11.8,
+      "sensitivity": 0.5,
+      "specificity": 0.981,
+      "adjusted_pct": 20.6
+    },
+    {
+      "code": "FRAUD",
+      "observed_pct": 22.6,
+      "sensitivity": 0.541,
+      "specificity": 0.955,
+      "adjusted_pct": 36.4
+    },
+    {
+      "code": "COMM",
+      "observed_pct": 13.7,
+      "sensitivity": 0.285,
+      "specificity": 0.956,
+      "adjusted_pct": 38.5
+    },
+    {
+      "code": "PROF",
+      "observed_pct": 52.2,
+      "sensitivity": 0.662,
+      "specificity": 0.921,
+      "adjusted_pct": 76.0
+    }
+  ]
+}

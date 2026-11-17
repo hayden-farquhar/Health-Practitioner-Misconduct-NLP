@@ -1,0 +1,822 @@
+{
+  "protocol": "config/second_coder_protocol_2026-11.md",
+  "coder_1": "author, frozen test2 re-code (sha1 b42fd27e...)",
+  "coder_2": "independent second coder recruited on Prolific (pseudonymous ID not published)",
+  "n": 60,
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261109
+  },
+  "min_positives_for_kappa": 5,
+  "agreement": {
+    "is_disciplinary": {
+      "n": 60,
+      "pct_agree": 0.917,
+      "kappa": 0.793,
+      "ci95": [
+        0.603,
+        0.946
+      ]
+    },
+    "finding": {
+      "n": 60,
+      "pct_agree": 0.833,
+      "kappa": 0.764,
+      "ci95": [
+        0.63,
+        0.883
+      ]
+    },
+    "profession": {
+      "n": 60,
+      "pct_agree": 0.95,
+      "kappa": 0.905,
+      "ci95": [
+        0.798,
+        1.0
+      ]
+    },
+    "CLIN": {
+      "n": 60,
+      "pct_agree": 0.9,
+      "positives_author": 15,
+      "positives_coder": 17,
+      "kappa": 0.745,
+      "ci95": [
+        0.522,
+        0.915
+      ]
+    },
+    "PRESC": {
+      "n": 60,
+      "pct_agree": 0.967,
+      "positives_author": 10,
+      "positives_coder": 12,
+      "kappa": 0.889,
+      "ci95": [
+        0.691,
+        1.0
+      ]
+    },
+    "BOUND": {
+      "n": 60,
+      "pct_agree": 0.983,
+      "positives_author": 15,
+      "positives_coder": 14,
+      "kappa": 0.955,
+      "ci95": [
+        0.839,
+        1.0
+      ]
+    },
+    "IMPR": {
+      "n": 60,
+      "pct_agree": 0.967,
+      "positives_author": 5,
+      "positives_coder": 5,
+      "kappa": 0.782,
+      "ci95": [
+        0.375,
+        1.0
+      ]
+    },
+    "FRAUD": {
+      "n": 60,
+      "pct_agree": 0.85,
+      "positives_author": 12,
+      "positives_coder": 17,
+      "kappa": 0.595,
+      "ci95": [
+        0.329,
+        0.819
+      ]
+    },
+    "COMM": {
+      "n": 60,
+      "pct_agree": 0.917,
+      "positives_author": 2,
+      "positives_coder": 7,
+      "kappa": null,
+      "ci95": null,
+      "note": "fewer than 5 positives from a coder: descriptive only"
+    },
+    "PROF": {
+      "n": 60,
+      "pct_agree": 0.817,
+      "positives_author": 24,
+      "positives_coder": 17,
+      "kappa": 0.599,
+      "ci95": [
+        0.393,
+        0.798
+      ]
+    },
+    "CANCEL": {
+      "n": 60,
+      "pct_agree": 0.967,
+      "positives_author": 11,
+      "positives_coder": 9,
+      "kappa": 0.88,
+      "ci95": [
+        0.68,
+        1.0
+      ]
+    },
+    "SUSPEND": {
+      "n": 60,
+      "pct_agree": 0.967,
+      "positives_author": 8,
+      "positives_coder": 6,
+      "kappa": 0.839,
+      "ci95": [
+        0.549,
+        1.0
+      ]
+    },
+    "CONDITIONS": {
+      "n": 60,
+      "pct_agree": 0.967,
+      "positives_author": 21,
+      "positives_coder": 21,
+      "kappa": 0.927,
+      "ci95": [
+        0.806,
+        1.0
+      ]
+    },
+    "REPRIMAND": {
+      "n": 60,
+      "pct_agree": 0.983,
+      "positives_author": 23,
+      "positives_coder": 22,
+      "kappa": 0.964,
+      "ci95": [
+        0.883,
+        1.0
+      ]
+    },
+    "FINE": {
+      "n": 60,
+      "pct_agree": 1.0,
+      "positives_author": 2,
+      "positives_coder": 2,
+      "kappa": null,
+      "ci95": null,
+      "note": "fewer than 5 positives from a coder: descriptive only"
+    },
+    "CAUTION": {
+      "n": 60,
+      "pct_agree": 0.983,
+      "positives_author": 0,
+      "positives_coder": 1,
+      "kappa": null,
+      "ci95": null,
+      "note": "fewer than 5 positives from a coder: descriptive only"
+    },
+    "UNDERTAKING": {
+      "n": 60,
+      "pct_agree": 1.0,
+      "positives_author": 1,
+      "positives_coder": 1,
+      "kappa": null,
+      "ci95": null,
+      "note": "fewer than 5 positives from a coder: descriptive only"
+    },
+    "NO_ADVERSE": {
+      "n": 60,
+      "pct_agree": 1.0,
+      "positives_author": 1,
+      "positives_coder": 1,
+      "kappa": null,
+      "ci95": null,
+      "note": "fewer than 5 positives from a coder: descriptive only"
+    },
+    "OTHER": {
+      "n": 60,
+      "pct_agree": 0.717,
+      "positives_author": 15,
+      "positives_coder": 24,
+      "kappa": 0.37,
+      "ci95": [
+        0.124,
+        0.585
+      ]
+    },
+    "boundary_subtypes_among_both_BOUND": {
+      "n": 14,
+      "BOUND_SEXUAL": {
+        "n": 14,
+        "pct_agree": 0.929,
+        "positives_author": 11,
+        "positives_coder": 12,
+        "kappa": 0.759,
+        "ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "BOUND_EMOTIONAL": {
+        "n": 14,
+        "pct_agree": 0.286,
+        "positives_author": 11,
+        "positives_coder": 1,
+        "kappa": null,
+        "ci95": null,
+        "note": "fewer than 5 positives from a coder: descriptive only"
+      },
+      "BOUND_FINANCIAL": {
+        "n": 14,
+        "pct_agree": 1.0,
+        "positives_author": 1,
+        "positives_coder": 1,
+        "kappa": null,
+        "ci95": null,
+        "note": "fewer than 5 positives from a coder: descriptive only"
+      }
+    }
+  },
+  "prevalence": {
+    "n_disciplinary_author": 41,
+    "n_disciplinary_coder": 46,
+    "CLIN": {
+      "author": 0.366,
+      "author_ci95": [
+        0.222,
+        0.512
+      ],
+      "coder": 0.37,
+      "coder_ci95": [
+        0.232,
+        0.511
+      ],
+      "difference_coder_minus_author": 0.004,
+      "difference_ci95": [
+        -0.106,
+        0.117
+      ]
+    },
+    "PRESC": {
+      "author": 0.244,
+      "author_ci95": [
+        0.125,
+        0.395
+      ],
+      "coder": 0.261,
+      "coder_ci95": [
+        0.149,
+        0.4
+      ],
+      "difference_coder_minus_author": 0.017,
+      "difference_ci95": [
+        -0.041,
+        0.082
+      ]
+    },
+    "BOUND": {
+      "author": 0.366,
+      "author_ci95": [
+        0.22,
+        0.512
+      ],
+      "coder": 0.304,
+      "coder_ci95": [
+        0.174,
+        0.442
+      ],
+      "difference_coder_minus_author": -0.062,
+      "difference_ci95": [
+        -0.129,
+        -0.015
+      ]
+    },
+    "IMPR": {
+      "author": 0.122,
+      "author_ci95": [
+        0.027,
+        0.233
+      ],
+      "coder": 0.109,
+      "coder_ci95": [
+        0.023,
+        0.205
+      ],
+      "difference_coder_minus_author": -0.013,
+      "difference_ci95": [
+        -0.082,
+        0.058
+      ]
+    },
+    "FRAUD": {
+      "author": 0.293,
+      "author_ci95": [
+        0.159,
+        0.435
+      ],
+      "coder": 0.37,
+      "coder_ci95": [
+        0.233,
+        0.511
+      ],
+      "difference_coder_minus_author": 0.077,
+      "difference_ci95": [
+        -0.052,
+        0.207
+      ]
+    },
+    "COMM": {
+      "author": 0.049,
+      "author_ci95": [
+        0.0,
+        0.125
+      ],
+      "coder": 0.152,
+      "coder_ci95": [
+        0.06,
+        0.267
+      ],
+      "difference_coder_minus_author": 0.103,
+      "difference_ci95": [
+        0.017,
+        0.2
+      ]
+    },
+    "PROF": {
+      "author": 0.585,
+      "author_ci95": [
+        0.432,
+        0.737
+      ],
+      "coder": 0.37,
+      "coder_ci95": [
+        0.239,
+        0.512
+      ],
+      "difference_coder_minus_author": -0.216,
+      "difference_ci95": [
+        -0.366,
+        -0.066
+      ]
+    }
+  },
+  "exploratory_not_prespecified": {
+    "agreement_by_session": {
+      "session1": {
+        "is_disciplinary": {
+          "n": 30,
+          "pct_agree": 0.867,
+          "kappa": 0.595,
+          "ci95": [
+            0.173,
+            0.918
+          ]
+        },
+        "finding": {
+          "n": 30,
+          "pct_agree": 0.767,
+          "kappa": 0.648,
+          "ci95": [
+            0.446,
+            0.845
+          ]
+        },
+        "profession": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "kappa": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "CLIN": {
+          "n": 30,
+          "pct_agree": 0.867,
+          "positives_author": 5,
+          "positives_coder": 9,
+          "kappa": 0.636,
+          "ci95": [
+            0.294,
+            0.918
+          ]
+        },
+        "PRESC": {
+          "n": 30,
+          "pct_agree": 0.933,
+          "positives_author": 4,
+          "positives_coder": 6,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "BOUND": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 8,
+          "positives_coder": 8,
+          "kappa": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "IMPR": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 4,
+          "positives_coder": 5,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "FRAUD": {
+          "n": 30,
+          "pct_agree": 0.767,
+          "positives_author": 6,
+          "positives_coder": 11,
+          "kappa": 0.444,
+          "ci95": [
+            0.121,
+            0.769
+          ]
+        },
+        "COMM": {
+          "n": 30,
+          "pct_agree": 0.9,
+          "positives_author": 1,
+          "positives_coder": 4,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "PROF": {
+          "n": 30,
+          "pct_agree": 0.867,
+          "positives_author": 12,
+          "positives_coder": 8,
+          "kappa": 0.706,
+          "ci95": [
+            0.415,
+            0.932
+          ]
+        },
+        "CANCEL": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 9,
+          "positives_coder": 8,
+          "kappa": 0.918,
+          "ci95": [
+            0.714,
+            1.0
+          ]
+        },
+        "SUSPEND": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 3,
+          "positives_coder": 2,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "CONDITIONS": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 12,
+          "positives_coder": 13,
+          "kappa": 0.932,
+          "ci95": [
+            0.772,
+            1.0
+          ]
+        },
+        "REPRIMAND": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 13,
+          "positives_coder": 13,
+          "kappa": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "FINE": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 1,
+          "positives_coder": 1,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "CAUTION": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 0,
+          "positives_coder": 1,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "UNDERTAKING": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 1,
+          "positives_coder": 1,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "NO_ADVERSE": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 0,
+          "positives_coder": 0,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "OTHER": {
+          "n": 30,
+          "pct_agree": 0.633,
+          "positives_author": 9,
+          "positives_coder": 16,
+          "kappa": 0.286,
+          "ci95": [
+            -0.024,
+            0.587
+          ]
+        },
+        "boundary_subtypes_among_both_BOUND": {
+          "n": 8,
+          "BOUND_SEXUAL": {
+            "n": 8,
+            "pct_agree": 1.0,
+            "positives_author": 7,
+            "positives_coder": 7,
+            "kappa": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "BOUND_EMOTIONAL": {
+            "n": 8,
+            "pct_agree": 0.25,
+            "positives_author": 7,
+            "positives_coder": 1,
+            "kappa": null,
+            "ci95": null,
+            "note": "fewer than 5 positives from a coder: descriptive only"
+          },
+          "BOUND_FINANCIAL": {
+            "n": 8,
+            "pct_agree": 1.0,
+            "positives_author": 0,
+            "positives_coder": 0,
+            "kappa": null,
+            "ci95": null,
+            "note": "fewer than 5 positives from a coder: descriptive only"
+          }
+        }
+      },
+      "session2": {
+        "is_disciplinary": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "kappa": 0.927,
+          "ci95": [
+            0.738,
+            1.0
+          ]
+        },
+        "finding": {
+          "n": 30,
+          "pct_agree": 0.9,
+          "kappa": 0.86,
+          "ci95": [
+            0.688,
+            1.0
+          ]
+        },
+        "profession": {
+          "n": 30,
+          "pct_agree": 0.9,
+          "kappa": 0.837,
+          "ci95": [
+            0.666,
+            1.0
+          ]
+        },
+        "CLIN": {
+          "n": 30,
+          "pct_agree": 0.933,
+          "positives_author": 10,
+          "positives_coder": 8,
+          "kappa": 0.842,
+          "ci95": [
+            0.569,
+            1.0
+          ]
+        },
+        "PRESC": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 6,
+          "positives_coder": 6,
+          "kappa": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "BOUND": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 7,
+          "positives_coder": 6,
+          "kappa": 0.902,
+          "ci95": [
+            0.634,
+            1.0
+          ]
+        },
+        "IMPR": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 1,
+          "positives_coder": 0,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "FRAUD": {
+          "n": 30,
+          "pct_agree": 0.933,
+          "positives_author": 6,
+          "positives_coder": 6,
+          "kappa": 0.792,
+          "ci95": [
+            0.423,
+            1.0
+          ]
+        },
+        "COMM": {
+          "n": 30,
+          "pct_agree": 0.933,
+          "positives_author": 1,
+          "positives_coder": 3,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "PROF": {
+          "n": 30,
+          "pct_agree": 0.767,
+          "positives_author": 12,
+          "positives_coder": 9,
+          "kappa": 0.493,
+          "ci95": [
+            0.153,
+            0.78
+          ]
+        },
+        "CANCEL": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 2,
+          "positives_coder": 1,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "SUSPEND": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 5,
+          "positives_coder": 4,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "CONDITIONS": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 9,
+          "positives_coder": 8,
+          "kappa": 0.918,
+          "ci95": [
+            0.71,
+            1.0
+          ]
+        },
+        "REPRIMAND": {
+          "n": 30,
+          "pct_agree": 0.967,
+          "positives_author": 10,
+          "positives_coder": 9,
+          "kappa": 0.923,
+          "ci95": [
+            0.737,
+            1.0
+          ]
+        },
+        "FINE": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 1,
+          "positives_coder": 1,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "CAUTION": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 0,
+          "positives_coder": 0,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "UNDERTAKING": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 0,
+          "positives_coder": 0,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "NO_ADVERSE": {
+          "n": 30,
+          "pct_agree": 1.0,
+          "positives_author": 1,
+          "positives_coder": 1,
+          "kappa": null,
+          "ci95": null,
+          "note": "fewer than 5 positives from a coder: descriptive only"
+        },
+        "OTHER": {
+          "n": 30,
+          "pct_agree": 0.8,
+          "positives_author": 6,
+          "positives_coder": 8,
+          "kappa": 0.444,
+          "ci95": [
+            0.015,
+            0.794
+          ]
+        },
+        "boundary_subtypes_among_both_BOUND": {
+          "n": 6,
+          "BOUND_SEXUAL": {
+            "n": 6,
+            "pct_agree": 0.833,
+            "positives_author": 4,
+            "positives_coder": 5,
+            "kappa": null,
+            "ci95": null,
+            "note": "fewer than 5 positives from a coder: descriptive only"
+          },
+          "BOUND_EMOTIONAL": {
+            "n": 6,
+            "pct_agree": 0.333,
+            "positives_author": 4,
+            "positives_coder": 0,
+            "kappa": null,
+            "ci95": null,
+            "note": "fewer than 5 positives from a coder: descriptive only"
+          },
+          "BOUND_FINANCIAL": {
+            "n": 6,
+            "pct_agree": 1.0,
+            "positives_author": 1,
+            "positives_coder": 1,
+            "kappa": null,
+            "ci95": null,
+            "note": "fewer than 5 positives from a coder: descriptive only"
+          }
+        }
+      }
+    },
+    "pace": {
+      "session1": {
+        "n": 30,
+        "median_seconds": 116.0,
+        "min_seconds": 53.0,
+        "max_seconds": 1632.0,
+        "total_hours": 1.91
+      },
+      "session2": {
+        "n": 30,
+        "median_seconds": 84.0,
+        "min_seconds": 52.0,
+        "max_seconds": 3783.0,
+        "total_hours": 2.18
+      }
+    }
+  },
+  "n_disagreements": 90
+}

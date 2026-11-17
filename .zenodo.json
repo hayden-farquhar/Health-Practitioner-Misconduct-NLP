@@ -1,0 +1,9 @@
+{
+  "title": "What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses: analysis code and released labels",
+  "upload_type": "software",
+  "description": "Analysis code, pre-specified protocols, coding guidelines, released gold-standard labels (no decision texts or names), and aggregate outputs for a study of 3,586 Australian health practitioner tribunal decisions (1999 to February 2026).",
+  "creators": [{"name": "Farquhar, Hayden", "orcid": "0009-0002-6226-440X", "affiliation": "Independent Researcher"}],
+  "license": "MIT",
+  "keywords": ["health practitioner regulation", "professional misconduct", "disciplinary tribunals", "natural language processing", "validation", "Australia"],
+  "related_identifiers": [{"identifier": "10.64898/2026.02.13.26346299", "relation": "isSupplementTo", "scheme": "doi"}]
+}

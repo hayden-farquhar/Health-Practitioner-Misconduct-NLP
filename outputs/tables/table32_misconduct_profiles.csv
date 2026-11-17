@@ -1,0 +1,9 @@
+cluster,n,pct_of_disciplinary,dominant_misconduct,top_professions,cancellation_rate_pct
+1,222,9.0,"PRESC (91.0%), PROF (48.2%), FRAUD (40.5%)","Medical Practitioner (72), Pharmacist (69), Unknown (46)",32.4
+2,277,11.2,"IMPR (100.0%), PROF (59.2%), PRESC (55.2%), FRAUD (40.1%), CLIN (13.0%), BOUND (8.7%)","Medical Practitioner (125), Nurse (84), Unknown (41)",50.5
+3,317,12.8,PROF (100.0%),"Nurse (143), Medical Practitioner (90), Unknown (41)",43.8
+4,278,11.2,"FRAUD (100.0%), PROF (95.0%), CLIN (24.8%), PRESC (11.9%), COMM (6.1%)","Nurse (88), Medical Practitioner (84), Unknown (42)",47.8
+5,519,21.0,"BOUND (100.0%), CLIN (28.5%), PROF (25.4%), FRAUD (14.3%), PRESC (10.2%)","Medical Practitioner (225), Nurse (102), Psychologist (77)",41.4
+6,302,12.2,"COMM (100.0%), CLIN (86.8%), BOUND (57.0%), PROF (44.0%), PRESC (19.9%)","Medical Practitioner (201), Nurse (31), Psychologist (16)",44.0
+7,173,7.0,"CLIN (100.0%), PROF (37.0%)","Medical Practitioner (83), Nurse (53), Dentist (14)",27.7
+8,223,9.0,"CLIN (100.0%), PRESC (100.0%), PROF (50.2%)","Medical Practitioner (176), Pharmacist (19), Nurse (12)",34.1

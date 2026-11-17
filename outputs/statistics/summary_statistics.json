@@ -1,0 +1,92 @@
+{
+  "total_decisions": 3586,
+  "disciplinary_decisions": 2477,
+  "non_disciplinary_decisions": 1109,
+  "pct_disciplinary": 69.1,
+  "year_range": "1999--2026",
+  "jurisdictions": {
+    "NSW": 1497,
+    "QLD": 908,
+    "VIC": 803,
+    "SA": 149,
+    "WA": 104,
+    "ACT": 51,
+    "NT": 48,
+    "TAS": 26
+  },
+  "sources": {
+    "austlii": 2043,
+    "open_australian_legal_corpus": 1497,
+    "wayback": 46
+  },
+  "profession_distribution": {
+    "Medical practitioner": 1135,
+    "Nurse": 584,
+    "Unknown": 313,
+    "Pharmacist": 133,
+    "Psychologist": 125,
+    "Dentist": 65,
+    "Chiropractor": 38,
+    "Physiotherapist": 17,
+    "Chinese medicine": 16,
+    "Osteopath": 14,
+    "Paramedic": 14,
+    "Podiatrist": 9,
+    "Occupational therapist": 5,
+    "Midwife": 5,
+    "Optometrist": 4
+  },
+  "misconduct_prevalence": {
+    "CLIN": 911,
+    "PRESC": 724,
+    "BOUND": 719,
+    "PROF": 1293,
+    "FRAUD": 559,
+    "IMPR": 292,
+    "COMM": 339
+  },
+  "outcome_distribution": {
+    "CANCEL": 983,
+    "SUSPEND": 538,
+    "CONDITIONS": 632,
+    "REPRIMAND": 1291,
+    "FINE": 142,
+    "CAUTION": 68,
+    "UNDERTAKING": 17,
+    "NO_ADVERSE": 37
+  },
+  "finding_distribution": {
+    "PM": 2066,
+    "UPC_SAT": 152,
+    "UPC_GEN": 88,
+    "NO_FINDING": 171
+  },
+  "misconduct_cooccurrence_diagonal": {
+    "CLIN": 911,
+    "PRESC": 724,
+    "BOUND": 719,
+    "PROF": 1293,
+    "FRAUD": 559,
+    "IMPR": 292,
+    "COMM": 339
+  },
+  "avg_misconduct_types": 1.95,
+  "pct_multiple_misconduct": 60.8,
+  "prescribing": {
+    "total_presc": 724,
+    "pct_opioid": 64.1,
+    "top_medication": "oxycodone",
+    "top_medication_pct": 31.4
+  },
+  "boundary": {
+    "total_bound": 719,
+    "pct_sexual": 91.4
+  },
+  "covid": {
+    "Pre-COVID (<2020)": 1045,
+    "COVID (2020\u20132021)": 468,
+    "Post-COVID (2022+)": 953,
+    "note": "11 disciplinary decisions excluded from COVID analysis due to missing dates"
+  },
+  "year_range_note": "Latest decision dated 2026. Title uses 1999-2025 as the study period. 12 decisions lack parseable dates."
+}

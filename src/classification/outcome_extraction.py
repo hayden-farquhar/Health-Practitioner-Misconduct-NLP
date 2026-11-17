@@ -19,7 +19,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
-GOLD_STANDARD_PATH = DATA_DIR / "annotations" / "gold_standard.json"
+GOLD_STANDARD_PATH = DATA_DIR / "annotations" / "gold_standard_2026-11.json"
 CORPUS_PATH = DATA_DIR / "extracted" / "all_decisions.jsonl"
 OUTPUT_PATH = DATA_DIR / "extracted" / "outcome_predictions.jsonl"
 

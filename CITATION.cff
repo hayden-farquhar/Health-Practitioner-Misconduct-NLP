@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or the released labels, please cite the accompanying preprint."
+title: "What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses: analysis code and released labels"
+version: 2.0.0
+date-released: 2026-11-17
+license: MIT
+repository-code: "https://github.com/hayden-farquhar/Health-Practitioner-Misconduct-NLP"
+authors:
+  - family-names: Farquhar
+    given-names: Hayden
+    orcid: "https://orcid.org/0009-0002-6226-440X"
+    affiliation: "Independent Researcher"
+preferred-citation:
+  type: article
+  title: "What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses: 3,586 Decisions, 1999 to February 2026"
+  authors:
+    - family-names: Farquhar
+      given-names: Hayden
+      orcid: "https://orcid.org/0009-0002-6226-440X"
+  doi: "10.64898/2026.02.13.26346299"
+  journal: "medRxiv"
+  year: 2026

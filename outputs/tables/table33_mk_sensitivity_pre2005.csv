@@ -1,0 +1,17 @@
+misconduct_type,range,n_years,year_start,year_end,tau,p_value,slope,trend,significant
+CLIN,full_range,27,1999,2026,-0.236,0.08691,-0.524,no trend,False
+CLIN,2005_onwards,22,2005,2026,-0.528,0.000642,-1.2222,decreasing,True
+PRESC,full_range,27,1999,2026,0.214,0.122368,0.5627,no trend,False
+PRESC,2005_onwards,22,2005,2026,0.022,0.910124,0.052,no trend,False
+BOUND,full_range,27,1999,2026,0.231,0.095221,0.4712,no trend,False
+BOUND,2005_onwards,22,2005,2026,0.065,0.693012,0.1174,no trend,False
+PROF,full_range,27,1999,2026,0.199,0.149985,0.6031,no trend,False
+PROF,2005_onwards,22,2005,2026,0.394,0.011155,1.5509,increasing,True
+FRAUD,full_range,27,1999,2026,0.462,0.000764,1.0584,increasing,True
+FRAUD,2005_onwards,22,2005,2026,0.645,3e-05,1.2765,increasing,True
+IMPR,full_range,27,1999,2026,-0.123,0.38078,-0.2748,no trend,False
+IMPR,2005_onwards,22,2005,2026,-0.113,0.480668,-0.25,no trend,False
+COMM,full_range,27,1999,2026,0.59,1.3e-05,0.7054,increasing,True
+COMM,2005_onwards,22,2005,2026,0.567,0.000235,0.8643,increasing,True
+TOTAL,full_range,27,1999,2025,0.877,0.0,10.5455,increasing,True
+TOTAL,2005_onwards,21,2005,2025,0.857,0.0,13.6125,increasing,True

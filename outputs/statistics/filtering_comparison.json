@@ -1,0 +1,121 @@
+{
+  "baseline_210": {
+    "best_C": 10.0,
+    "val_macro_f1": 0.6106,
+    "test_macro_f1": 0.5747,
+    "test_micro_f1": 0.6446,
+    "hamming_loss": 0.1194,
+    "per_class": {
+      "CLIN": 0.88,
+      "PRESC": 0.6667,
+      "BOUND": 0.7,
+      "IMPR": 0.8,
+      "FRAUD": 0.1818,
+      "COMM": 0.25,
+      "PROF": 0.7857,
+      "N/A": 0.3333
+    }
+  },
+  "all_510": {
+    "best_C": 100.0,
+    "val_macro_f1": 0.6868,
+    "test_macro_f1": 0.6353,
+    "test_micro_f1": 0.6774,
+    "hamming_loss": 0.1111,
+    "per_class": {
+      "CLIN": 0.6,
+      "PRESC": 0.7273,
+      "BOUND": 0.7619,
+      "IMPR": 0.6667,
+      "FRAUD": 0.3636,
+      "COMM": 0.4,
+      "PROF": 0.8571,
+      "N/A": 0.7059
+    }
+  },
+  "disc_only": {
+    "best_C": 10.0,
+    "val_macro_f1": 0.6843,
+    "test_macro_f1": 0.6261,
+    "test_micro_f1": 0.6774,
+    "hamming_loss": 0.1111,
+    "per_class": {
+      "CLIN": 0.7273,
+      "PRESC": 0.7273,
+      "BOUND": 0.8182,
+      "IMPR": 0.6667,
+      "FRAUD": 0.3333,
+      "COMM": 0.5455,
+      "PROF": 0.8571,
+      "N/A": 0.3333
+    }
+  },
+  "rare_only": {
+    "best_C": 50.0,
+    "val_macro_f1": 0.6735,
+    "test_macro_f1": 0.6259,
+    "test_micro_f1": 0.6614,
+    "hamming_loss": 0.1194,
+    "per_class": {
+      "CLIN": 0.7826,
+      "PRESC": 0.6667,
+      "BOUND": 0.8182,
+      "IMPR": 0.8,
+      "FRAUD": 0.4706,
+      "COMM": 0.5,
+      "PROF": 0.7692,
+      "N/A": 0.2
+    }
+  },
+  "rare_plus_nd": {
+    "best_C": 100.0,
+    "val_macro_f1": 0.6349,
+    "test_macro_f1": 0.6822,
+    "test_micro_f1": 0.6917,
+    "hamming_loss": 0.1139,
+    "per_class": {
+      "CLIN": 0.7273,
+      "PRESC": 0.6667,
+      "BOUND": 0.8182,
+      "IMPR": 0.8,
+      "FRAUD": 0.4706,
+      "COMM": 0.5,
+      "PROF": 0.7692,
+      "N/A": 0.7059
+    }
+  },
+  "quality_filter": {
+    "best_C": 100.0,
+    "val_macro_f1": 0.6868,
+    "test_macro_f1": 0.6353,
+    "test_micro_f1": 0.6774,
+    "hamming_loss": 0.1111,
+    "per_class": {
+      "CLIN": 0.6,
+      "PRESC": 0.7273,
+      "BOUND": 0.7619,
+      "IMPR": 0.6667,
+      "FRAUD": 0.3636,
+      "COMM": 0.4,
+      "PROF": 0.8571,
+      "N/A": 0.7059
+    }
+  },
+  "disc_protect_clin_impr": {
+    "best_C": 10.0,
+    "val_macro_f1": 0.663,
+    "test_macro_f1": 0.6329,
+    "test_micro_f1": 0.6829,
+    "hamming_loss": 0.1083,
+    "per_class": {
+      "CLIN": 0.7273,
+      "PRESC": 0.7273,
+      "BOUND": 0.8182,
+      "IMPR": 0.6667,
+      "FRAUD": 0.3333,
+      "COMM": 0.6,
+      "PROF": 0.8571,
+      "N/A": 0.3333
+    }
+  }
+}

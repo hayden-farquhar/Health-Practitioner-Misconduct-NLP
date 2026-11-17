@@ -1,0 +1,75 @@
+[
+  {
+    "misconduct_type": "CLIN",
+    "label": "Clinical competence",
+    "trend": "no trend",
+    "p_value": 0.0869099,
+    "tau": -0.236,
+    "sens_slope": -0.524,
+    "n_years": 27
+  },
+  {
+    "misconduct_type": "PRESC",
+    "label": "Prescribing",
+    "trend": "no trend",
+    "p_value": 0.122368,
+    "tau": 0.214,
+    "sens_slope": 0.5627,
+    "n_years": 27
+  },
+  {
+    "misconduct_type": "BOUND",
+    "label": "Boundary violations",
+    "trend": "no trend",
+    "p_value": 0.0952209,
+    "tau": 0.231,
+    "sens_slope": 0.4712,
+    "n_years": 27
+  },
+  {
+    "misconduct_type": "PROF",
+    "label": "Professional conduct",
+    "trend": "no trend",
+    "p_value": 0.149985,
+    "tau": 0.199,
+    "sens_slope": 0.6031,
+    "n_years": 27
+  },
+  {
+    "misconduct_type": "FRAUD",
+    "label": "Dishonesty/fraud",
+    "trend": "increasing",
+    "p_value": 0.000764372,
+    "tau": 0.462,
+    "sens_slope": 1.0584,
+    "n_years": 27
+  },
+  {
+    "misconduct_type": "IMPR",
+    "label": "Impairment",
+    "trend": "no trend",
+    "p_value": 0.38078,
+    "tau": -0.123,
+    "sens_slope": -0.2748,
+    "n_years": 27
+  },
+  {
+    "misconduct_type": "COMM",
+    "label": "Communication",
+    "trend": "increasing",
+    "p_value": 1.32002e-05,
+    "tau": 0.59,
+    "sens_slope": 0.7054,
+    "n_years": 27
+  },
+  {
+    "misconduct_type": "TOTAL",
+    "label": "Total decisions",
+    "trend": "increasing",
+    "p_value": 1.48444e-10,
+    "tau": 0.877,
+    "sens_slope": 10.5455,
+    "n_years": 27,
+    "years": "1999-2025"
+  }
+]

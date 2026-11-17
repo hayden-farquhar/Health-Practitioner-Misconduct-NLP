@@ -1,0 +1,8 @@
+code,observed_n,observed_pct,sensitivity,specificity,adjusted_pct,adjusted_n,direction_of_bias,test_support,test_precision,test_recall,test_f1
+CLIN,911,36.8,0.706,1.0,52.1,1291,"underestimate (low recall, no FP)",17,1.0,0.7059,0.8276
+PRESC,724,29.2,0.667,1.0,43.8,1086,"underestimate (low recall, no FP)",9,1.0,0.6667,0.8
+BOUND,719,29.0,0.75,1.0,38.7,959,"underestimate (low recall, no FP)",8,1.0,0.75,0.8571
+IMPR,292,11.8,0.4,0.95,19.4,480,uncertain (both FP and FN),5,0.5,0.4,0.4444
+FRAUD,559,22.6,0.4,0.971,53.1,1314,uncertain (both FP and FN),10,0.8,0.4,0.5333
+COMM,339,13.7,0.429,0.895,9.8,242,uncertain (both FP and FN),7,0.4286,0.4286,0.4286
+PROF,1293,52.2,0.818,1.0,63.8,1580,"underestimate (low recall, no FP)",22,1.0,0.8182,0.9

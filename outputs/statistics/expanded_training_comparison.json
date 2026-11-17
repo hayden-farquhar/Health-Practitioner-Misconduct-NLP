@@ -1,0 +1,45 @@
+{
+  "original": {
+    "n_train": 210,
+    "misconduct_test_macro_f1": 0.5747,
+    "misconduct_test_micro_f1": 0.6446,
+    "misconduct_hamming_loss": 0.1194,
+    "misconduct_per_class": {
+      "CLIN": 0.88,
+      "PRESC": 0.6667,
+      "BOUND": 0.7,
+      "IMPR": 0.8,
+      "FRAUD": 0.1818,
+      "COMM": 0.25,
+      "PROF": 0.7857,
+      "N/A": 0.3333
+    },
+    "finding_test_accuracy": 0.7111,
+    "disciplinary_test_accuracy": 0.9556
+  },
+  "expanded": {
+    "n_train": 510,
+    "n_new": 300,
+    "misconduct_test_macro_f1": 0.6353,
+    "misconduct_test_micro_f1": 0.6774,
+    "misconduct_hamming_loss": 0.1111,
+    "misconduct_per_class": {
+      "CLIN": 0.6,
+      "PRESC": 0.7273,
+      "BOUND": 0.7619,
+      "IMPR": 0.6667,
+      "FRAUD": 0.3636,
+      "COMM": 0.4,
+      "PROF": 0.8571,
+      "N/A": 0.7059
+    },
+    "finding_test_accuracy": 0.6222,
+    "disciplinary_test_accuracy": 0.9556
+  },
+  "delta": {
+    "misconduct_macro_f1": 0.0606,
+    "misconduct_micro_f1": 0.0328,
+    "finding_accuracy": -0.0889,
+    "disciplinary_accuracy": 0.0
+  }
+}

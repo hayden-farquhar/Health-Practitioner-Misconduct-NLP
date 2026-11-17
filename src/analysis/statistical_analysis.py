@@ -28,7 +28,9 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 # ---------------------------------------------------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CORPUS_PATH = PROJECT_ROOT / "data" / "extracted" / "enriched_corpus.jsonl"
+LAST_COMPLETE_YEAR = 2025  # corpus assembled Feb 2026; count-based trends stop here
 ENTITIES_PATH = PROJECT_ROOT / "data" / "extracted" / "entities.jsonl"
+SCHEDULE_MAP_PATH = PROJECT_ROOT / "config" / "poisons_schedule_map_2026-10.json"
 FIGURES_DIR = PROJECT_ROOT / "outputs" / "figures"
 TABLES_DIR = PROJECT_ROOT / "outputs" / "tables"
 STATS_DIR = PROJECT_ROOT / "outputs" / "statistics"
@@ -566,17 +568,10 @@ def prescribing_analysis(disc: pd.DataFrame, full_df: pd.DataFrame):
     t11 = pd.DataFrame(top_meds, columns=["Medication", "N"])
     t11["% of PRESC decisions"] = (t11["N"] / len(presc) * 100).round(1)
 
-    # Add schedule classification from entities
-    schedule_map = {}
-    for doc_id, ents in entities.items():
-        for sched in ents.get("SCHEDULE", []):
-            normalised = sched.get("normalised", sched.get("text", ""))
-            if normalised:
-                # Map medications mentioned near this schedule
-                for med in ents.get("MEDICATION", []):
-                    schedule_map[med["text"].lower()] = normalised
-
-    t11["Schedule"] = t11["Medication"].map(schedule_map).fillna("")
+    # Current Poisons Standard schedule(s) for each medication term
+    # (config/poisons_schedule_map_2026-10.json, built by src/ner/build_poisons_schedule_map.py)
+    schedule_map = json.loads(SCHEDULE_MAP_PATH.read_text())["terms"]
+    t11["Schedule"] = t11["Medication"].map(lambda m: schedule_map[m.lower()]["label"])
     save_table(t11, "table11_top20_medications.csv")
 
     # Opioid vs non-opioid analysis
@@ -751,9 +746,12 @@ def temporal_trends(disc: pd.DataFrame):
             except Exception as e:
                 print(f"    {mc}: Mann-Kendall failed — {e}")
 
-    # Also test total decisions trend
-    if len(annual_totals) >= 8:
-        result = mk.original_test(annual_totals.values)
+    # Also test total decisions trend. Counts need complete calendar years: the partial final
+    # year (corpus assembled Feb 2026) is dropped and years with no decisions count as zero.
+    complete_totals = annual_totals.reindex(
+        range(int(annual_totals.index.min()), LAST_COMPLETE_YEAR + 1), fill_value=0)
+    if len(complete_totals) >= 8:
+        result = mk.original_test(complete_totals.values)
         trend_results.append({
             "misconduct_type": "TOTAL",
             "label": "Total decisions",
@@ -761,7 +759,8 @@ def temporal_trends(disc: pd.DataFrame):
             "p_value": float(f"{result.p:.6g}"),
             "tau": round(result.Tau, 3),
             "sens_slope": round(result.slope, 4),
-            "n_years": len(annual_totals),
+            "n_years": len(complete_totals),
+            "years": f"{complete_totals.index.min()}-{complete_totals.index.max()}",
         })
         print(f"    TOTAL: trend={result.trend}, tau={result.Tau:.3f}, p={result.p:.4g}")
 
