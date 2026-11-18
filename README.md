@@ -4,7 +4,7 @@ Analysis code and released labels for: **What Australian Health Practitioner Tri
 
 Hayden Farquhar MBBS MPHTM, Independent Researcher, Finley, New South Wales, Australia. ORCID [0009-0002-6226-440X](https://orcid.org/0009-0002-6226-440X)
 
-Preprint: version 1, [doi:10.64898/2026.02.13.26346299](https://doi.org/10.64898/2026.02.13.26346299). This release (v2.0.0) accompanies version 2 of the preprint, which corrects version 1 and reports a revised analysis.
+Preprint: version 2, [medRxiv](https://www.medrxiv.org/content/10.64898/2026.02.13.26346299v2) (posted 17 November 2026; [doi:10.64898/2026.02.13.26346299](https://doi.org/10.64898/2026.02.13.26346299)). This release (v2.0.0) accompanies version 2, which corrects version 1 and reports a revised analysis. Version 1 remains available at the same DOI.
 
 ## Overview
 
@@ -93,7 +93,7 @@ In the public copies, internal project identifiers have been removed; nothing el
 
 ## Citation
 
-> Farquhar H. What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses: 3,586 Decisions, 1999 to February 2026. medRxiv preprint. https://doi.org/10.64898/2026.02.13.26346299
+> Farquhar H. What Australian Health Practitioner Tribunals Decide, and What Automated Analysis Misses: 3,586 Decisions, 1999 to February 2026. medRxiv preprint, version 2; 2026. https://doi.org/10.64898/2026.02.13.26346299
 
 Machine-readable citation metadata is in `CITATION.cff`.
 
